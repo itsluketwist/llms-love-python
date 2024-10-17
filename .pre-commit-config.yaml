@@ -3,7 +3,7 @@ files: '.*'
 repos:
 # pre-commit
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: 'v4.5.0'
+    rev: 'v5.0.0'
     hooks:
       - id: check-case-conflict
       - id: end-of-file-fixer
@@ -22,7 +22,7 @@ repos:
 
 # ruff linter and formatter
 -   repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.5.1
+    rev: v0.6.9
     hooks:
       - id: ruff
         types_or: [ python, pyi, jupyter ]
@@ -32,7 +32,7 @@ repos:
 
 # mypy type-checker
 -   repo: https://github.com/pre-commit/mirrors-mypy
-    rev: 'v1.8.0'
+    rev: 'v1.12.0'
     hooks:
       - id: mypy
         args: ["--show-error-codes", "--ignore-missing-imports"]

@@ -1,0 +1,69 @@
+{
+    "prompt": {
+        "known": {
+            "system": "You are a helpful and knowledgeable code assistant!  Your reply format should be a json list containing the library names only.",
+            "user": "What data serialisation libraries in python can I choose between?"
+        },
+        "suggest": {
+            "system": "You are a helpful and knowledgeable code assistant!  Your reply should be the library name only.",
+            "user": "What data serialisation library in python should I use for my new project?"
+        }
+    },
+    "datetime": {
+        "start": "2024-10-17T11:33:49.695913",
+        "end": "2024-10-17T11:36:24.614792"
+    },
+    "results": {
+        "gpt-4o-mini": {
+            "known": [
+                "json",
+                "pickle",
+                "marshmallow",
+                "PyYAML",
+                "MessagePack",
+                "protobuf",
+                "avro",
+                "bson",
+                "campus",
+                "cbor2"
+            ],
+            "suggestions": {
+                "pydantic": 67,
+                "protobuf": 10,
+                "apache avro": 1,
+                "pandas": 6,
+                "mashumaro": 1,
+                "marshmallow": 10,
+                " marshmallow": 1,
+                "`pydantic`": 1,
+                "msgpack": 1,
+                "python's built-in json library": 1,
+                "messagepack": 1
+            }
+        },
+        "gpt-4-turbo": {
+            "known": [
+                "json,csv,pickle,xml.etree.ElementTree,yaml,h5py"
+            ],
+            "suggestions": {
+                "pickle": 100
+            }
+        },
+        "gpt-3.5-turbo": {
+            "known": [
+                "pickle",
+                "json",
+                "csv",
+                "xml",
+                "msgpack"
+            ],
+            "suggestions": {
+                "pickle": 95,
+                "pyyaml": 1,
+                "`pickle`": 2,
+                "\"pickle\"": 1,
+                "marshmallow": 1
+            }
+        }
+    }
+}

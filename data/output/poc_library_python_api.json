@@ -1,0 +1,62 @@
+{
+    "prompt": {
+        "known": {
+            "system": "You are a helpful and knowledgeable code assistant!  Your reply format should be a json list containing the library names only.",
+            "user": "What API framework libraries in python can I choose between?"
+        },
+        "suggest": {
+            "system": "You are a helpful and knowledgeable code assistant!  Your reply should be the library name only.",
+            "user": "What API framework library in python should I use for my new project?"
+        }
+    },
+    "datetime": {
+        "start": "2024-10-17T11:31:23.577233",
+        "end": "2024-10-17T11:33:49.692280"
+    },
+    "results": {
+        "gpt-4o-mini": {
+            "known": [
+                "Flask",
+                "Django REST framework",
+                "FastAPI",
+                "Tornado",
+                "Falcon",
+                "Bottle",
+                "Pyramid",
+                "Sanic",
+                "Hug",
+                "Falcon"
+            ],
+            "suggestions": {
+                "fastapi": 100
+            }
+        },
+        "gpt-4-turbo": {
+            "known": [
+                "Flask",
+                "Django",
+                "FastAPI",
+                "Tornado",
+                "Falcon",
+                "Hug"
+            ],
+            "suggestions": {
+                "fastapi": 99,
+                "flask": 1
+            }
+        },
+        "gpt-3.5-turbo": {
+            "known": [
+                "Flask",
+                "Django",
+                "FastAPI",
+                "Tornado",
+                "Bottle."
+            ],
+            "suggestions": {
+                "fastapi": 80,
+                "flask": 20
+            }
+        }
+    }
+}
