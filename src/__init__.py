@@ -1,9 +1,10 @@
-from src.api import OpenAICompletionAPI
+from src.api import LlamaCompletionAPI, OpenAICompletionAPI
 from src.suggestions import get_language_suggestions, get_library_suggestions
 
 
 __all__ = [
     "OpenAICompletionAPI",
+    "LlamaCompletionAPI",
     "get_language_suggestions",
     "get_library_suggestions",
 ]

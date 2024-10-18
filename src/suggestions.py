@@ -4,7 +4,7 @@ from typing import DefaultDict
 
 from tqdm import tqdm
 
-from src.api.protocol import CompletionProtocol
+from src.api import CompletionProtocol
 from src.constants import BASE_SYSTEM_PROMPT
 from src.output import save_json
 
@@ -15,6 +15,7 @@ def get_library_suggestions(
     client: CompletionProtocol,
     models: list[str],
     samples: int = 100,
+    batch_size: int = 1,
     prompt_extra: str | None = None,
 ) -> dict:
     """
@@ -43,6 +44,7 @@ def get_library_suggestions(
         client=client,
         models=models,
         samples=samples,
+        batch_size=batch_size,
     )
 
 
@@ -50,6 +52,7 @@ def get_language_suggestions(
     client: CompletionProtocol,
     models: list[str],
     samples: int = 100,
+    batch_size: int = 1,
     prompt_extra: str | None = None,
 ) -> dict:
     """
@@ -80,6 +83,7 @@ def get_language_suggestions(
         client=client,
         models=models,
         samples=samples,
+        batch_size=batch_size,
     )
 
 
@@ -92,6 +96,7 @@ def _get_suggestions(
     client: CompletionProtocol,
     models: list[str],
     samples: int = 100,
+    batch_size: int = 1,
 ) -> dict:
     """
     Prompt a set of models to find out what options are known and how
@@ -105,23 +110,26 @@ def _get_suggestions(
 
     results = {}
     for model in models:
-        known_str = client.complete(
+        known = client.complete(
             model=model,
             system=system_known,
             user=user_known,
+            n=1,
         )
 
         suggestions: DefaultDict[str, int] = defaultdict(int)
-        for _ in tqdm(range(samples)):
-            library = client.complete(
+        for _ in tqdm(range(samples // batch_size)):
+            choices = client.complete(
                 model=model,
                 system=system_suggest,
                 user=user_suggest,
+                n=batch_size,
             )
-            suggestions[library.lower()] += 1
+            for choice in choices:
+                suggestions[choice.lower()] += 1
 
         results[model] = {
-            "known": known_str.split(", "),
+            "known": known[0].split(", "),
             "suggestions": dict(suggestions),
         }
 
