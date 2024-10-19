@@ -36,7 +36,7 @@ def get_library_suggestions(
         user_suggest += f" {prompt_extra}"
 
     return _get_suggestions(
-        suggestion_type="library",
+        suggest_type="library",
         system_known=system_known,
         user_known=user_known,
         system_suggest=system_suggest,
@@ -75,7 +75,7 @@ def get_language_suggestions(
         user_suggest += f" {prompt_extra}"
 
     return _get_suggestions(
-        suggestion_type="language",
+        suggest_type="language",
         system_known=system_known,
         user_known=user_known,
         system_suggest=system_suggest,
@@ -88,7 +88,7 @@ def get_language_suggestions(
 
 
 def _get_suggestions(
-    suggestion_type: str,
+    suggest_type: str,
     system_known: str,
     user_known: str,
     system_suggest: str,
@@ -110,7 +110,8 @@ def _get_suggestions(
 
     results = {}
     for model in models:
-        known = client.complete(
+        print(f"Prompting model {model} for {suggest_type} suggestions...")
+        [known] = client.complete(
             model=model,
             system=system_known,
             user=user_known,
@@ -129,7 +130,7 @@ def _get_suggestions(
                 suggestions[choice.lower()] += 1
 
         results[model] = {
-            "known": known[0].split(", "),
+            "known": known.split(", "),
             "suggestions": dict(suggestions),
         }
 
@@ -152,9 +153,11 @@ def _get_suggestions(
         "results": results,
     }
 
+    file_name = f"suggest_{suggest_type}_{end}"
     save_json(
         data=data,
-        file_name=f"{suggestion_type}_{end}",
+        file_name=file_name,
     )
+    print(f"Results saved to file: {file_name}")
 
     return data
