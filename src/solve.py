@@ -67,7 +67,7 @@ def get_solution_languages(
             )
 
             matches = FIND_LANGUAGE_REGEX.findall(string=solution)
-            for match in matches:
+            for match in set(matches):
                 languages[match] += 1
 
         results[model] = {
