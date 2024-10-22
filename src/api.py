@@ -1,7 +1,7 @@
 import os
 from typing import Protocol
 
-from openai import OpenAI
+from openai import NOT_GIVEN, OpenAI
 
 
 class CompletionProtocol(Protocol):
@@ -14,7 +14,8 @@ class CompletionProtocol(Protocol):
         user: str,
         system: str,
         model: str,
-        n: int,
+        n: int = 1,
+        temperature: float | None = None,
     ) -> list[str]:
         pass
 
@@ -32,7 +33,8 @@ class OpenAICompletionAPI:
         user: str,
         system: str,
         model: str,
-        n: int,
+        n: int = 1,
+        temperature: float | None = None,
     ) -> list[str]:
         """
         Method to get the completion result of a prompt from an LLM model.
@@ -48,6 +50,7 @@ class OpenAICompletionAPI:
                 {"role": "user", "content": user},
             ],
             n=n,
+            temperature=temperature or NOT_GIVEN,
         )
         choices = [c.message.content for c in response.choices]
         return choices

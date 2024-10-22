@@ -17,6 +17,7 @@ def get_library_suggestions(
     samples: int = 100,
     batch_size: int = 1,
     prompt_extra: str | None = None,
+    temperature: float | None = None,
 ) -> dict:
     """
     Prompt a set of models to find out what coding libraries they know and how
@@ -45,6 +46,7 @@ def get_library_suggestions(
         models=models,
         samples=samples,
         batch_size=batch_size,
+        temperature=temperature,
     )
 
 
@@ -54,6 +56,7 @@ def get_language_suggestions(
     samples: int = 100,
     batch_size: int = 1,
     prompt_extra: str | None = None,
+    temperature: float | None = None,
 ) -> dict:
     """
     Prompt a set of models to find out what coding languages they know and how
@@ -84,6 +87,7 @@ def get_language_suggestions(
         models=models,
         samples=samples,
         batch_size=batch_size,
+        temperature=temperature,
     )
 
 
@@ -97,6 +101,7 @@ def _get_suggestions(
     models: list[str],
     samples: int = 100,
     batch_size: int = 1,
+    temperature: float | None = None,
 ) -> dict:
     """
     Prompt a set of models to find out what options are known and how
@@ -116,6 +121,7 @@ def _get_suggestions(
             system=system_known,
             user=user_known,
             n=1,
+            temperature=temperature,
         )
 
         suggestions: DefaultDict[str, int] = defaultdict(int)
@@ -125,6 +131,7 @@ def _get_suggestions(
                 system=system_suggest,
                 user=user_suggest,
                 n=batch_size,
+                temperature=temperature,
             )
             for choice in choices:
                 suggestions[choice.lower()] += 1

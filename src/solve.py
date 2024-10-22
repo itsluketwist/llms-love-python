@@ -17,6 +17,7 @@ def get_solution_languages(
     system_extra: str | None = None,
     user_extra: str | None = None,
     limit: int | None = None,
+    temperature: float | None = None,
 ) -> dict:
     """
     Prompt a set of models to find out what coding languages they will try to
@@ -50,6 +51,7 @@ def get_solution_languages(
             system=system_known,
             user=user_known,
             n=1,
+            temperature=temperature,
         )
 
         languages: DefaultDict[str, int] = defaultdict(int)
@@ -64,6 +66,7 @@ def get_solution_languages(
                 system=system_solve,
                 user=user_solve,
                 n=1,
+                temperature=temperature,
             )
 
             matches = FIND_LANGUAGE_REGEX.findall(string=solution)
