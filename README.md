@@ -19,11 +19,20 @@
 
 ## *about*
 
-todo
+
+Coding language and library choice is weighted more towards current popularity than ever, rather than quality or new features, because of the vast adoption of LLMs.
+Because of the way LLMs learn to produce code it's impossible for less well-adopted open-source languages and libraries to gain traction in the ecosystem and build their userbase.
+
+This project investigates this discrimination by LLMs towards lesser known coding languages and libraries.
+
 
 ## *structure*
 
-todo
+Core modules and files included in the repository:
+
+- `data/` - Contains the data records used in the project and results produced, has it's own [README.md](data/README.md).
+- `src/` - The main project code, accessing LLM model APIs and analysing the results.
+- `run.ipynb` - Simple python notebook used to run the project code.
 
 ## *installation*
 
@@ -45,7 +54,7 @@ pip install -r requirements.lock
 
 ## *development*
 
-Install and use pre-commit to ensure code is in a good state:
+Install and use `pre-commit` to ensure code is in a good state:
 
 ```shell
 pre-commit install
