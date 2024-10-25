@@ -161,3 +161,4 @@ cython_debug/
 .idea/
 
 todo.txt
+data/raw/*
