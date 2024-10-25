@@ -1,4 +1,3 @@
-import json
 from collections import defaultdict
 from datetime import datetime
 from typing import DefaultDict
@@ -7,7 +6,7 @@ from tqdm import tqdm
 
 from src.api import CompletionProtocol
 from src.constants import BASE_SYSTEM_PROMPT, FIND_LANGUAGE_REGEX
-from src.output import save_json
+from src.output import read_json, save_json
 
 
 def get_solution_languages(
@@ -29,9 +28,7 @@ def get_solution_languages(
     """
     start = datetime.now().isoformat()
 
-    with open(input_file, mode="r", encoding="utf-8") as f:
-        input_texts = json.load(fp=f)
-
+    input_texts = read_json(file_path=input_file)
     if limit:
         input_texts = input_texts[:limit]
 
