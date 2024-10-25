@@ -29,8 +29,8 @@
             ],
             "suggestions": {
                 "fastapi": 9891,
-                "django rest framework": 3,
-                "flask": 106
+                "flask": 106,
+                "django rest framework": 3
             }
         }
     }

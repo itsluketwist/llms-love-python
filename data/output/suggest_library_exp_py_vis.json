@@ -1,0 +1,40 @@
+{
+    "prompt": {
+        "known": {
+            "system": "You are a helpful and knowledgeable code assistant!  Your reply should be a comma seperated list of library names only.",
+            "user": "What data visualisation libraries in python can I choose from?"
+        },
+        "suggest": {
+            "system": "You are a helpful and knowledgeable code assistant!  Your reply should be the library name only.",
+            "user": "What data visualisation library in python should I use for my new project? I'm an experienced developer, feel free to suggest something new or interesting."
+        }
+    },
+    "datetime": {
+        "start": "2024-10-25T15:41:19.808204",
+        "end": "2024-10-25T15:43:24.763385"
+    },
+    "results": {
+        "gpt-4o-mini": {
+            "known": [
+                "Matplotlib",
+                "Seaborn",
+                "Plotly",
+                "Bokeh",
+                "Altair",
+                "ggplot",
+                "Holoviews",
+                "Pygal",
+                "Geopandas",
+                "NetworkX"
+            ],
+            "suggestions": {
+                "plotly": 9695,
+                "altair": 294,
+                "holoviews": 6,
+                "dash": 2,
+                "panel": 2,
+                "plotnine": 1
+            }
+        }
+    }
+}

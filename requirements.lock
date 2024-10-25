@@ -83,11 +83,12 @@ ipykernel==6.29.5
     #   jupyter
     #   jupyter-console
     #   jupyterlab
-ipython==8.28.0
+ipython==8.20.0
     # via
     #   ipykernel
     #   ipywidgets
     #   jupyter-console
+    #   plotly-utils
 ipywidgets==8.1.5
     # via jupyter
 isoduration==20.11.0
@@ -158,6 +159,8 @@ jupyterlab-server==2.27.3
     #   notebook
 jupyterlab-widgets==3.0.13
     # via ipywidgets
+kaleido==0.2.1
+    # via plotly-utils
 markupsafe==3.0.1
     # via
     #   jinja2
@@ -200,6 +203,7 @@ packaging==24.1
     #   jupyterlab
     #   jupyterlab-server
     #   nbconvert
+    #   plotly
 pandocfilters==1.5.1
     # via nbconvert
 parso==0.8.4
@@ -210,6 +214,10 @@ platformdirs==4.3.6
     # via
     #   jupyter-core
     #   virtualenv
+plotly==5.18.0
+    # via plotly-utils
+plotly-utils @ git+https://github.com/itsluketwist/plotly-utils@5ac1d953ce6436b77fb58e87f0a07f928d9085a1
+    # via -r requirements.txt
 pre-commit==4.0.1
     # via -r requirements.txt
 prometheus-client==0.21.0
@@ -291,6 +299,8 @@ soupsieve==2.6
     # via beautifulsoup4
 stack-data==0.6.3
     # via ipython
+tenacity==9.0.0
+    # via plotly
 terminado==0.18.1
     # via
     #   jupyter-server
@@ -329,7 +339,6 @@ types-python-dateutil==2.9.0.20241003
     # via arrow
 typing-extensions==4.12.2
     # via
-    #   ipython
     #   openai
     #   pydantic
     #   pydantic-core

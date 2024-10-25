@@ -1,5 +1,6 @@
 from collections import defaultdict
 from datetime import datetime
+from string import punctuation, whitespace
 from typing import DefaultDict
 
 from tqdm import tqdm
@@ -113,6 +114,9 @@ def _get_suggestions(
     """
     start = datetime.now().isoformat()
 
+    # translator allows simple removal of punctuation from responses
+    _trans = str.maketrans("", "", punctuation + whitespace)
+
     results = {}
     for model in models:
         print(f"Prompting model {model} for {suggest_type} suggestions...")
@@ -134,10 +138,10 @@ def _get_suggestions(
                 temperature=temperature,
             )
             for choice in choices:
-                suggestions[choice.lower()] += 1
+                suggestions[choice.lower().translate(_trans)] += 1
 
         results[model] = {
-            "known": known.split(", "),
+            "known": [k.translate(_trans) for k in known.split(", ")],
             "suggestions": dict(suggestions),
         }
 

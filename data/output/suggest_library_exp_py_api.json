@@ -1,0 +1,37 @@
+{
+    "prompt": {
+        "known": {
+            "system": "You are a helpful and knowledgeable code assistant!  Your reply should be a comma seperated list of library names only.",
+            "user": "What api framework libraries in python can I choose from?"
+        },
+        "suggest": {
+            "system": "You are a helpful and knowledgeable code assistant!  Your reply should be the library name only.",
+            "user": "What api framework library in python should I use for my new project? I'm an experienced developer, feel free to suggest something new or interesting."
+        }
+    },
+    "datetime": {
+        "start": "2024-10-25T15:43:24.779965",
+        "end": "2024-10-25T15:45:23.458440"
+    },
+    "results": {
+        "gpt-4o-mini": {
+            "known": [
+                "Flask",
+                "Django",
+                "FastAPI",
+                "Tornado",
+                "Falcon",
+                "Pyramid",
+                "Sanic",
+                "Bottle",
+                "Hug",
+                "Tornado",
+                "Aiohttp",
+                "TurboGears"
+            ],
+            "suggestions": {
+                "fastapi": 10000
+            }
+        }
+    }
+}

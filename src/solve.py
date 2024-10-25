@@ -68,10 +68,10 @@ def get_solution_languages(
 
             matches = FIND_LANGUAGE_REGEX.findall(string=solution)
             for match in set(matches):
-                languages[match] += 1
+                languages[match.lower().strip()] += 1
 
         results[model] = {
-            "known": known.split(", "),
+            "known": [k.strip() for k in known.split(", ")],
             "solutions": dict(languages),
         }
 

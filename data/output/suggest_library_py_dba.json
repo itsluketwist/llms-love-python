@@ -1,0 +1,35 @@
+{
+    "prompt": {
+        "known": {
+            "system": "You are a helpful and knowledgeable code assistant!  Your reply should be a comma seperated list of library names only.",
+            "user": "What database adapter libraries in python can I choose from?"
+        },
+        "suggest": {
+            "system": "You are a helpful and knowledgeable code assistant!  Your reply should be the library name only.",
+            "user": "What database adapter library in python should I use for my new project?"
+        }
+    },
+    "datetime": {
+        "start": "2024-10-25T14:07:06.923646",
+        "end": "2024-10-25T14:09:11.737211"
+    },
+    "results": {
+        "gpt-4o-mini": {
+            "known": [
+                "sqlite3",
+                "psycopg2",
+                "SQLAlchemy",
+                "pymysql",
+                "cx_Oracle",
+                "pyodbc",
+                "alembic",
+                "django.db.backends",
+                "MySQLdb",
+                "motor"
+            ],
+            "suggestions": {
+                "sqlalchemy": 10000
+            }
+        }
+    }
+}

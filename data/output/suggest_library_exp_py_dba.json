@@ -1,0 +1,41 @@
+{
+    "prompt": {
+        "known": {
+            "system": "You are a helpful and knowledgeable code assistant!  Your reply should be a comma seperated list of library names only.",
+            "user": "What database adapter libraries in python can I choose from?"
+        },
+        "suggest": {
+            "system": "You are a helpful and knowledgeable code assistant!  Your reply should be the library name only.",
+            "user": "What database adapter library in python should I use for my new project? I'm an experienced developer, feel free to suggest something new or interesting."
+        }
+    },
+    "datetime": {
+        "start": "2024-10-25T15:45:23.473557",
+        "end": "2024-10-25T15:47:15.295801"
+    },
+    "results": {
+        "gpt-4o-mini": {
+            "known": [
+                "psycopg2",
+                "mysql-connector-python",
+                "SQLAlchemy",
+                "pyodbc",
+                "cx_Oracle",
+                "pony",
+                "dataset",
+                "SQLObject",
+                "pymongo",
+                "redis-py"
+            ],
+            "suggestions": {
+                "sqlalchemy": 9784,
+                "tortoise-orm": 152,
+                "sqlmodel": 41,
+                "asyncpg": 19,
+                "peewee": 2,
+                "databases": 1,
+                "django orm": 1
+            }
+        }
+    }
+}

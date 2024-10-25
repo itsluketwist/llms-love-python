@@ -1,5 +1,7 @@
 # **llm-code-discrimination**
 
+This project investigates this discrimination by LLMs towards lesser known coding languages and libraries.
+
 <div>
     <!-- badges from : https://shields.io/ -->
     <!-- logos available : https://simpleicons.org/ -->
@@ -19,11 +21,9 @@
 
 ## *about*
 
+Coding language and library choice is weighted more towards current popularity than ever, rather than quality or new features, because of the vast adoption of LLMs and the way they produce code.
+It's becoming impossible for less well-adopted open-source languages and libraries to gain traction in the ecosystem and build their userbase.
 
-Coding language and library choice is weighted more towards current popularity than ever, rather than quality or new features, because of the vast adoption of LLMs.
-Because of the way LLMs learn to produce code it's impossible for less well-adopted open-source languages and libraries to gain traction in the ecosystem and build their userbase.
-
-This project investigates this discrimination by LLMs towards lesser known coding languages and libraries.
 
 
 ## *structure*

@@ -1,0 +1,36 @@
+{
+    "prompt": {
+        "known": {
+            "system": "You are a helpful and knowledgeable code assistant!  Your reply should be a comma seperated list of library names only.",
+            "user": "What distributed computing libraries in python can I choose from?"
+        },
+        "suggest": {
+            "system": "You are a helpful and knowledgeable code assistant!  Your reply should be the library name only.",
+            "user": "What distributed computing library in python should I use for my new project? I'm an experienced developer, feel free to suggest something new or interesting."
+        }
+    },
+    "datetime": {
+        "start": "2024-10-25T15:47:15.311740",
+        "end": "2024-10-25T15:49:18.487034"
+    },
+    "results": {
+        "gpt-4o-mini": {
+            "known": [
+                "Dask",
+                "PySpark",
+                "Ray",
+                "Celery",
+                "Joblib",
+                "Pyro",
+                "MPI4Py",
+                "H2O",
+                "Pysparkling",
+                "Vaex"
+            ],
+            "suggestions": {
+                "dask": 8274,
+                "ray": 1726
+            }
+        }
+    }
+}
