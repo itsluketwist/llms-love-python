@@ -162,3 +162,5 @@ cython_debug/
 
 todo.txt
 data/raw/*
+.ruff*
+mvp.ipynb
