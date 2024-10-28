@@ -84,7 +84,7 @@ def get_solution_languages(
             },
             "solve": {
                 "system": system_solve,
-                "user": user_solve,
+                "user": f"{{code problem}} {user_extra}",
             },
         },
         "datetime": {

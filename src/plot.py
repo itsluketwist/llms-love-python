@@ -1,7 +1,11 @@
 import math
 
+import plotly.express as px
 import plotly.graph_objects as go
 from plotly_utils import default_figure
+
+
+DEFAULT_COLOR_SCHEME = px.colors.qualitative.Bold * 3
 
 
 def _format_results(
@@ -24,9 +28,11 @@ def _format_results(
             _list += [-1 if _log else 0]
 
 
-def plot_results(
+def plot_line_results(
     data: dict[str, list[int]],
     title: str,
+    x_title: str | None = None,
+    y_title: str | None = None,
     x_len: int = 5,
     y_log: bool = True,
 ) -> go.Figure:
@@ -42,7 +48,7 @@ def plot_results(
         x_ticks.append(f"{len(x_ticks) + 1}th")
 
     lines = []
-    for key, value in data.items():
+    for idx, (key, value) in enumerate(data.items()):
         lines.append(
             go.Scatter(
                 x=x_ticks,
@@ -53,12 +59,16 @@ def plot_results(
                 ),
                 name=key,
                 mode="lines+markers",
+                marker_color=DEFAULT_COLOR_SCHEME[idx],
+                line_color=DEFAULT_COLOR_SCHEME[idx],
             )
         )
 
     figure = default_figure(
         title=title,
         data=lines,
+        x_title=x_title,
+        y_title=y_title,
     )
 
     if y_log:
@@ -70,5 +80,43 @@ def plot_results(
                 ticktext=["0"] + [str(t) for t in tens],
             )
         )
+
+    return figure
+
+
+def plot_bar_results(
+    data: dict[str, int],
+    title: str,
+    x_title: str | None = None,
+    y_title: str | None = None,
+    descending: bool | None = True,
+) -> go.Figure:
+    """
+    Plot the given result data onto a scatter plot with lines.
+
+    Returns
+    -------
+    The created figure.
+    """
+    data_pairs = list(data.items())
+
+    if descending is not None:
+        data_pairs = sorted(data_pairs, key=lambda x: x[1], reverse=descending)
+
+    bars = [d[0] for d in data_pairs]
+    values = [d[1] for d in data_pairs]
+    figure = default_figure(
+        title=title,
+        data=[
+            go.Bar(
+                x=bars,
+                y=values,
+                text=values,
+                marker_color=DEFAULT_COLOR_SCHEME,
+            )
+        ],
+        x_title=x_title,
+        y_title=y_title,
+    )
 
     return figure

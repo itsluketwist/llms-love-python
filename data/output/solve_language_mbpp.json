@@ -40,18 +40,17 @@
                 "SQL"
             ],
             "solutions": {
-                "cpp": 521,
-                "javascript": 926,
                 "python": 964,
-                "java": 951,
-                "ruby": 451,
+                "javascript": 927,
                 "csharp": 646,
+                "cpp": 521,
+                "ruby": 451,
                 "php": 142,
                 "go": 135,
+                "java": 951,
                 "c": 4,
                 "swift": 4,
                 "rust": 1,
-                "js": 1,
                 "kotlin": 1
             }
         }

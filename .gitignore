@@ -164,3 +164,4 @@ todo.txt
 data/raw/*
 .ruff*
 mvp.ipynb
+.DS_STORE
