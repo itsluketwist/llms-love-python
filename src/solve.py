@@ -15,8 +15,9 @@ def get_solution_languages(
     models: list[str],
     system_extra: str | None = None,
     user_extra: str | None = None,
-    limit: int | None = None,
     temperature: float | None = None,
+    limit: int | None = None,
+    repeat: int | None = None,
 ) -> dict:
     """
     Prompt a set of models to find out what coding languages they will try to
@@ -29,6 +30,9 @@ def get_solution_languages(
     start = datetime.now().isoformat()
 
     input_texts = read_json(file_path=input_file)
+    assert isinstance(input_texts, list)
+    if repeat:
+        input_texts = input_texts * repeat
     if limit:
         input_texts = input_texts[:limit]
 
@@ -53,22 +57,26 @@ def get_solution_languages(
 
         languages: DefaultDict[str, int] = defaultdict(int)
         for text in tqdm(input_texts):
-            if user_extra:
-                user_solve = f"{text} {user_extra}"
-            else:
-                user_solve = text
+            try:
+                if user_extra:
+                    user_solve = f"{text} {user_extra}"
+                else:
+                    user_solve = text
 
-            [solution] = client.complete(
-                model=model,
-                system=system_solve,
-                user=user_solve,
-                n=1,
-                temperature=temperature,
-            )
+                [solution] = client.complete(
+                    model=model,
+                    system=system_solve,
+                    user=user_solve,
+                    n=1,
+                    temperature=temperature,
+                )
 
-            matches = FIND_LANGUAGE_REGEX.findall(string=solution)
-            for match in set(matches):
-                languages[match.lower().strip()] += 1
+                matches = FIND_LANGUAGE_REGEX.findall(string=solution)
+                for match in set(matches):
+                    languages[match.lower().strip()] += 1
+
+            except Exception:
+                pass
 
         results[model] = {
             "known": [k.strip() for k in known.split(", ")],
@@ -86,6 +94,7 @@ def get_solution_languages(
                 "system": system_solve,
                 "user": f"{{code problem}} {user_extra}",
             },
+            "problem_texts": input_file,
         },
         "datetime": {
             "start": start,
