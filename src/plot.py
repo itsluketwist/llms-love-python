@@ -43,7 +43,7 @@ def plot_line_results(
     -------
     The created figure.
     """
-    x_ticks = ["1st", "2nd", "3rd"]
+    x_ticks = ["Most common<br>suggestion", "2nd most<br>common", "3rd"]
     while len(x_ticks) < x_len:
         x_ticks.append(f"{len(x_ticks) + 1}th")
 
@@ -85,11 +85,12 @@ def plot_line_results(
 
 
 def plot_bar_results(
-    data: dict[str, int],
+    data: dict[str, int | float],
     title: str,
     x_title: str | None = None,
     y_title: str | None = None,
     descending: bool | None = True,
+    percentage: bool = False,
 ) -> go.Figure:
     """
     Plot the given result data onto a scatter plot with lines.
@@ -105,13 +106,18 @@ def plot_bar_results(
 
     bars = [d[0] for d in data_pairs]
     values = [d[1] for d in data_pairs]
+
+    if percentage:
+        total = sum(values)
+        values = [v * 100 / total for v in values]
+
     figure = default_figure(
         title=title,
         data=[
             go.Bar(
                 x=bars,
                 y=values,
-                text=values,
+                text=[round(v, 2) for v in values],
                 marker_color=DEFAULT_COLOR_SCHEME,
             )
         ],
