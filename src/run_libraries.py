@@ -24,15 +24,16 @@ SOLVE_PROMPT = (
 )
 
 
-def get_compare_libraries(
-    libraries: list[str],
-    input_texts: dict[str, str],
+def get_solution_libraries(
+    problems: dict[str, str],
     models: list[str],
+    libraries: list[str] | None = None,
     language: str = "python",
     system_extra: str | None = None,
     temperature: float | None = None,
     samples: int = 10,
-    save_directory: str = "data/output/library_compare",
+    save_directory: str = "data/output/library",
+    run_id: str | None = None,
 ) -> dict:
     """
     Prompt a set of models to compare their usage of specific
@@ -40,7 +41,7 @@ def get_compare_libraries(
 
     Returns
     -------
-    A summary of the prompts and solution languages.
+    A summary of the prompts, responses and libraries used in the solutions.
     """
     start = datetime.now().isoformat()
 
@@ -55,38 +56,39 @@ def get_compare_libraries(
         client = get_client(model=model)
         results[model] = {}
 
-        for id, text in input_texts.items():
+        for id, text in problems.items():
             print(f"Getting solutions for problem {id}...")
             results[model][id] = {}
 
-            compare_prompt = COMPARE_PROMPT.format(
-                language=language,
-                libraries=f"{', '.join(libraries[:-1])} and {libraries[-1]} ",
-                problem=text,
-            )
-            [compare_response] = client.complete(
-                model=model,
-                system=system_prompt,
-                user=compare_prompt,
-                n=1,
-                temperature=temperature,
-            )
-            results[model][id]["compare"] = compare_response
-
-            for library in libraries:
-                library_prompt = LIBRARY_PROMPT.format(
-                    problem=text,
+            if libraries:
+                compare_prompt = COMPARE_PROMPT.format(
                     language=language,
-                    library=library,
+                    libraries=f"{', '.join(libraries[:-1])} and {libraries[-1]} ",
+                    problem=text,
                 )
-                [library_response] = client.complete(
+                [compare_response] = client.complete(
                     model=model,
                     system=system_prompt,
-                    user=library_prompt,
+                    user=compare_prompt,
                     n=1,
                     temperature=temperature,
                 )
-                results[model][id][library] = library_response
+                results[model][id]["compare"] = compare_response
+
+                for library in libraries:
+                    library_prompt = LIBRARY_PROMPT.format(
+                        problem=text,
+                        language=language,
+                        library=library,
+                    )
+                    [library_response] = client.complete(
+                        model=model,
+                        system=system_prompt,
+                        user=library_prompt,
+                        n=1,
+                        temperature=temperature,
+                    )
+                    results[model][id][library] = library_response
 
             solve_prompt = SOLVE_PROMPT.format(
                 problem=text,
@@ -109,7 +111,8 @@ def get_compare_libraries(
             "compare_prompt": COMPARE_PROMPT,
             "library_prompt": LIBRARY_PROMPT,
             "solve_prompt": SOLVE_PROMPT,
-            "problem_texts": input_texts,
+            "problem_texts": problems,
+            "dataset": run_id or "unspecified",
         },
         "datetime": {
             "start": start,
@@ -118,7 +121,11 @@ def get_compare_libraries(
         "results": results,
     }
 
-    file_name = f"compare_library_{end}"
+    if run_id:
+        file_name = f"solve_library_{run_id}_{end}"
+    else:
+        file_name = f"solve_library_{end}"
+
     save_json(
         data=data,
         file_name=file_name,
