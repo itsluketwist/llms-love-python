@@ -1,27 +1,9 @@
 import os
-from typing import Protocol
 
 from anthropic import NOT_GIVEN as ANTHOPIC_NOT_GIVEN
 from anthropic import Anthropic
 from openai import NOT_GIVEN as OPENAI_NOT_GIVEN
 from openai import OpenAI
-
-
-class CompletionProtocol(Protocol):
-    """
-    Protocol that describes how to access the completion API of an LLM service.
-    """
-
-    def complete(
-        self,
-        user: str,
-        system: str,
-        model: str | None = None,
-        n: int = 1,
-        temperature: float | None = None,
-        max_tokens: int | None = None,
-    ) -> list[str]:
-        pass
 
 
 class OpenAICompletionAPI:
@@ -37,7 +19,7 @@ class OpenAICompletionAPI:
         self,
         user: str,
         system: str,
-        model: str | None = None,
+        model: str,
         n: int = 1,
         temperature: float | None = None,
         max_tokens: int | None = None,
@@ -49,7 +31,6 @@ class OpenAICompletionAPI:
         -------
         The textual response to the prompt.
         """
-        model = model or self._model
         response = self._client.chat.completions.create(
             model=model,
             messages=[
@@ -90,12 +71,11 @@ class AnthropicCompletionAPI:
         self,
         user: str,
         system: str,
-        model: str | None = None,
+        model: str,
         n: int = 1,
         temperature: float | None = None,
         max_tokens: int | None = None,
     ) -> list[str]:
-        model = model or self._model
         response = self._client.messages.create(
             model=model,
             temperature=temperature or ANTHOPIC_NOT_GIVEN,

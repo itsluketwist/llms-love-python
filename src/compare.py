@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from src.api import CompletionProtocol
+from src.api import get_client
 from src.constants import BASE_SYSTEM_PROMPT
 from src.output import save_json
 from src.python_imports import get_imports_from_completion
@@ -27,7 +27,6 @@ SOLVE_PROMPT = (
 def get_compare_libraries(
     libraries: list[str],
     input_texts: dict[str, str],
-    client: CompletionProtocol,
     models: list[str],
     language: str = "python",
     system_extra: str | None = None,
@@ -53,6 +52,7 @@ def get_compare_libraries(
     results: dict[str, dict] = {}
     for model in models:
         print(f"Prompting model {model} for solutions...")
+        client = get_client(model=model)
         results[model] = {}
 
         for id, text in input_texts.items():

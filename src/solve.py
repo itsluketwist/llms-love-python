@@ -4,7 +4,7 @@ from typing import DefaultDict
 
 from tqdm import tqdm
 
-from src.api import CompletionProtocol
+from src.api import get_client
 from src.constants import BASE_SYSTEM_PROMPT, FIND_LANGUAGE_REGEX
 from src.output import read_json, save_json
 from src.python_imports import get_imports_from_completion
@@ -12,7 +12,6 @@ from src.python_imports import get_imports_from_completion
 
 def get_solution_languages(
     input_file: str,
-    client: CompletionProtocol,
     models: list[str],
     system_extra: str | None = None,
     user_extra: str | None = None,
@@ -49,6 +48,7 @@ def get_solution_languages(
     results = {}
     for model in models:
         print(f"Prompting model {model} for solutions...")
+        client = get_client(model=model)
         [known] = client.complete(
             model=model,
             system=system_known,
@@ -118,7 +118,6 @@ def get_solution_languages(
 
 def get_solution_libraries(
     input_texts: list[str],
-    client: CompletionProtocol,
     models: list[str],
     system_extra: str | None = None,
     user_extra: str | None = None,
@@ -143,6 +142,7 @@ def get_solution_libraries(
 
     results: dict[str, list] = {}
     for model in models:
+        client = get_client(model=model)
         results[model] = []
 
         for text in input_texts:

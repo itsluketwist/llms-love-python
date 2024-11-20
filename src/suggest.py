@@ -5,7 +5,7 @@ from typing import DefaultDict
 
 from tqdm import tqdm
 
-from src.api import CompletionProtocol
+from src.api import get_client
 from src.constants import BASE_SYSTEM_PROMPT
 from src.output import save_json
 
@@ -13,7 +13,6 @@ from src.output import save_json
 def get_library_suggestions(
     library_type: str,
     code_language: str,
-    client: CompletionProtocol,
     models: list[str],
     samples: int = 100,
     batch_size: int = 1,
@@ -44,7 +43,6 @@ def get_library_suggestions(
         user_known=user_known,
         system_suggest=system_suggest,
         user_suggest=user_suggest,
-        client=client,
         models=models,
         samples=samples,
         batch_size=batch_size,
@@ -54,7 +52,6 @@ def get_library_suggestions(
 
 
 def get_language_suggestions(
-    client: CompletionProtocol,
     models: list[str],
     samples: int = 100,
     batch_size: int = 1,
@@ -87,7 +84,6 @@ def get_language_suggestions(
         user_known=user_known,
         system_suggest=system_suggest,
         user_suggest=user_suggest,
-        client=client,
         models=models,
         samples=samples,
         batch_size=batch_size,
@@ -102,7 +98,6 @@ def _get_suggestions(
     user_known: str,
     system_suggest: str,
     user_suggest: str,
-    client: CompletionProtocol,
     models: list[str],
     samples: int = 100,
     batch_size: int = 1,
@@ -125,6 +120,7 @@ def _get_suggestions(
     results = {}
     for model in models:
         print(f"Prompting model {model} for {suggest_type} suggestions...")
+        client = get_client(model=model)
         [known] = client.complete(
             model=model,
             system=system_known,
