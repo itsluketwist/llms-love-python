@@ -1,3 +1,4 @@
+anthropic
 git+https://github.com/itsluketwist/plotly-utils
 Jupyter
 openai
