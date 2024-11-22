@@ -80,7 +80,7 @@ def get_solution_languages(
 
         results[model] = {
             "known": [k.strip() for k in known.split(", ")],
-            "solutions": dict(languages),
+            "counts": dict(languages),
         }
 
     end = datetime.now().isoformat()

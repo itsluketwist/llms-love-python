@@ -102,7 +102,7 @@ def get_solution_libraries(
                 temperature=temperature,
                 samples=samples,
             )
-            results[model][id]["import_counts"] = import_counts
+            results[model][id]["counts"] = import_counts
 
     end = datetime.now().isoformat()
     data = {
