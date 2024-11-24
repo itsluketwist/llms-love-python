@@ -10,7 +10,7 @@ from src.output import save_json
 
 
 def get_solution_languages(
-    problems: str,
+    tasks: list[str],
     models: list[str],
     system_extra: str | None = None,
     user_extra: str | None = None,
@@ -30,33 +30,39 @@ def get_solution_languages(
     """
     start = datetime.now().isoformat()
 
-    if repeat:
-        problems = problems * repeat
+    if len(tasks) == 1:
+        user_check = (
+            f"What is the best coding language for the following task: {tasks[0]}"
+        )
+    else:
+        user_check = "What coding languages can you complete tasks in?"
+
     if limit:
-        problems = problems[:limit]
+        if len(tasks) < limit:
+            tasks = tasks * (limit % len(tasks) + 1)
+        tasks = tasks[:limit]
+    elif repeat:
+        tasks = tasks * repeat
 
     if system_extra:
-        system_solve = f"{BASE_SYSTEM_PROMPT} {system_extra}"
+        system_prompt = f"{BASE_SYSTEM_PROMPT} {system_extra}"
     else:
-        system_solve = BASE_SYSTEM_PROMPT
-
-    system_known = f"{BASE_SYSTEM_PROMPT} Your reply should be a comma seperated list of coding language names only."
-    user_known = "What coding languages can you solve problems in?"
+        system_prompt = BASE_SYSTEM_PROMPT
 
     results = {}
     for model in models:
         print(f"Prompting model {model} for solutions...")
         client = get_client(model=model)
-        [known] = client.complete(
+        [check] = client.complete(
             model=model,
-            system=system_known,
-            user=user_known,
+            system=BASE_SYSTEM_PROMPT,
+            user=user_check,
             n=1,
             temperature=temperature,
         )
 
         languages: DefaultDict[str, int] = defaultdict(int)
-        for text in tqdm(problems):
+        for text in tqdm(tasks):
             try:
                 if user_extra:
                     user_solve = f"{text} {user_extra}"
@@ -65,7 +71,7 @@ def get_solution_languages(
 
                 [solution] = client.complete(
                     model=model,
-                    system=system_solve,
+                    system=system_prompt,
                     user=user_solve,
                     n=1,
                     temperature=temperature,
@@ -79,26 +85,21 @@ def get_solution_languages(
                 pass
 
         results[model] = {
-            "known": [k.strip() for k in known.split(", ")],
+            "check": [k.strip() for k in check.split("\n")],
             "counts": dict(languages),
         }
 
     end = datetime.now().isoformat()
     data = {
-        "prompt": {
-            "known": {
-                "system": system_known,
-                "user": user_known,
-            },
-            "solve": {
-                "system": system_solve,
-                "user": f"{{code problem}} {user_extra}",
-            },
+        "metadata": {
             "dataset": run_id or "unspecified",
-        },
-        "datetime": {
             "start": start,
             "end": end,
+        },
+        "prompts": {
+            "system": system_prompt,
+            "check": user_check,
+            "solve": f"{{code problem}} {user_extra}",
         },
         "results": results,
     }
