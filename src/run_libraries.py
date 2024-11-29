@@ -8,17 +8,17 @@ from src.python_imports import get_imports_from_completion
 
 COMPARE_PROMPT = (
     "Compare the usage of {language} libraries {libraries} "
-    "for writing a function to solve:\n{problem}"
+    "for the following task:\n\n{problem}"
 )
 
 LIBRARY_PROMPT = (
-    "Write a python function to solve:\n{problem}\n\n"
+    "{problem}\n\n"
     "You should write self-contained {language} code.\n"
     "Import and use the {library} library, and explain if it's a good choice."
 )
 
 SOLVE_PROMPT = (
-    "Write a python function to solve:\n{problem}\n\n"
+    "{problem}\n\n"
     "You should write self-contained {language} code.\n"
     "Choose, import and utilise at least one external library."
 )
@@ -32,7 +32,7 @@ def get_solution_libraries(
     system_extra: str | None = None,
     temperature: float | None = None,
     samples: int = 10,
-    save_directory: str = "data/output/library",
+    save_directory: str = "output/library",
     run_id: str | None = None,
 ) -> dict:
     """
@@ -43,6 +43,7 @@ def get_solution_libraries(
     -------
     A summary of the prompts, responses and libraries used in the solutions.
     """
+    print(f"Starting run {run_id}...")
     start = datetime.now().isoformat()
 
     if system_extra:
@@ -106,17 +107,19 @@ def get_solution_libraries(
 
     end = datetime.now().isoformat()
     data = {
+        "metadata": {
+            "dataset": run_id or "unspecified",
+            "total": samples * len(problems),
+            "start": start,
+            "end": end,
+            "temperature": temperature,
+        },
         "prompt": {
             "system": system_prompt,
             "compare_prompt": COMPARE_PROMPT,
             "library_prompt": LIBRARY_PROMPT,
             "solve_prompt": SOLVE_PROMPT,
             "problem_texts": problems,
-            "dataset": run_id or "unspecified",
-        },
-        "datetime": {
-            "start": start,
-            "end": end,
         },
         "results": results,
     }

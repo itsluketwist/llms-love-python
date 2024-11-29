@@ -116,7 +116,7 @@ def get_imports_from_completion(
     -------
     The count of each group of imports.
     """
-    import_count: DefaultDict[frozenset[str], int] = defaultdict(int)
+    import_count: DefaultDict[str, int] = defaultdict(int)
 
     for _ in tqdm(range(samples)):
         try:
@@ -128,10 +128,12 @@ def get_imports_from_completion(
                 temperature=temperature,
             )
             imports = get_imports_from_markdown(text=markdown)
-            import_count[frozenset(imports)] += 1
+            if imports:
+                import_count[",".join(sorted(imports))] += 1
+            else:
+                import_count["none"] += 1
 
         except Exception:
-            pass
+            import_count["error"] += 1
 
-    _import_count = {",".join(sorted(k)): n for k, n in import_count.items()}
-    return _import_count
+    return import_count

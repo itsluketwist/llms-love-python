@@ -1,7 +1,7 @@
 from src.api.completion import (
     AnthropicCompletionAPI,
-    LlamaCompletionAPI,
     OpenAICompletionAPI,
+    TogetherCompletionAPI,
 )
 from src.api.protocol import CompletionProtocol
 from src.constants import BASE_SYSTEM_PROMPT
@@ -14,10 +14,10 @@ def get_client(model: str) -> CompletionProtocol:
     if "claude" in model:
         return AnthropicCompletionAPI()
 
-    if "llama" in model:
-        return LlamaCompletionAPI()
+    if "gpt" in model or "o1" in model:
+        return OpenAICompletionAPI()
 
-    return OpenAICompletionAPI()
+    return TogetherCompletionAPI()
 
 
 def quick_complete(

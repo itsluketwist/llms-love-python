@@ -1,16 +1,16 @@
 from src.api.completion import (
     AnthropicCompletionAPI,
-    LlamaCompletionAPI,
     OpenAICompletionAPI,
+    TogetherCompletionAPI,
 )
 from src.api.protocol import CompletionProtocol
 from src.api.utils import get_client, quick_complete
 
 
 __all__ = [
-    "OpenAICompletionAPI",
-    "LlamaCompletionAPI",
     "AnthropicCompletionAPI",
+    "OpenAICompletionAPI",
+    "TogetherCompletionAPI",
     "CompletionProtocol",
     "get_client",
     "quick_complete",

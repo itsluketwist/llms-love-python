@@ -1,9 +1,6 @@
-import os
-
-from anthropic import NOT_GIVEN as ANTHOPIC_NOT_GIVEN
-from anthropic import Anthropic
-from openai import NOT_GIVEN as OPENAI_NOT_GIVEN
-from openai import OpenAI
+import anthropic
+import openai
+import together
 
 
 class OpenAICompletionAPI:
@@ -12,8 +9,7 @@ class OpenAICompletionAPI:
     """
 
     def __init__(self):
-        self._client = OpenAI()
-        self._model = "gpt-4o-mini"
+        self._client = openai.OpenAI()
 
     def complete(
         self,
@@ -38,24 +34,43 @@ class OpenAICompletionAPI:
                 {"role": "user", "content": user},
             ],
             n=n,
-            temperature=temperature or OPENAI_NOT_GIVEN,
-            max_tokens=max_tokens or OPENAI_NOT_GIVEN,
+            temperature=temperature or openai.NOT_GIVEN,
+            max_tokens=max_tokens or openai.NOT_GIVEN,
         )
         choices = [c.message.content for c in response.choices]
         return choices
 
 
-class LlamaCompletionAPI(OpenAICompletionAPI):
+class TogetherCompletionAPI:
     """
     Class to access to Llama-API, using the OpenAI interface.
     """
 
     def __init__(self):
-        self._client = OpenAI(
-            api_key=os.environ["LLAMA_API_KEY"],
-            base_url="https://api.llama-api.com/",
+        self._client = together.Together()
+
+    def complete(
+        self,
+        user: str,
+        system: str,
+        model: str,
+        n: int = 1,
+        temperature: float | None = None,
+        max_tokens: int | None = None,
+    ) -> list[str]:
+        response = self._client.chat.completions.create(
+            model=model,
+            system=system,
+            messages=[
+                {"role": "system", "content": system},
+                {"role": "user", "content": user},
+            ],
+            n=n,
+            temperature=temperature,
+            max_tokens=max_tokens or 1000,
         )
-        self._model = "llama3-8b"
+        choices = [c.message.content for c in response.choices]
+        return choices
 
 
 class AnthropicCompletionAPI:
@@ -64,8 +79,7 @@ class AnthropicCompletionAPI:
     """
 
     def __init__(self) -> None:
-        self._client = Anthropic()
-        self._model = "claude-3-5-haiku-20241022"
+        self._client = anthropic.Anthropic()
 
     def complete(
         self,
@@ -78,7 +92,7 @@ class AnthropicCompletionAPI:
     ) -> list[str]:
         response = self._client.messages.create(
             model=model,
-            temperature=temperature or ANTHOPIC_NOT_GIVEN,
+            temperature=temperature or anthropic.ANTHOPIC_NOT_GIVEN,
             system=system,
             messages=[
                 {
