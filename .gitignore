@@ -167,5 +167,4 @@ mvp.ipynb
 .DS_STORE
 
 # temporary
-data/plots/
-data/output/
+output/

@@ -13,7 +13,7 @@ The data records used in the project and results produced.
     - `apps_introductory.json` (2701 records) - the `question` data from the APPS (train and test) dataset, for problems with `difficulty = introductory`, 2021.
     - `bigcodebench.json` (515 records) - the `instruct_prompt` data from the BigCodeBench dataset, 2024.
         - *Edits: the function definition provided at the end of each problem has been removed.*
-    - `codecontests_1k.json` (1000 records) - a random sample of the `description` data from the CodeContests dataset, 2022.
+    - `codecontests_{200|1000}.json` (200 or 1000 records) - samples of the `description` data from the CodeContests dataset, distributed evenly over the different difficulties, 2022.
     - `conala.json` (2255 records) - the `rewritten_intent` data from the CoNaLa (train and test) dataset, 2018.
     - `mx_humaneval.json` (161 records) - the `description` data from the MxEval Multi-HumanEval dataset, 2023.
     - `mx_mbxp.json` (967 records) - the `description` data from the MxEval MBXP dataset, 2023.
