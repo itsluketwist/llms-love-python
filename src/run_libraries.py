@@ -1,5 +1,7 @@
 from datetime import datetime
 
+from tqdm import tqdm
+
 from src.api import get_client
 from src.constants import BASE_SYSTEM_PROMPT
 from src.output import save_json
@@ -57,7 +59,7 @@ def get_solution_libraries(
         client = get_client(model=model)
         results[model] = {}
 
-        for id, text in problems.items():
+        for id, text in tqdm(problems.items()):
             print(f"Getting solutions for problem {id}...")
             results[model][id] = {}
 

@@ -3,8 +3,6 @@ import sys
 from collections import defaultdict
 from typing import DefaultDict
 
-from tqdm import tqdm
-
 from src.api import CompletionProtocol
 
 
@@ -118,7 +116,7 @@ def get_imports_from_completion(
     """
     import_count: DefaultDict[str, int] = defaultdict(int)
 
-    for _ in tqdm(range(samples)):
+    for _ in range(samples):
         try:
             [markdown] = client.complete(
                 model=model,

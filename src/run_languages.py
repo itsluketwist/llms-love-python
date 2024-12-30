@@ -91,7 +91,7 @@ def get_solution_languages(
     data = {
         "metadata": {
             "dataset": run_id or "unspecified",
-            "total": limit or repeat * len(tasks),
+            "total": len(tasks),
             "start": start,
             "end": end,
             "temperature": temperature,
