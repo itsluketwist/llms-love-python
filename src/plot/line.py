@@ -1,11 +1,12 @@
 import math
+from datetime import datetime
 
-import plotly.express as px
 import plotly.graph_objects as go
 from plotly_utils import default_figure
 
-
-DEFAULT_COLOR_SCHEME = px.colors.qualitative.Bold * 3
+from src.constants import DATETIME_FORMAT
+from src.output import read_json
+from src.plot.utils import DEFAULT_COLOURS, LIBRARY_COLOURS
 
 
 def _format_results(
@@ -59,8 +60,8 @@ def plot_line_results(
                 ),
                 name=key,
                 mode="lines+markers",
-                marker_color=DEFAULT_COLOR_SCHEME[idx],
-                line_color=DEFAULT_COLOR_SCHEME[idx],
+                marker_color=DEFAULT_COLOURS[idx],
+                line_color=DEFAULT_COLOURS[idx],
             )
         )
 
@@ -80,5 +81,72 @@ def plot_line_results(
                 ticktext=["0"] + [str(t) for t in tens],
             )
         )
+
+    return figure
+
+
+def plot_line_library_stars(
+    libraries: list[str],
+    title: str | None = None,
+    x_title: str = "Years since repository creation",
+    y_title: str = "Total GitHub stars",
+    data_path: str = "data/library_texts/library_stats.json",
+    width: int = 700,
+) -> go.Figure:
+    """
+    Plot the given result data onto a scatter plot with lines.
+
+    Returns
+    -------
+    The created figure.
+    """
+    raw = read_json(file_path=data_path)
+    if not isinstance(raw, dict):
+        raise TypeError("Results file must contain a json dictionary.")
+
+    queried = datetime.strptime(raw["queried"], DATETIME_FORMAT)
+    title = (
+        title or "GitHub repository stars growth"
+    )  # + " vs ".join([f"<b>{lib}</b>" for lib in libraries])
+
+    figure = default_figure(
+        title=title,
+        x_title=x_title,
+        y_title=y_title,
+    )
+
+    for i, library in enumerate(libraries):
+        library_data = raw["data"][library]
+        created = datetime.strptime(library_data["created"], DATETIME_FORMAT)
+        age = (queried - created).days / 365
+
+        figure.add_trace(
+            go.Scatter(
+                x=[0, age],
+                y=[0, library_data["stars"]],
+                name=library,
+                mode="lines+markers",
+                marker_color=LIBRARY_COLOURS[i],
+                line_color=LIBRARY_COLOURS[i],
+                line_width=5,
+                marker_size=8,
+            )
+        )
+        figure.add_annotation(
+            x=age,
+            y=library_data["stars"],
+            text=f"<b>{library}</b>",
+            showarrow=False,
+            xshift=-5,
+            xanchor="right",
+            yshift=5,
+            yanchor="bottom",
+        )
+
+    figure.update_layout(
+        width=width,
+        showlegend=False,
+        margin=dict(b=200, t=160),
+    )
 
     return figure
