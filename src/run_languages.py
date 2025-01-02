@@ -5,8 +5,9 @@ from typing import DefaultDict
 from tqdm import tqdm
 
 from src.api import get_client
-from src.constants import BASE_SYSTEM_PROMPT, FIND_LANGUAGE_REGEX
+from src.constants import FIND_LANGUAGE_REGEX
 from src.output import save_json
+from src.prompts import BASE_SYSTEM_PROMPT
 
 
 def get_solution_languages(
@@ -58,9 +59,8 @@ def get_solution_languages(
         languages: DefaultDict[str, int] = defaultdict(int)
         no_code_solutions = []
         for text in tqdm(tasks):
+            user_solve = f"{pre_prompt or ''}{text}{post_prompt or ''}"
             try:
-                user_solve = f"{pre_prompt or ''}{text}{post_prompt or ''}"
-
                 [solution] = client.complete(
                     model=model,
                     system=BASE_SYSTEM_PROMPT,

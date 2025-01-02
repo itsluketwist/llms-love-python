@@ -4,7 +4,7 @@ from src.api.completion import (
     TogetherCompletionAPI,
 )
 from src.api.protocol import CompletionProtocol
-from src.constants import BASE_SYSTEM_PROMPT
+from src.prompts import BASE_SYSTEM_PROMPT
 
 
 def get_client(model: str) -> CompletionProtocol:

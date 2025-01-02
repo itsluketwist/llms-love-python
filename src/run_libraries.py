@@ -3,27 +3,14 @@ from datetime import datetime
 from tqdm import tqdm
 
 from src.api import get_client
-from src.constants import BASE_SYSTEM_PROMPT
 from src.output import save_json
+from src.prompts import (
+    BASE_SYSTEM_PROMPT,
+    LIBRARY_PROMPT_COMPARE,
+    LIBRARY_PROMPT_USE_ANY,
+    LIBRARY_PROMPT_USE_ONE,
+)
 from src.python_imports import get_imports_from_completion
-
-
-COMPARE_PROMPT = (
-    "Compare the usage of {language} libraries {libraries} "
-    "for the following task:\n\n{problem}"
-)
-
-LIBRARY_PROMPT = (
-    "{problem}\n\n"
-    "You should write self-contained {language} code.\n"
-    "Import and use the {library} library, and explain if it's a good choice."
-)
-
-SOLVE_PROMPT = (
-    "{problem}\n\n"
-    "You should write self-contained {language} code.\n"
-    "Choose, import and utilise at least one external library."
-)
 
 
 def get_solution_libraries(
@@ -31,7 +18,8 @@ def get_solution_libraries(
     models: list[str],
     libraries: list[str] | None = None,
     language: str = "python",
-    system_extra: str | None = None,
+    pre_prompt: str | None = None,
+    post_prompt: str | None = None,
     temperature: float | None = None,
     samples: int = 10,
     save_directory: str = "output/library",
@@ -48,11 +36,6 @@ def get_solution_libraries(
     print(f"Starting run {run_id}...")
     start = datetime.now().isoformat()
 
-    if system_extra:
-        system_prompt = f"{BASE_SYSTEM_PROMPT} {system_extra}"
-    else:
-        system_prompt = BASE_SYSTEM_PROMPT
-
     results: dict[str, dict] = {}
     for model in models:
         print(f"Prompting model {model} for solutions...")
@@ -60,18 +43,18 @@ def get_solution_libraries(
         results[model] = {}
 
         for id, text in tqdm(problems.items()):
-            print(f"Getting solutions for problem {id}...")
             results[model][id] = {}
+            text = f"{pre_prompt or ''}{text}{post_prompt or ''}"
 
             if libraries:
-                compare_prompt = COMPARE_PROMPT.format(
+                compare_prompt = LIBRARY_PROMPT_COMPARE.format(
                     language=language,
                     libraries=f"{', '.join(libraries[:-1])} and {libraries[-1]} ",
                     problem=text,
                 )
                 [compare_response] = client.complete(
                     model=model,
-                    system=system_prompt,
+                    system=BASE_SYSTEM_PROMPT,
                     user=compare_prompt,
                     n=1,
                     temperature=temperature,
@@ -79,28 +62,28 @@ def get_solution_libraries(
                 results[model][id]["compare"] = compare_response
 
                 for library in libraries:
-                    library_prompt = LIBRARY_PROMPT.format(
+                    library_prompt = LIBRARY_PROMPT_USE_ONE.format(
                         problem=text,
                         language=language,
                         library=library,
                     )
                     [library_response] = client.complete(
                         model=model,
-                        system=system_prompt,
+                        system=BASE_SYSTEM_PROMPT,
                         user=library_prompt,
                         n=1,
                         temperature=temperature,
                     )
                     results[model][id][library] = library_response
 
-            solve_prompt = SOLVE_PROMPT.format(
+            solve_prompt = LIBRARY_PROMPT_USE_ANY.format(
                 problem=text,
                 language=language,
             )
             import_counts = get_imports_from_completion(
                 client=client,
                 model=model,
-                system=system_prompt,
+                system=BASE_SYSTEM_PROMPT,
                 user=solve_prompt,
                 temperature=temperature,
                 samples=samples,
@@ -117,10 +100,12 @@ def get_solution_libraries(
             "temperature": temperature,
         },
         "prompt": {
-            "system": system_prompt,
-            "compare_prompt": COMPARE_PROMPT,
-            "library_prompt": LIBRARY_PROMPT,
-            "solve_prompt": SOLVE_PROMPT,
+            "system": BASE_SYSTEM_PROMPT,
+            "compare_prompt": LIBRARY_PROMPT_COMPARE,
+            "library_prompt": LIBRARY_PROMPT_USE_ONE,
+            "solve_prompt": LIBRARY_PROMPT_USE_ANY,
+            "pre_prompt": pre_prompt,
+            "post_prompt": post_prompt,
             "problem_texts": problems,
         },
         "results": results,

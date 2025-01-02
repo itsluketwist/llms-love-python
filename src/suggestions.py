@@ -6,8 +6,8 @@ from typing import DefaultDict
 from tqdm import tqdm
 
 from src.api import get_client
-from src.constants import BASE_SYSTEM_PROMPT
 from src.output import save_json
+from src.prompts import BASE_SYSTEM_PROMPT
 
 
 def get_library_suggestions(
