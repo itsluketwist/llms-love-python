@@ -164,6 +164,7 @@ todo.txt
 data/raw/*
 .ruff*
 mvp.ipynb
+data.ipynb
 .DS_STORE
 
 # temporary

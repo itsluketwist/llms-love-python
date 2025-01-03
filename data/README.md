@@ -5,26 +5,36 @@ The data records used in the project and results produced.
 ## *contents*
 
 - `output/` - json files containing the results from running the main code.
-- `problem_texts/` - natural language coding problems from existing datasets, used to run experiments on the models.
-    - `aixbench.json` (129 records) - the `raw_nl` data from the Aix-Bench NL task dataset, 2022.
-        - *Cuts: problems containing chinese characters have been removed.*
-    - `apps_competition.json` (1361 records) - the `question` data from the APPS (train and test) dataset, for problems with `difficulty = competition`, 2021.
-    - `apps_interview.json` (4716 records) - the `question` data from the APPS (train and test) dataset, for problems with `difficulty = interview`, 2021.
-    - `apps_introductory.json` (2701 records) - the `question` data from the APPS (train and test) dataset, for problems with `difficulty = introductory`, 2021.
-    - `bigcodebench.json` (515 records) - the `instruct_prompt` data from the BigCodeBench dataset, 2024.
-        - *Edits: the function definition provided at the end of each problem has been removed.*
-    - `codecontests_{200|1000}.json` (200 or 1000 records) - samples of the `description` data from the CodeContests dataset, distributed evenly over the different difficulties, 2022.
-    - `conala.json` (2255 records) - the `rewritten_intent` data from the CoNaLa (train and test) dataset, 2018.
-    - `mx_humaneval.json` (161 records) - the `description` data from the MxEval Multi-HumanEval dataset, 2023.
-    - `mx_mbxp.json` (967 records) - the `description` data from the MxEval MBXP dataset, 2023.
-    - `pecc_aoc.json` (200 records) - the `part1_converted` data from the PECC Advent of Code dataset, 2024.
-    - `pecc_euler.json` (806 records) - the `title` and `problem` data from the PECC Project Euler dataset, 2024.
+- `language/` - data used for *language* experiments.
+    - `projects.json` - project descriptions to be used as prompts.
+    - `datasets/` - natural language coding problems from existing datasets.
+        - `aixbench.json` (129 records) - the `raw_nl` data from the AixBench NL task dataset, 2022.
+            - *Cuts: problems containing chinese characters have been removed.*
+        - `apps_competition.json` (1361 records) - the `question` data from the APPS (train and test) dataset, for problems with `difficulty = competition`, 2021.
+        - `apps_interview.json` (4716 records) - the `question` data from the APPS (train and test) dataset, for problems with `difficulty = interview`, 2021.
+        - `apps_introductory.json` (2701 records) - the `question` data from the APPS (train and test) dataset, for problems with `difficulty = introductory`, 2021.
+        - `codecontests_{200|1000}.json` (200 or 1000 records) - samples of the `description` data from the CodeContests dataset, distributed evenly over the different difficulties, 2022.
+        - `conala.json` (2255 records) - the `rewritten_intent` data from the CoNaLa (train and test) dataset, 2018.
+        - `mx_humaneval.json` (161 records) - the `description` data from the MxEval Multi-HumanEval dataset, 2023.
+        - `mx_mbxp.json` (967 records) - the `description` data from the MxEval MBXP dataset, 2023.
+        - `pecc_aoc.json` (200 records) - the `part1_converted` data from the PECC Advent of Code dataset, 2024.
+        - `pecc_euler.json` (806 records) - the `title` and `problem` data from the PECC Project Euler dataset, 2024.
+- `library/` - data used for *library* experiments
+    - `library/bigcodebench_stats.json` - data about the BigCodeBench dataset, before and after processing for use.
+    - `library/library_stats.json` - GitHub data from about libraries analysed in the study.
+    - `library/problems.json` - problem statements to be used as prompts, curated from the BigCodeBench dataset.
+    - `library/projects.json` - project descriptions to be used as prompts.
+    - `bigcodebench/` - raw data from the BigCodeBench dataset
+        - `bigcodebench_all.json` (1140 records) - the `instruct_prompt` and `libs` data from the BigCodeBench dataset, 2024.
+        - `bigcodebench_ext.json` (813 records) - BigCodeBench problems that include external libraries.
+        - `lib2domain.json` - mapping of libraries to domains.
+        - `task2domain.json` - mapping of BigCodeBench problems to domains.
 
-*The following datasets had problems that referenced a coding language or library removed: Aix-Bench, APPS, BigCodeBench, CoNaLa, CodeContests.*
+*The following datasets had problems that referenced a coding language or library removed: Aix-Bench, APPS, CoNaLa, CodeContests.*
 
 ## *references*
 
-[Aix-Bench](https://huggingface.co/datasets/xin1997/aixbench-manual_all_only_input) - Y. Hao et al., ‘AixBench: A Code Generation Benchmark Dataset’, Jul. 21, 2022, arXiv: arXiv:2206.13179. doi: 10.48550/arXiv.2206.13179.
+[AixBench](https://huggingface.co/datasets/xin1997/aixbench-manual_all_only_input) - Y. Hao et al., ‘AixBench: A Code Generation Benchmark Dataset’, Jul. 21, 2022, arXiv: arXiv:2206.13179. doi: 10.48550/arXiv.2206.13179.
 
 [APPS (Automated Programming Progress Standard)](https://huggingface.co/datasets/codeparrot/apps) - D. Hendrycks et al., ‘Measuring Coding Challenge Competence With APPS’, Nov. 08, 2021, arXiv: arXiv:2105.09938. doi: 10.48550/arXiv.2105.09938.
 

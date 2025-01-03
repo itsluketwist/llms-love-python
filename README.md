@@ -1,4 +1,4 @@
-# **llm-code-discrimination**
+# **llm-code-diversity**
 
 This project investigates this discrimination by LLMs towards lesser known coding languages and libraries.
 
@@ -21,15 +21,14 @@ This project investigates this discrimination by LLMs towards lesser known codin
 Coding language and library choice is weighted more towards current popularity than ever, rather than quality or new features, because of the vast adoption of LLMs and the way they produce code.
 It's becoming impossible for less well-adopted open-source languages and libraries to gain traction in the ecosystem and build their userbase.
 
-
-
 ## *structure*
 
 Core modules and files included in the repository:
 
-- `data/` - Contains the data records used in the project and results produced, has it's own [README.md](data/README.md).
+- `data/` - Contains the data used in the project and results produced, has it's own [README.md](data/README.md).
 - `src/` - The main project code, accessing LLM model APIs and analysing the results.
-- `run.ipynb` - Simple python notebook used to run the project code.
+- `run.ipynb` - Notebook used to run the project code.
+- `see.ipynb` - Notebook used to plot generated results.
 
 ## *installation*
 
