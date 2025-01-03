@@ -4,7 +4,6 @@ The data records used in the project and results produced.
 
 ## *contents*
 
-- `output/` - json files containing the results from running the main code.
 - `language/` - data used for *language* experiments.
     - `projects.json` - project descriptions to be used as prompts.
     - `datasets/` - natural language coding problems from existing datasets.

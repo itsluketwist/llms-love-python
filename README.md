@@ -25,7 +25,8 @@ It's becoming impossible for less well-adopted open-source languages and librari
 
 Core modules and files included in the repository:
 
-- `data/` - Contains the data used in the project and results produced, has it's own [README.md](data/README.md).
+- `data/` - Contains the data used in the project, has it's own [README.md](data/README.md).
+- `output/` - Data and images produced from running the project code.
 - `src/` - The main project code, accessing LLM model APIs and analysing the results.
 - `run.ipynb` - Notebook used to run the project code.
 - `see.ipynb` - Notebook used to plot generated results.
