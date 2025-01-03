@@ -31,6 +31,7 @@ IGNORE_FILETYPES = [
     "yml",
     "batch",
     "toml",
+    "qml",
     # other
     "makefile",
     "cmake",
@@ -44,6 +45,8 @@ IGNORE_FILETYPES = [
     "nginx",
     "docker",
     "dockerfile",
+    "graphql",
+    "textlint",
     # tracking keys
     "error",
     # "none",

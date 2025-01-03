@@ -9,7 +9,6 @@ from src.plot.utils import (
     IGNORE_FILETYPES,
     LANGUAGE_COLOURS,
     LIBRARY_COLOURS,
-    MODEL_MAP,
     SCRIPTING_LANGUAGES,
     format_model,
 )
@@ -23,6 +22,7 @@ def plot_bar_results(
     x_title: str | None = None,
     y_title: str | None = None,
     width: int | None = None,
+    annotation: str | None = None,
 ) -> go.Figure:
     """
     Plot the given result data onto a scatter plot with lines.
@@ -54,6 +54,16 @@ def plot_bar_results(
     if width:
         figure.update_layout(width=width)
 
+    if annotation:
+        figure.add_annotation(
+            text=f"<i><b>{annotation}</b></i>",
+            xref="paper",
+            yref="paper",
+            x=0.995,
+            y=0.995,
+            showarrow=False,
+        )
+
     return figure
 
 
@@ -64,6 +74,7 @@ def plot_bar_languages(
     domain: str | None = None,
     width: int | None = None,
     ignore_bash: bool = True,
+    temperature: bool = False,
 ) -> go.Figure:
     raw = read_json(file_path=results)
     if not isinstance(raw, dict):
@@ -93,15 +104,23 @@ def plot_bar_languages(
             plot_mod.append(format_model(model=model))
             plot_val.append(count)
 
+    if temperature:
+        model = raw["metadata"]["model"]
+        annotation = f"model: {model}"
+    else:
+        annotation = None
+
     figure = plot_bar_results(
         categories=(plot_mod, plot_lang),
         values=plot_val,
         colors=[LANGUAGE_COLOURS.get(lang, "LightSlateGray") for lang in plot_lang],
         title=title,
-        x_title="Languages used per model",
+        x_title=f"Languages used per <b>{'temperature' if temperature else 'model'}</b>",
         y_title=f"<b>{'%' if percentage else '#'}</b> responses with language used",
         width=width,
+        annotation=annotation,
     )
+
     return figure
 
 
@@ -112,6 +131,7 @@ def plot_bar_libraries(
     extra_libraries: list[str] | None = None,
     width: int = 1200,
     title: str | None = None,
+    temperature: bool = False,
 ) -> go.Figure:
     raw = read_json(file_path=results)
     if not isinstance(raw, dict):
@@ -152,24 +172,32 @@ def plot_bar_libraries(
 
         for i, library in enumerate(libraries):
             plot_lib.append(library)
-            plot_mod.append(MODEL_MAP[model])
+            plot_mod.append(format_model(model=model))
             plot_val.append(_counts.get(library, 0))
             plot_clr.append(LIBRARY_COLOURS[i])
 
         for extra in ["other", "none"]:
             if extra in _counts:
                 plot_lib.append(extra)
-                plot_mod.append(MODEL_MAP[model])
+                plot_mod.append(format_model(model=model))
                 plot_val.append(_counts.get(extra, 0))
                 plot_clr.append("DarkSlateBlue")
+
+    if temperature:
+        model = raw["metadata"]["model"]
+        annotation = f"model: {model}"
+    else:
+        annotation = None
 
     figure = plot_bar_results(
         categories=(plot_mod, plot_lib),
         values=plot_val,
         colors=plot_clr,
         title=title,
-        x_title="Libraries imported per model",
+        x_title=f"Libraries imported per <b>{'temperature' if temperature else 'model'}</b>",
         y_title=f"<b>{'%' if percentage else '#'}</b> responses with library imported",
         width=width,
+        annotation=annotation,
     )
+
     return figure

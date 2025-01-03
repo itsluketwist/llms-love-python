@@ -98,6 +98,7 @@ def get_solution_libraries(
             "start": start,
             "end": end,
             "temperature": temperature,
+            "models": models,
         },
         "prompt": {
             "system": BASE_SYSTEM_PROMPT,

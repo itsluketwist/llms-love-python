@@ -90,7 +90,7 @@ def plot_line_library_stars(
     title: str | None = None,
     x_title: str = "Years since repository creation",
     y_title: str = "Total GitHub stars",
-    data_path: str = "data/library_texts/library_stats.json",
+    data_path: str = "data/library/library_stats.json",
     width: int = 700,
 ) -> go.Figure:
     """

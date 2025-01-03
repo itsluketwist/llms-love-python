@@ -95,6 +95,7 @@ def get_solution_languages(
             "start": start,
             "end": end,
             "temperature": temperature,
+            "models": models,
         },
         "prompts": {
             "system": BASE_SYSTEM_PROMPT,
