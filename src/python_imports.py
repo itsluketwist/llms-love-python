@@ -10,7 +10,7 @@ STDLIB_MODULES = set(sys.stdlib_module_names)
 
 
 CODE_BLOCK_REGEX = re.compile(
-    pattern=r"\`\`\`(\w*)\n(.*?)\`\`\`",
+    pattern=r"\`\`\`(\w*)\n(.*?)(?:\`\`\`|$)",
     flags=re.DOTALL,
 )
 

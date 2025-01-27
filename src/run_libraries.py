@@ -7,6 +7,7 @@ from src.output import save_json
 from src.prompts import (
     BASE_SYSTEM_PROMPT,
     LIBRARY_PROMPT_COMPARE,
+    LIBRARY_PROMPT_RANK,
     LIBRARY_PROMPT_USE_ANY,
     LIBRARY_PROMPT_USE_ONE,
 )
@@ -22,7 +23,7 @@ def get_solution_libraries(
     post_prompt: str | None = None,
     temperature: float | None = None,
     samples: int = 10,
-    save_directory: str = "output/library",
+    rank_repeat: int = 0,
     run_id: str | None = None,
 ) -> dict:
     """
@@ -76,19 +77,37 @@ def get_solution_libraries(
                     )
                     results[model][id][library] = library_response
 
-            solve_prompt = LIBRARY_PROMPT_USE_ANY.format(
-                problem=text,
-                language=language,
-            )
-            import_counts = get_imports_from_completion(
-                client=client,
-                model=model,
-                system=BASE_SYSTEM_PROMPT,
-                user=solve_prompt,
-                temperature=temperature,
-                samples=samples,
-            )
-            results[model][id]["counts"] = import_counts
+            if rank_repeat:
+                rank_prompt = LIBRARY_PROMPT_RANK.format(
+                    problem=text,
+                    language=language,
+                )
+                ranks = []
+                for _ in range(rank_repeat):
+                    [rank_response] = client.complete(
+                        model=model,
+                        system=BASE_SYSTEM_PROMPT,
+                        user=rank_prompt,
+                        n=1,
+                        temperature=temperature,
+                    )
+                    ranks.append([k.strip() for k in rank_response.split("\n")])
+                results[model][id]["ranks"] = ranks
+
+            if samples:
+                solve_prompt = LIBRARY_PROMPT_USE_ANY.format(
+                    problem=text,
+                    language=language,
+                )
+                import_counts = get_imports_from_completion(
+                    client=client,
+                    model=model,
+                    system=BASE_SYSTEM_PROMPT,
+                    user=solve_prompt,
+                    temperature=temperature,
+                    samples=samples,
+                )
+                results[model][id]["counts"] = import_counts
 
     end = datetime.now().isoformat()
     data = {
@@ -112,16 +131,11 @@ def get_solution_libraries(
         "results": results,
     }
 
-    if run_id:
-        file_name = f"solve_library_{run_id}_{end}"
-    else:
-        file_name = f"solve_library_{end}"
-
+    save_path = f"output/library/{run_id or 'language'}_results_{end}.json"
     save_json(
         data=data,
-        file_name=file_name,
-        directory=save_directory,
+        file_path=save_path,
     )
-    print(f"Results saved to file: {file_name}")
+    print(f"Results saved to file: {save_path}")
 
     return data

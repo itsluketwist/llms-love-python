@@ -93,16 +93,13 @@ def plot_bar_languages(
     total = raw["metadata"]["total"]
     for model, _data in raw["results"].items():
         counts: dict[str, int | float] = _data["counts"]
-        if percentage:
-            counts = {k: v * 100 / total for k, v in counts.items()}
-            counts = {k: int(v) if v > 10 else v for k, v in counts.items()}
-        pairs = [(k, v) for k, v in counts.items() if k not in ignore]
-        pairs.sort(key=lambda x: x[1], reverse=True)
+        tuples = [(k, v, v * 100 / total) for k, v in counts.items() if k not in ignore]
+        tuples.sort(key=lambda x: x[1], reverse=True)
 
-        for language, count in pairs:
+        for language, count, pct in tuples:
             plot_lang.append(language)
             plot_mod.append(format_model(model=model))
-            plot_val.append(count)
+            plot_val.append((int(pct) if pct > 10 else pct) if percentage else count)
 
     if temperature:
         model = raw["metadata"]["model"]

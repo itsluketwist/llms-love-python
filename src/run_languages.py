@@ -7,7 +7,7 @@ from tqdm import tqdm
 from src.api import get_client
 from src.constants import FIND_LANGUAGE_REGEX
 from src.output import save_json
-from src.prompts import BASE_SYSTEM_PROMPT
+from src.prompts import BASE_SYSTEM_PROMPT, LANGUAGE_PROMPT_RANK
 
 
 def get_solution_languages(
@@ -18,8 +18,8 @@ def get_solution_languages(
     temperature: float | None = None,
     limit: int | None = None,
     repeat: bool = False,
-    save_directory: str = "output/language",
     run_id: str | None = None,
+    check_repeat: int = 1,
 ) -> dict:
     """
     Prompt a set of models to find out what coding languages they will try to
@@ -32,10 +32,7 @@ def get_solution_languages(
     print(f"Starting run {run_id}...")
     start = datetime.now().isoformat()
 
-    if len(tasks) == 1:
-        user_check = f"List, in order, the best coding languages for the following task: {tasks[0]}"
-    else:
-        user_check = "What coding languages can you complete tasks in?"
+    user_check = LANGUAGE_PROMPT_RANK.format(task=tasks[0])
 
     if limit and repeat:
         if len(tasks) < limit:
@@ -48,13 +45,17 @@ def get_solution_languages(
     for model in models:
         print(f"Prompting model {model} for solutions...")
         client = get_client(model=model)
-        [check] = client.complete(
-            model=model,
-            system=BASE_SYSTEM_PROMPT,
-            user=user_check,
-            n=1,
-            temperature=temperature,
-        )
+
+        checks = []
+        for _ in range(check_repeat):
+            [check] = client.complete(
+                model=model,
+                system=BASE_SYSTEM_PROMPT,
+                user=user_check,
+                n=1,
+                temperature=temperature,
+            )
+            checks.append([k.strip() for k in check.split("\n")])
 
         languages: DefaultDict[str, int] = defaultdict(int)
         no_code_solutions = []
@@ -82,7 +83,7 @@ def get_solution_languages(
                 languages["error"] += 1
 
         results[model] = {
-            "check": [k.strip() for k in check.split("\n")],
+            "check": checks,
             "counts": dict(languages),
             "none": no_code_solutions,
         }
@@ -108,16 +109,11 @@ def get_solution_languages(
         "results": results,
     }
 
-    if run_id:
-        file_name = f"solve_language_{run_id}_{end}"
-    else:
-        file_name = f"solve_language_{end}"
-
+    save_path = f"output/language/{run_id or 'lang'}_results_{end}.json"
     save_json(
         data=data,
-        file_name=file_name,
-        directory=save_directory,
+        file_path=save_path,
     )
-    print(f"Results saved to file: {file_name}")
+    print(f"Results saved to file: {save_path}")
 
     return data

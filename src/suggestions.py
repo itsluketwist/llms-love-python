@@ -18,7 +18,6 @@ def get_library_suggestions(
     batch_size: int = 1,
     prompt_extra: str | None = None,
     temperature: float | None = None,
-    save_directory: str = "data/output",
 ) -> dict:
     """
     Prompt a set of models to find out what coding libraries they know and how
@@ -47,7 +46,6 @@ def get_library_suggestions(
         samples=samples,
         batch_size=batch_size,
         temperature=temperature,
-        save_directory=save_directory,
     )
 
 
@@ -57,7 +55,6 @@ def get_language_suggestions(
     batch_size: int = 1,
     prompt_extra: str | None = None,
     temperature: float | None = None,
-    save_directory: str = "data/output",
 ) -> dict:
     """
     Prompt a set of models to find out what coding languages they know and how
@@ -88,7 +85,6 @@ def get_language_suggestions(
         samples=samples,
         batch_size=batch_size,
         temperature=temperature,
-        save_directory=save_directory,
     )
 
 
@@ -102,7 +98,6 @@ def _get_suggestions(
     samples: int = 100,
     batch_size: int = 1,
     temperature: float | None = None,
-    save_directory: str = "data/output",
 ) -> dict:
     """
     Prompt a set of models to find out what options are known and how
@@ -165,12 +160,11 @@ def _get_suggestions(
         "results": results,
     }
 
-    file_name = f"suggest_{suggest_type}_{end}"
+    save_path = f"output/suggest_{suggest_type}_{end}.json"
     save_json(
         data=data,
-        file_path=file_name,
-        directory=save_directory,
+        file_path=save_path,
     )
-    print(f"Results saved to file: {file_name}")
+    print(f"Results saved to file: {save_path}")
 
     return data

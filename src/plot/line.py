@@ -120,6 +120,10 @@ def plot_line_library_stars(
         created = datetime.strptime(library_data["created"], DATETIME_FORMAT)
         age = (queried - created).days / 365
 
+        print(
+            f"{library} created {age} years ago with {library_data['stars']} stars. Growth: {library_data['stars']/age}"
+        )
+
         figure.add_trace(
             go.Scatter(
                 x=[0, age],
