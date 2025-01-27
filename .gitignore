@@ -165,6 +165,7 @@ data/raw/*
 .ruff*
 mvp.ipynb
 data.ipynb
+latex.ipynb
 .DS_STORE
 
 # temporary

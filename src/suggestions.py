@@ -168,7 +168,7 @@ def _get_suggestions(
     file_name = f"suggest_{suggest_type}_{end}"
     save_json(
         data=data,
-        file_name=file_name,
+        file_path=file_name,
         directory=save_directory,
     )
     print(f"Results saved to file: {file_name}")

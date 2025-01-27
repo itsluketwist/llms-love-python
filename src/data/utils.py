@@ -40,6 +40,6 @@ def process_data(
 
     save_json(
         data=data,
-        file_name=_path.stem,
+        file_path=_path.stem,
         directory=str(_path.parent),
     )

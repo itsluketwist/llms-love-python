@@ -9,15 +9,13 @@ The data records used in the project and results produced.
     - `datasets/` - natural language coding problems from existing datasets.
         - `aixbench.json` (129 records) - the `raw_nl` data from the AixBench NL task dataset, 2022.
             - *Cuts: problems containing chinese characters have been removed.*
-        - `apps_competition.json` (1361 records) - the `question` data from the APPS (train and test) dataset, for problems with `difficulty = competition`, 2021.
-        - `apps_interview.json` (4716 records) - the `question` data from the APPS (train and test) dataset, for problems with `difficulty = interview`, 2021.
-        - `apps_introductory.json` (2701 records) - the `question` data from the APPS (train and test) dataset, for problems with `difficulty = introductory`, 2021.
-        - `codecontests_{200|1000}.json` (200 or 1000 records) - samples of the `description` data from the CodeContests dataset, distributed evenly over the different difficulties, 2022.
-        - `conala.json` (2255 records) - the `rewritten_intent` data from the CoNaLa (train and test) dataset, 2018.
+        - `apps_competition.json` (200 records) - the `question` data from the APPS (train and test) dataset, for problems with `difficulty = competition`, 2021.
+        - `apps_interview.json` (200 records) - the `question` data from the APPS (train and test) dataset, for problems with `difficulty = interview`, 2021.
+        - `apps_introductory.json` (200 records) - the `question` data from the APPS (train and test) dataset, for problems with `difficulty = introductory`, 2021.
+        - `codecontests.json` (200 records) - samples of the `description` data from the CodeContests dataset, distributed evenly over the different difficulties, 2022.
+        - `conala.json` (200 records) - the `rewritten_intent` data from the CoNaLa (train and test) dataset, 2018.
         - `mx_humaneval.json` (161 records) - the `description` data from the MxEval Multi-HumanEval dataset, 2023.
-        - `mx_mbxp.json` (967 records) - the `description` data from the MxEval MBXP dataset, 2023.
-        - `pecc_aoc.json` (200 records) - the `part1_converted` data from the PECC Advent of Code dataset, 2024.
-        - `pecc_euler.json` (806 records) - the `title` and `problem` data from the PECC Project Euler dataset, 2024.
+        - `mx_mbxp.json` (200 records) - the `description` data from the MxEval MBXP dataset, 2023.
 - `library/` - data used for *library* experiments
     - `library/bigcodebench_stats.json` - data about the BigCodeBench dataset, before and after processing for use.
     - `library/library_stats.json` - GitHub data from about libraries analysed in the study.
@@ -44,5 +42,3 @@ The data records used in the project and results produced.
 [CoNaLa (Coding in Natural Language)](https://huggingface.co/datasets/neulab/conala) - P. Yin, B. Deng, E. Chen, B. Vasilescu, and G. Neubig, ‘Learning to Mine Aligned Code and Natural Language Pairs from Stack Overflow’, May 23, 2018, arXiv: arXiv:1805.08949. doi: 10.48550/arXiv.1805.08949.
 
 [MxEval (Multi-HumanEval and MBXP)](https://huggingface.co/mxeval) - B. Athiwaratkun et al., ‘Multi-lingual Evaluation of Code Generation Models’, Mar. 28, 2023, arXiv: arXiv:2210.14868. doi: 10.48550/arXiv.2210.14868.
-
-[PECC (Problem Extraction and Coding Challenges)](https://huggingface.co/datasets/PatrickHaller/pecc) - P. Haller, J. Golde, and A. Akbik, ‘PECC: Problem Extraction and Coding Challenges’, Apr. 29, 2024, arXiv: arXiv:2404.18766. doi: 10.48550/arXiv.2404.18766.

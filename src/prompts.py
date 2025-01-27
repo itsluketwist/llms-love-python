@@ -7,6 +7,11 @@ LANGUAGE_PROBLEM_INTRO = (
     "for the following task or described function:\n"
 )
 
+# the prompt to be used for ranking languages
+LANGUAGE_PROMPT_RANK = (
+   "List, in order, the best coding languages for the following task: {task}"
+)
+
 # pre-prompt to be used for all bigcodebench problems
 BIGCODEBENCH_INTRO = "Write a python function to solve:\n"
 
@@ -31,4 +36,9 @@ LIBRARY_PROMPT_USE_ANY = (
     "{problem}\n\n"
     "You should write self-contained {language} code.\n"
     "Choose, import and utilise at least one external library."
+)
+
+# the prompt to be used for ranking libraries
+LIBRARY_PROMPT_RANK = (
+   "List, in order, the best {language} libraries for the following task: {problem}"
 )

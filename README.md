@@ -14,6 +14,9 @@ This project investigates this discrimination by LLMs towards lesser known codin
     <a href="https://openai.com/blog/openai-api/">
         <img alt="OpenAI API" src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white" />
     </a>
+    <a href="https://www.anthropic.com/api/">
+        <img alt="Anthropic API" src="https://img.shields.io/badge/Claude_API-D97757?style=for-the-badge&logo=claude&logoColor=white" />
+    </a>
 </div>
 
 ## *about*

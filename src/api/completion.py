@@ -92,7 +92,7 @@ class AnthropicCompletionAPI:
     ) -> list[str]:
         response = self._client.messages.create(
             model=model,
-            temperature=temperature or anthropic.ANTHOPIC_NOT_GIVEN,
+            temperature=temperature or anthropic.NOT_GIVEN,
             system=system,
             messages=[
                 {
