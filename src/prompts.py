@@ -9,7 +9,7 @@ LANGUAGE_PROBLEM_INTRO = (
 
 # the prompt to be used for ranking languages
 LANGUAGE_PROMPT_RANK = (
-   "List, in order, the best coding languages for the following task: {task}"
+    "List, in order, the best coding languages for the following task: {task}"
 )
 
 # pre-prompt to be used for all bigcodebench problems
@@ -40,5 +40,5 @@ LIBRARY_PROMPT_USE_ANY = (
 
 # the prompt to be used for ranking libraries
 LIBRARY_PROMPT_RANK = (
-   "List, in order, the best {language} libraries for the following task: {problem}"
+    "List, in order, the best {language} libraries for the following task: {problem}"
 )
