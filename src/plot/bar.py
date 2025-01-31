@@ -11,6 +11,7 @@ from src.plot.utils import (
     LIBRARY_COLOURS,
     SCRIPTING_LANGUAGES,
     format_model,
+    new_colors,
 )
 
 
@@ -99,7 +100,11 @@ def plot_bar_languages(
         for language, count, pct in tuples:
             plot_lang.append(language)
             plot_mod.append(format_model(model=model))
-            plot_val.append((int(pct) if pct > 10 else pct) if percentage else count)
+            plot_val.append(
+                (int(pct) if pct > 10 else pct)
+                if (percentage and total != 100)
+                else count
+            )
 
     if temperature:
         model = raw["metadata"]["model"]
@@ -123,18 +128,19 @@ def plot_bar_languages(
 
 def plot_bar_libraries(
     results: str,
-    libraries: list[str],
+    libraries: list[str] | None = None,
     percentage: bool = True,
     extra_libraries: list[str] | None = None,
     width: int = 1200,
     title: str | None = None,
     temperature: bool = False,
+    limit: int | None = None,
 ) -> go.Figure:
     raw = read_json(file_path=results)
     if not isinstance(raw, dict):
         raise TypeError("Results file must contain a json dictionary.")
 
-    if title is None:
+    if title is None and libraries is not None:
         library_string = " vs ".join(
             [
                 f"<b style='color:{col};'>{lib}</b>"
@@ -149,36 +155,52 @@ def plot_bar_libraries(
     plot_clr = []
     extra_libraries = extra_libraries or []
     total = raw["metadata"]["total"]
+    colors = new_colors()
     for model, _data in raw["results"].items():
         counts: DefaultDict[str, int] = defaultdict(int)
         for _, problem_data in _data.items():
             for import_str, count in problem_data["counts"].items():
                 import_list = import_str.split(",")
                 for _import in import_list:
-                    if _import in libraries or _import == "none":
-                        counts[_import] += count
+                    counts[_import] += count
 
-                if [i for i in import_list if i != "none" and i not in libraries]:
+                if libraries and [
+                    i for i in import_list if i != "none" and i not in libraries
+                ]:
                     counts["other"] += 1
 
-        if percentage:
+        counts["none"]
+
+        if percentage and total != 100:
             _counts = {k: v * 100 / total for k, v in counts.items()}
             _counts = {k: int(v) if v > 10 else v for k, v in _counts.items()}
         else:
             _counts = dict(counts)
 
-        for i, library in enumerate(libraries):
-            plot_lib.append(library)
-            plot_mod.append(format_model(model=model))
-            plot_val.append(_counts.get(library, 0))
-            plot_clr.append(LIBRARY_COLOURS[i])
-
-        for extra in ["other", "none"]:
-            if extra in _counts:
-                plot_lib.append(extra)
+        if libraries:
+            for i, library in enumerate(libraries):
+                plot_lib.append(library)
                 plot_mod.append(format_model(model=model))
-                plot_val.append(_counts.get(extra, 0))
-                plot_clr.append("DarkSlateBlue")
+                plot_val.append(_counts.get(library, 0))
+                plot_clr.append(LIBRARY_COLOURS[i])
+
+            for extra in ["other", "none"]:
+                if extra in _counts:
+                    plot_lib.append(extra)
+                    plot_mod.append(format_model(model=model))
+                    plot_val.append(_counts.get(extra, 0))
+                    plot_clr.append("DarkSlateBlue")
+        else:
+            tuples = sorted(
+                [(k, v) for k, v in _counts.items()], key=lambda x: x[1], reverse=True
+            )
+            for i, (library, count) in enumerate(tuples):
+                if limit and i >= limit:
+                    break
+                plot_lib.append(library)
+                plot_mod.append(format_model(model=model))
+                plot_val.append(count)
+                plot_clr.append(colors[library])
 
     if temperature:
         model = raw["metadata"]["model"]

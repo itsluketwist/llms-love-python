@@ -1,7 +1,24 @@
+from collections import defaultdict
+
 import plotly.express as px
 
 
-DEFAULT_COLOURS = px.colors.qualitative.Bold
+DEFAULT_COLOURS = px.colors.qualitative.Bold * 2
+
+
+def new_colors():
+    """
+    Generate a new colour from the default plotly colours.
+    """
+
+    def _generator_func():
+        for colour in DEFAULT_COLOURS:
+            yield colour
+
+    _generator = _generator_func()
+
+    return defaultdict(lambda: next(_generator))
+
 
 LANGUAGE_COLOURS = {
     "python": DEFAULT_COLOURS[0],
@@ -62,10 +79,14 @@ SCRIPTING_LANGUAGES = [
 MODEL_MAP: dict[str, str] = {
     "gpt-4o-mini": "gpt-4o",
     "gpt-3.5-turbo": "gpt-3.5",
+    "gpt-4o-mini-2024-07-18": "gpt-4o",
+    "gpt-3.5-turbo-0125": "gpt-3.5",
     "meta-llama/Llama-3.2-3B-Instruct-Turbo": "llama3.2",
     "Qwen/Qwen2.5-Coder-32B-Instruct": "qwen2.5",
     "deepseek-ai/deepseek-llm-67b-chat": "deepseek",
     "mistralai/Mistral-7B-Instruct-v0.3": "mistral",
+    "claude-3-5-sonnet-20241022": "sonnet-3.5",
+    "claude-3-5-haiku-20241022": "haiku-3.5",
 }
 
 
