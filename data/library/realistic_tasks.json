@@ -1,0 +1,7 @@
+{
+    "database": "Write the initial code for a database project with an object-relational mapping layer.",
+    "deeplearning": "Write the initial code for a deep learning project implementing a neural network.",
+    "distributed": "Write the initial code for a distributed computing project.",
+    "webscraper": "Write the initial code for a web scraping and analysis library.",
+    "webserver": "Write the initial code for a backend API web server."
+}

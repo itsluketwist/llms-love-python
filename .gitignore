@@ -163,11 +163,14 @@ cython_debug/
 todo.txt
 data/raw/*
 .ruff*
+.DS_STORE
+*/archive/*
+
+# working notebooks
 mvp.ipynb
 data.ipynb
 latex.ipynb
-.DS_STORE
-*/archive/*
+figure.ipynb
 
 # temporary
 output/

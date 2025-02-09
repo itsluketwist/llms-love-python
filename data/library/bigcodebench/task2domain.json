@@ -1,5433 +1,4459 @@
 {
     "BigCodeBench/0": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/1": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/2": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/3": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/4": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/5": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/6": [
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/7": [
-        "General",
-        "System",
-        "General"
+        "general",
+        "system"
     ],
     "BigCodeBench/8": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/9": [
-        "Computation",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/10": [
-        "Computation",
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/11": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/12": [
-        "System",
-        "Time",
-        "System",
-        "System"
+        "system",
+        "time"
     ],
     "BigCodeBench/13": [
-        "System",
-        "Network",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/14": [
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/15": [
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/16": [
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/17": [
-        "System",
-        "System",
-        "Time"
+        "system",
+        "time"
     ],
     "BigCodeBench/18": [
-        "System",
-        "System",
-        "General",
-        "System",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/19": [
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/20": [
-        "General",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/21": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/22": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/23": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/24": [
-        "Cryptography",
-        "Cryptography",
-        "System"
+        "cryptography",
+        "system"
     ],
     "BigCodeBench/25": [
-        "System",
-        "Cryptography",
-        "System"
+        "cryptography",
+        "system"
     ],
     "BigCodeBench/26": [
-        "Cryptography",
-        "Cryptography"
+        "cryptography"
     ],
     "BigCodeBench/27": [
-        "Cryptography",
-        "System",
-        "Time"
+        "cryptography",
+        "system",
+        "time"
     ],
     "BigCodeBench/28": [
-        "Cryptography",
-        "Network",
-        "System"
+        "cryptography",
+        "network",
+        "system"
     ],
     "BigCodeBench/29": [
-        "Cryptography",
-        "Computation",
-        "Computation"
+        "computation",
+        "cryptography"
     ],
     "BigCodeBench/30": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/31": [
-        "Computation",
-        "Visualisation",
-        "General",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/32": [
-        "Network",
-        "Network"
+        "network"
     ],
     "BigCodeBench/33": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/34": [
-        "Visualisation",
-        "General",
-        "Visualisation"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/35": [
-        "Visualisation",
-        "Visualisation"
+        "visualisation"
     ],
     "BigCodeBench/36": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/37": [
-        "Computation",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/38": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/39": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/40": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/41": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/42": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/43": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/44": [
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/45": [
-        "Computation",
-        "Visualisation",
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/46": [
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/47": [
-        "Computation",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/48": [
-        "Time",
-        "General",
-        "Visualisation",
-        "Time"
+        "general",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/49": [
-        "Computation",
-        "Time",
-        "Visualisation"
+        "computation",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/50": [
-        "Time",
-        "Computation",
-        "Time",
-        "Visualisation"
+        "computation",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/51": [
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/52": [
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/53": [
-        "General",
-        "Computation",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/54": [
-        "General",
-        "Computation",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/55": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/56": [
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/57": [
-        "Computation",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/58": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/59": [
-        "Network",
-        "Visualisation",
-        "Visualisation"
+        "network",
+        "visualisation"
     ],
     "BigCodeBench/60": [
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/61": [
-        "Time",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/62": [
-        "General",
-        "Visualisation",
-        "Visualisation"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/63": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/64": [
-        "Computation",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/65": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/66": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/67": [
-        "Computation",
-        "General",
-        "System"
+        "computation",
+        "general",
+        "system"
     ],
     "BigCodeBench/68": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/69": [
-        "General",
-        "Visualisation"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/70": [
-        "Computation",
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/71": [
-        "General",
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/72": [
-        "Computation",
-        "Computation",
-        "General",
-        "System"
+        "computation",
+        "general",
+        "system"
     ],
     "BigCodeBench/73": [
-        "General",
-        "Computation",
-        "Visualisation",
-        "Computation",
-        "System"
+        "computation",
+        "general",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/74": [
-        "Network",
-        "Network"
+        "network"
     ],
     "BigCodeBench/75": [
-        "Computation",
-        "General",
-        "Computation",
-        "Visualisation",
-        "Time"
+        "computation",
+        "general",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/76": [
-        "Network",
-        "General",
-        "General"
+        "general",
+        "network"
     ],
     "BigCodeBench/77": [
-        "Cryptography",
-        "Network",
-        "Cryptography",
-        "Cryptography"
+        "cryptography",
+        "network"
     ],
     "BigCodeBench/78": [
-        "System",
-        "System",
-        "Network"
+        "network",
+        "system"
     ],
     "BigCodeBench/79": [
-        "System",
-        "Network",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/80": [
-        "System",
-        "Network",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/81": [
-        "Network",
-        "Network",
-        "Network"
+        "network"
     ],
     "BigCodeBench/82": [
-        "Network",
-        "Network",
-        "Network",
-        "Network",
-        "Network"
+        "network"
     ],
     "BigCodeBench/83": [
-        "Network",
-        "Network"
+        "network"
     ],
     "BigCodeBench/84": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/85": [
-        "Computation",
-        "Time",
-        "Computation"
+        "computation",
+        "time"
     ],
     "BigCodeBench/86": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/87": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/88": [
-        "Computation",
-        "Time",
-        "Computation"
+        "computation",
+        "time"
     ],
     "BigCodeBench/89": [
-        "Computation",
-        "Visualisation",
-        "Computation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/90": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/91": [
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/92": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/93": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/94": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/95": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/96": [
-        "General",
-        "System",
-        "General"
+        "general",
+        "system"
     ],
     "BigCodeBench/97": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/98": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/99": [
-        "Computation",
-        "Visualisation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/100": [
-        "Computation",
-        "Time",
-        "General",
-        "Visualisation"
+        "computation",
+        "general",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/101": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/102": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/103": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/104": [
-        "Computation",
-        "General",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/105": [
-        "Computation",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/106": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/107": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/108": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/109": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/110": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/111": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/112": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/113": [
-        "General",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/114": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/115": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/116": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/117": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/118": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/119": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/120": [
-        "Computation",
-        "Time",
-        "General"
+        "computation",
+        "general",
+        "time"
     ],
     "BigCodeBench/121": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/122": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/123": [
-        "System",
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/124": [
-        "General",
-        "Visualisation",
-        "Time"
+        "general",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/125": [
-        "General",
-        "General",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/126": [
-        "Computation",
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/127": [
-        "System",
-        "System",
-        "Cryptography",
-        "System"
+        "cryptography",
+        "system"
     ],
     "BigCodeBench/128": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "General"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/129": [
-        "Computation",
-        "Network",
-        "Network"
+        "computation",
+        "network"
     ],
     "BigCodeBench/130": [
-        "Cryptography",
-        "Cryptography",
-        "System",
-        "Cryptography"
+        "cryptography",
+        "system"
     ],
     "BigCodeBench/131": [
-        "Cryptography",
-        "Cryptography",
-        "System",
-        "Cryptography"
+        "cryptography",
+        "system"
     ],
     "BigCodeBench/132": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "Cryptography"
+        "computation",
+        "cryptography",
+        "visualisation"
     ],
     "BigCodeBench/133": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/134": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/135": [
-        "Computation",
-        "Visualisation",
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/136": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/137": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/138": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/139": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/140": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/141": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/142": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/143": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/144": [
-        "Network",
-        "Network"
+        "network"
     ],
     "BigCodeBench/145": [
-        "System",
-        "Network"
+        "network",
+        "system"
     ],
     "BigCodeBench/146": [
-        "System",
-        "Network"
+        "network",
+        "system"
     ],
     "BigCodeBench/147": [
-        "System",
-        "Network",
-        "Network"
+        "network",
+        "system"
     ],
     "BigCodeBench/148": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/149": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/150": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/151": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/152": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/153": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/154": [
-        "System",
-        "Network",
-        "General",
-        "System"
+        "general",
+        "network",
+        "system"
     ],
     "BigCodeBench/155": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/156": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/157": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/158": [
-        "Network",
-        "System",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/159": [
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/160": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/161": [
-        "Computation",
-        "Time",
-        "General"
+        "computation",
+        "general",
+        "time"
     ],
     "BigCodeBench/162": [
-        "Computation",
-        "Visualisation",
-        "General"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/163": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/164": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/165": [
-        "Computation",
-        "General",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/166": [
-        "Time",
-        "Computation",
-        "Time"
+        "computation",
+        "time"
     ],
     "BigCodeBench/167": [
-        "Computation",
-        "General",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/168": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/169": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/170": [
-        "Computation",
-        "System",
-        "Network"
+        "computation",
+        "network",
+        "system"
     ],
     "BigCodeBench/171": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/172": [
-        "Time",
-        "System"
+        "system",
+        "time"
     ],
     "BigCodeBench/173": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/174": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/175": [
-        "Visualisation",
-        "General"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/176": [
-        "General",
-        "Network"
+        "general",
+        "network"
     ],
     "BigCodeBench/177": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/178": [
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/179": [
-        "Computation",
-        "Visualisation",
-        "General",
-        "Computation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/180": [
-        "Visualisation",
-        "Visualisation",
-        "Computation",
-        "System",
-        "Computation"
+        "computation",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/181": [
-        "Network",
-        "General",
-        "Time"
+        "general",
+        "network",
+        "time"
     ],
     "BigCodeBench/182": [
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/183": [
-        "General",
-        "Network"
+        "general",
+        "network"
     ],
     "BigCodeBench/184": [
-        "Computation",
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/185": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/186": [
-        "Network",
-        "Visualisation"
+        "network",
+        "visualisation"
     ],
     "BigCodeBench/187": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/188": [
-        "Computation",
-        "Network",
-        "Visualisation"
+        "computation",
+        "network",
+        "visualisation"
     ],
     "BigCodeBench/189": [
-        "General",
-        "Network",
-        "System"
+        "general",
+        "network",
+        "system"
     ],
     "BigCodeBench/190": [
-        "System",
-        "Computation",
-        "System",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/191": [
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/192": [
-        "Network",
-        "General"
+        "general",
+        "network"
     ],
     "BigCodeBench/193": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/194": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/195": [
-        "System",
-        "System",
-        "Time"
+        "system",
+        "time"
     ],
     "BigCodeBench/196": [
-        "Computation",
-        "Visualisation",
-        "General",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/197": [
-        "Computation",
-        "Visualisation",
-        "General"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/198": [
-        "Computation",
-        "General",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/199": [
-        "Time",
-        "Computation",
-        "Time",
-        "General"
+        "computation",
+        "general",
+        "time"
     ],
     "BigCodeBench/200": [
-        "Computation",
-        "General",
-        "General",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/201": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/202": [
-        "General",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/203": [
-        "Network",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/204": [
-        "General",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/205": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/206": [
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/207": [
-        "General",
-        "Network"
+        "general",
+        "network"
     ],
     "BigCodeBench/208": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/209": [
-        "General",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/210": [
-        "General",
-        "General",
-        "Visualisation"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/211": [
-        "System",
-        "Network",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/212": [
-        "General",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/213": [
-        "General",
-        "Visualisation",
-        "Computation",
-        "Time"
+        "computation",
+        "general",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/214": [
-        "Computation",
-        "Visualisation",
-        "General",
-        "Computation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/215": [
-        "Computation",
-        "System",
-        "Network",
-        "Visualisation"
+        "computation",
+        "network",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/216": [
-        "Computation",
-        "General",
-        "System",
-        "System"
+        "computation",
+        "general",
+        "system"
     ],
     "BigCodeBench/217": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/218": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/219": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/220": [
-        "Visualisation",
-        "General",
-        "Time"
+        "general",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/221": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/222": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/223": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/224": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/225": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/226": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/227": [
-        "Computation",
-        "Visualisation",
-        "Computation",
-        "Computation",
-        "System"
+        "computation",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/228": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/229": [
-        "Time",
-        "General",
-        "System"
+        "general",
+        "system",
+        "time"
     ],
     "BigCodeBench/230": [
-        "Computation",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/231": [
-        "General",
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/232": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/233": [
-        "General",
-        "Visualisation"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/234": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/235": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/236": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/237": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/238": [
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/239": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/240": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/241": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/242": [
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/243": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/244": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/245": [
-        "Computation",
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/246": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/247": [
-        "Computation",
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/248": [
-        "Visualisation",
-        "Computation",
-        "General"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/249": [
-        "Computation",
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/250": [
-        "Computation",
-        "General",
-        "System"
+        "computation",
+        "general",
+        "system"
     ],
     "BigCodeBench/251": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/252": [
-        "Visualisation",
-        "General"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/253": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/254": [
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/255": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/256": [
-        "Time",
-        "General",
-        "Cryptography",
-        "System"
+        "cryptography",
+        "general",
+        "system",
+        "time"
     ],
     "BigCodeBench/257": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/258": [
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/259": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/260": [
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/261": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/262": [
-        "General",
-        "Visualisation",
-        "Visualisation"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/263": [
-        "System",
-        "System",
-        "System",
-        "Time"
+        "system",
+        "time"
     ],
     "BigCodeBench/264": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/265": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/266": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/267": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/268": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/269": [
-        "Computation",
-        "Visualisation",
-        "Computation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/270": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/271": [
-        "Cryptography",
-        "General",
-        "General",
-        "Time"
+        "cryptography",
+        "general",
+        "time"
     ],
     "BigCodeBench/272": [
-        "Network",
-        "Network",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/273": [
-        "Network",
-        "Network",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/274": [
-        "Network",
-        "Network",
-        "Network",
-        "System",
-        "Network"
+        "network",
+        "system"
     ],
     "BigCodeBench/275": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/276": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/277": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/278": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/279": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/280": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/281": [
-        "General",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/282": [
-        "Visualisation",
-        "Visualisation",
-        "Computation",
-        "Computation",
-        "System"
+        "computation",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/283": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/284": [
-        "Network",
-        "Network",
-        "Network"
+        "network"
     ],
     "BigCodeBench/285": [
-        "Network",
-        "Network"
+        "network"
     ],
     "BigCodeBench/286": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/287": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/288": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/289": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/290": [
-        "Computation",
-        "General",
-        "System"
+        "computation",
+        "general",
+        "system"
     ],
     "BigCodeBench/291": [
-        "Computation",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/292": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/293": [
-        "General",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/294": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/295": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/296": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/297": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/298": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/299": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/300": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/301": [
-        "Time",
-        "Computation",
-        "Computation",
-        "Time"
+        "computation",
+        "time"
     ],
     "BigCodeBench/302": [
-        "Computation",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/303": [
-        "Time",
-        "Computation",
-        "Computation",
-        "Time"
+        "computation",
+        "time"
     ],
     "BigCodeBench/304": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/305": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/306": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/307": [
-        "General",
-        "Visualisation",
-        "Visualisation"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/308": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/309": [
-        "Computation",
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/310": [
-        "Computation",
-        "System",
-        "General",
-        "System"
+        "computation",
+        "general",
+        "system"
     ],
     "BigCodeBench/311": [
-        "General",
-        "Computation",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/312": [
-        "General",
-        "Visualisation"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/313": [
-        "System",
-        "Time",
-        "General",
-        "System"
+        "general",
+        "system",
+        "time"
     ],
     "BigCodeBench/314": [
-        "Network",
-        "Network",
-        "Network"
+        "network"
     ],
     "BigCodeBench/315": [
-        "Network",
-        "Network",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/316": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/317": [
-        "Computation",
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/318": [
-        "Computation",
-        "General",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/319": [
-        "Computation",
-        "Visualisation",
-        "General"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/320": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/321": [
-        "Computation",
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/322": [
-        "System",
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/323": [
-        "Computation",
-        "General",
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/324": [
-        "System",
-        "System",
-        "Time"
+        "system",
+        "time"
     ],
     "BigCodeBench/325": [
-        "System",
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/326": [
-        "System",
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/327": [
-        "System",
-        "General",
-        "General"
+        "general",
+        "system"
     ],
     "BigCodeBench/328": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/329": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/330": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/331": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/332": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/333": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/334": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/335": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/336": [
-        "System",
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/337": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/338": [
-        "General",
-        "Visualisation",
-        "General"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/339": [
-        "Network",
-        "Cryptography",
-        "Cryptography",
-        "System"
+        "cryptography",
+        "network",
+        "system"
     ],
     "BigCodeBench/340": [
-        "Cryptography",
-        "Cryptography",
-        "System"
+        "cryptography",
+        "system"
     ],
     "BigCodeBench/341": [
-        "Computation",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/342": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/343": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/344": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/345": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/346": [
-        "System",
-        "Time",
-        "System",
-        "System"
+        "system",
+        "time"
     ],
     "BigCodeBench/347": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/348": [
-        "System",
-        "Time",
-        "System",
-        "System"
+        "system",
+        "time"
     ],
     "BigCodeBench/349": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/350": [
-        "System",
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/351": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/352": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/353": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/354": [
-        "Computation",
-        "General",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/355": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/356": [
-        "Visualisation",
-        "Computation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/357": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/358": [
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/359": [
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/360": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "System"
+        "computation",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/361": [
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/362": [
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/363": [
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/364": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/365": [
-        "General",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/366": [
-        "General",
-        "Visualisation"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/367": [
-        "Time",
-        "General",
-        "Visualisation"
+        "general",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/368": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/369": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/370": [
-        "System",
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/371": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/372": [
-        "System",
-        "System",
-        "General"
+        "general",
+        "system"
     ],
     "BigCodeBench/373": [
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/374": [
-        "General",
-        "System",
-        "System",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/375": [
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/376": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/377": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/378": [
-        "System",
-        "Computation",
-        "General",
-        "System"
+        "computation",
+        "general",
+        "system"
     ],
     "BigCodeBench/379": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/380": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/381": [
-        "Computation",
-        "Visualisation",
-        "Visualisation",
-        "Computation",
-        "System"
+        "computation",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/382": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/383": [
-        "Computation",
-        "General",
-        "Visualisation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/384": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/385": [
-        "General",
-        "Visualisation"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/386": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/387": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/388": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/389": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/390": [
-        "Computation",
-        "System",
-        "Network"
+        "computation",
+        "network",
+        "system"
     ],
     "BigCodeBench/391": [
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/392": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/393": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/394": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/395": [
-        "System",
-        "Computation",
-        "General",
-        "System",
-        "General"
+        "computation",
+        "general",
+        "system"
     ],
     "BigCodeBench/396": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/397": [
-        "Network",
-        "General",
-        "System"
+        "general",
+        "network",
+        "system"
     ],
     "BigCodeBench/398": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/399": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/400": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/401": [
-        "Network",
-        "Network",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/402": [
-        "Network",
-        "System",
-        "System",
-        "General",
-        "System"
+        "general",
+        "network",
+        "system"
     ],
     "BigCodeBench/403": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "System"
+        "computation",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/404": [
-        "Computation",
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/405": [
-        "General",
-        "Visualisation"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/406": [
-        "Computation",
-        "Visualisation",
-        "Visualisation",
-        "System"
+        "computation",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/407": [
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/408": [
-        "System",
-        "Computation"
+        "computation",
+        "system"
     ],
     "BigCodeBench/409": [
-        "Computation",
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/410": [
-        "Computation",
-        "Time",
-        "System"
+        "computation",
+        "system",
+        "time"
     ],
     "BigCodeBench/411": [
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/412": [
-        "Cryptography",
-        "General",
-        "System"
+        "cryptography",
+        "general",
+        "system"
     ],
     "BigCodeBench/413": [
-        "Network",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/414": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/415": [
-        "Cryptography",
-        "Computation"
+        "computation",
+        "cryptography"
     ],
     "BigCodeBench/416": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/417": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/418": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/419": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/420": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/421": [
-        "Time",
-        "System",
-        "Network",
-        "System"
+        "network",
+        "system",
+        "time"
     ],
     "BigCodeBench/422": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/423": [
-        "Computation",
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/424": [
-        "Computation",
-        "Computation",
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/425": [
-        "Visualisation",
-        "Computation",
-        "System"
+        "computation",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/426": [
-        "Computation",
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/427": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/428": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/429": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/430": [
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/431": [
-        "Computation",
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/432": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/433": [
-        "Cryptography",
-        "Cryptography",
-        "Cryptography",
-        "Cryptography"
+        "cryptography"
     ],
     "BigCodeBench/434": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/435": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/436": [
-        "Visualisation",
-        "General"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/437": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/438": [
-        "Visualisation",
-        "System",
-        "System"
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/439": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/440": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/441": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/442": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/443": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/444": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/445": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/446": [
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/447": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/448": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/449": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/450": [
-        "Visualisation",
-        "Computation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/451": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/452": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/453": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/454": [
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/455": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/456": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/457": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/458": [
-        "Computation",
-        "General",
-        "System"
+        "computation",
+        "general",
+        "system"
     ],
     "BigCodeBench/459": [
-        "System",
-        "Time",
-        "Time",
-        "System"
+        "system",
+        "time"
     ],
     "BigCodeBench/460": [
-        "System",
-        "Computation"
+        "computation",
+        "system"
     ],
     "BigCodeBench/461": [
-        "System",
-        "System",
-        "System",
-        "Time"
+        "system",
+        "time"
     ],
     "BigCodeBench/462": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/463": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/464": [
-        "General",
-        "Time",
-        "System"
+        "general",
+        "system",
+        "time"
     ],
     "BigCodeBench/465": [
-        "General",
-        "Time",
-        "Computation",
-        "System"
+        "computation",
+        "general",
+        "system",
+        "time"
     ],
     "BigCodeBench/466": [
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/467": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/468": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/469": [
-        "Computation",
-        "General",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/470": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/471": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/472": [
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/473": [
-        "General",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/474": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/475": [
-        "Computation",
-        "Time"
+        "computation",
+        "time"
     ],
     "BigCodeBench/476": [
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/477": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/478": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/479": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/480": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/481": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/482": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/483": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/484": [
-        "Computation",
-        "Computation",
-        "Time",
-        "Computation"
+        "computation",
+        "time"
     ],
     "BigCodeBench/485": [
-        "Time",
-        "Time",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/486": [
-        "Computation",
-        "Time",
-        "Computation"
+        "computation",
+        "time"
     ],
     "BigCodeBench/487": [
-        "Computation",
-        "General",
-        "System"
+        "computation",
+        "general",
+        "system"
     ],
     "BigCodeBench/488": [
-        "Computation",
-        "Time",
-        "Computation"
+        "computation",
+        "time"
     ],
     "BigCodeBench/489": [
-        "Computation",
-        "Time",
-        "General"
+        "computation",
+        "general",
+        "time"
     ],
     "BigCodeBench/490": [
-        "Network",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/491": [
-        "Time",
-        "General",
-        "Visualisation"
+        "general",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/492": [
-        "Computation",
-        "Time",
-        "General"
+        "computation",
+        "general",
+        "time"
     ],
     "BigCodeBench/493": [
-        "Time",
-        "General",
-        "Visualisation"
+        "general",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/494": [
-        "Time",
-        "General",
-        "Time",
-        "General"
+        "general",
+        "time"
     ],
     "BigCodeBench/495": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/496": [
-        "Time",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/497": [
-        "Time",
-        "Time",
-        "Time"
+        "time"
     ],
     "BigCodeBench/498": [
-        "Network",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/499": [
-        "System",
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/500": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/501": [
-        "Computation",
-        "System",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/502": [
-        "Computation",
-        "Time",
-        "General",
-        "Visualisation"
+        "computation",
+        "general",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/503": [
-        "Computation",
-        "Time",
-        "Computation"
+        "computation",
+        "time"
     ],
     "BigCodeBench/504": [
-        "Cryptography",
-        "Cryptography",
-        "Cryptography"
+        "cryptography"
     ],
     "BigCodeBench/505": [
-        "Cryptography",
-        "Cryptography"
+        "cryptography"
     ],
     "BigCodeBench/506": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/507": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/508": [
-        "System",
-        "Cryptography",
-        "System"
+        "cryptography",
+        "system"
     ],
     "BigCodeBench/509": [
-        "General",
-        "Computation",
-        "System"
+        "computation",
+        "general",
+        "system"
     ],
     "BigCodeBench/510": [
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/511": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/512": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/513": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/514": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/515": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/516": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/517": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/518": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/519": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/520": [
-        "General",
-        "Visualisation"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/521": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/522": [
-        "General",
-        "Visualisation"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/523": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/524": [
-        "General",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/525": [
-        "General",
-        "Computation",
-        "Visualisation",
-        "System"
+        "computation",
+        "general",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/526": [
-        "Computation",
-        "General",
-        "Computation",
-        "System"
+        "computation",
+        "general",
+        "system"
     ],
     "BigCodeBench/527": [
-        "Computation",
-        "General",
-        "Visualisation",
-        "Computation",
-        "Visualisation",
-        "System"
+        "computation",
+        "general",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/528": [
-        "Computation",
-        "System",
-        "General",
-        "Visualisation"
+        "computation",
+        "general",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/529": [
-        "General",
-        "Visualisation",
-        "General"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/530": [
-        "Computation",
-        "General",
-        "Visualisation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/531": [
-        "General",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/532": [
-        "Computation",
-        "General",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/533": [
-        "Cryptography",
-        "Cryptography",
-        "Cryptography",
-        "Computation"
+        "computation",
+        "cryptography"
     ],
     "BigCodeBench/534": [
-        "Cryptography",
-        "Computation",
-        "Cryptography"
+        "computation",
+        "cryptography"
     ],
     "BigCodeBench/535": [
-        "System",
-        "Computation",
-        "General"
+        "computation",
+        "general",
+        "system"
     ],
     "BigCodeBench/536": [
-        "System",
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/537": [
-        "System",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/538": [
-        "System",
-        "Computation"
+        "computation",
+        "system"
     ],
     "BigCodeBench/539": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/540": [
-        "Visualisation",
-        "General",
-        "Computation",
-        "General"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/541": [
-        "General",
-        "General",
-        "System",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/542": [
-        "System",
-        "Cryptography",
-        "General"
+        "cryptography",
+        "general",
+        "system"
     ],
     "BigCodeBench/543": [
-        "Cryptography",
-        "System"
+        "cryptography",
+        "system"
     ],
     "BigCodeBench/544": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/545": [
-        "Cryptography",
-        "System",
-        "General"
+        "cryptography",
+        "general",
+        "system"
     ],
     "BigCodeBench/546": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/547": [
-        "Cryptography",
-        "Cryptography",
-        "System"
+        "cryptography",
+        "system"
     ],
     "BigCodeBench/548": [
-        "Cryptography",
-        "General",
-        "General",
-        "System"
+        "cryptography",
+        "general",
+        "system"
     ],
     "BigCodeBench/549": [
-        "Computation",
-        "Cryptography"
+        "computation",
+        "cryptography"
     ],
     "BigCodeBench/550": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/551": [
-        "Computation",
-        "General",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/552": [
-        "Visualisation",
-        "General",
-        "General"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/553": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/554": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/555": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/556": [
-        "General",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/557": [
-        "General",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/558": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/559": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/560": [
-        "Computation",
-        "Time",
-        "Visualisation"
+        "computation",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/561": [
-        "Time",
-        "Time"
+        "time"
     ],
     "BigCodeBench/562": [
-        "System",
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/563": [
-        "System",
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/564": [
-        "Time",
-        "System",
-        "System",
-        "Time"
+        "system",
+        "time"
     ],
     "BigCodeBench/565": [
-        "System",
-        "Cryptography",
-        "Cryptography"
+        "cryptography",
+        "system"
     ],
     "BigCodeBench/566": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/567": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/568": [
-        "Computation",
-        "General",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/569": [
-        "General",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/570": [
-        "General",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/571": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/572": [
-        "Computation",
-        "Visualisation",
-        "General"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/573": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/574": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/575": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/576": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/577": [
-        "General",
-        "Cryptography",
-        "System",
-        "System"
+        "cryptography",
+        "general",
+        "system"
     ],
     "BigCodeBench/578": [
-        "General",
-        "Network"
+        "general",
+        "network"
     ],
     "BigCodeBench/579": [
-        "General",
-        "System",
-        "General",
-        "Visualisation"
+        "general",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/580": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "Computation",
-        "General"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/581": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "General"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/582": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/583": [
-        "Cryptography",
-        "Cryptography",
-        "Cryptography",
-        "System"
+        "cryptography",
+        "system"
     ],
     "BigCodeBench/584": [
-        "Network",
-        "Cryptography",
-        "Cryptography"
+        "cryptography",
+        "network"
     ],
     "BigCodeBench/585": [
-        "Cryptography",
-        "Cryptography",
-        "System",
-        "System"
+        "cryptography",
+        "system"
     ],
     "BigCodeBench/586": [
-        "Cryptography",
-        "Cryptography",
-        "Cryptography"
+        "cryptography"
     ],
     "BigCodeBench/587": [
-        "Cryptography",
-        "Cryptography",
-        "Cryptography",
-        "System"
+        "cryptography",
+        "system"
     ],
     "BigCodeBench/588": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/589": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/590": [
-        "Computation",
-        "Network",
-        "Time",
-        "Network"
+        "computation",
+        "network",
+        "time"
     ],
     "BigCodeBench/591": [
-        "Computation",
-        "Time",
-        "General",
-        "Visualisation"
+        "computation",
+        "general",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/592": [
-        "System",
-        "Time",
-        "General",
-        "System"
+        "general",
+        "system",
+        "time"
     ],
     "BigCodeBench/593": [
-        "Computation",
-        "Visualisation",
-        "General",
-        "System",
-        "System",
-        "Time"
+        "computation",
+        "general",
+        "system",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/594": [
-        "System",
-        "General",
-        "System",
-        "System",
-        "Time"
+        "general",
+        "system",
+        "time"
     ],
     "BigCodeBench/595": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/596": [
-        "Time",
-        "General",
-        "Visualisation",
-        "Time"
+        "general",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/597": [
-        "Computation",
-        "Time"
+        "computation",
+        "time"
     ],
     "BigCodeBench/598": [
-        "Computation",
-        "Time"
+        "computation",
+        "time"
     ],
     "BigCodeBench/599": [
-        "Computation",
-        "Time"
+        "computation",
+        "time"
     ],
     "BigCodeBench/600": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/601": [
-        "Time",
-        "Visualisation"
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/602": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/603": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/604": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/605": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/606": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/607": [
-        "Computation",
-        "General",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/608": [
-        "General",
-        "Visualisation"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/609": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/610": [
-        "Computation",
-        "General",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/611": [
-        "General",
-        "Visualisation"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/612": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/613": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/614": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/615": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/616": [
-        "Computation",
-        "General",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/617": [
-        "Computation",
-        "General",
-        "Visualisation",
-        "General"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/618": [
-        "Computation",
-        "General",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/619": [
-        "Computation",
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/620": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/621": [
-        "Visualisation",
-        "Computation",
-        "General",
-        "Computation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/622": [
-        "Visualisation",
-        "Computation",
-        "General",
-        "Computation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/623": [
-        "Computation",
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/624": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/625": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/626": [
-        "Time",
-        "Time",
-        "General"
+        "general",
+        "time"
     ],
     "BigCodeBench/627": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/628": [
-        "Computation",
-        "General",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/629": [
-        "System",
-        "Time"
+        "system",
+        "time"
     ],
     "BigCodeBench/630": [
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/631": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/632": [
-        "Computation",
-        "Time"
+        "computation",
+        "time"
     ],
     "BigCodeBench/633": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/634": [
-        "General",
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/635": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/636": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/637": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "General"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/638": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/639": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/640": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/641": [
-        "Computation",
-        "General",
-        "System"
+        "computation",
+        "general",
+        "system"
     ],
     "BigCodeBench/642": [
-        "Cryptography",
-        "General",
-        "Cryptography"
+        "cryptography",
+        "general"
     ],
     "BigCodeBench/643": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/644": [
-        "Cryptography",
-        "Cryptography"
+        "cryptography"
     ],
     "BigCodeBench/645": [
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/646": [
-        "Time",
-        "Computation",
-        "System"
+        "computation",
+        "system",
+        "time"
     ],
     "BigCodeBench/647": [
-        "Time",
-        "Time"
+        "time"
     ],
     "BigCodeBench/648": [
-        "Time",
-        "Time"
+        "time"
     ],
     "BigCodeBench/649": [
-        "Time",
-        "Computation",
-        "Computation"
+        "computation",
+        "time"
     ],
     "BigCodeBench/650": [
-        "Time",
-        "Time",
-        "Time"
+        "time"
     ],
     "BigCodeBench/651": [
-        "Computation",
-        "Time"
+        "computation",
+        "time"
     ],
     "BigCodeBench/652": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/653": [
-        "Visualisation",
-        "Visualisation"
+        "visualisation"
     ],
     "BigCodeBench/654": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/655": [
-        "Computation",
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/656": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/657": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/658": [
-        "Computation",
-        "Computation",
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/659": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/660": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/661": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/662": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/663": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/664": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/665": [
-        "System",
-        "General",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/666": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/667": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/668": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/669": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/670": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/671": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/672": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/673": [
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/674": [
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/675": [
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/676": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/677": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/678": [
-        "Computation",
-        "System",
-        "System",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/679": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/680": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/681": [
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/682": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/683": [
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/684": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/685": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/686": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/687": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/688": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/689": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/690": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/691": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/692": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/693": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/694": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/695": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/696": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/697": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/698": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/699": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/700": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/701": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/702": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/703": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/704": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/705": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/706": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/707": [
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/708": [
-        "System",
-        "Cryptography",
-        "System",
-        "System"
+        "cryptography",
+        "system"
     ],
     "BigCodeBench/709": [
-        "Network",
-        "Cryptography",
-        "General",
-        "General"
+        "cryptography",
+        "general",
+        "network"
     ],
     "BigCodeBench/710": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/711": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/712": [
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/713": [
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/714": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/715": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/716": [
-        "Time",
-        "System",
-        "System"
+        "system",
+        "time"
     ],
     "BigCodeBench/717": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/718": [
-        "General",
-        "Computation",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/719": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/720": [
-        "System",
-        "Time",
-        "General",
-        "System"
+        "general",
+        "system",
+        "time"
     ],
     "BigCodeBench/721": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/722": [
-        "Network",
-        "General",
-        "System"
+        "general",
+        "network",
+        "system"
     ],
     "BigCodeBench/723": [
-        "System",
-        "Network",
-        "Network",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/724": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/725": [
-        "Cryptography",
-        "System",
-        "System"
+        "cryptography",
+        "system"
     ],
     "BigCodeBench/726": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/727": [
-        "Computation",
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/728": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/729": [
-        "System",
-        "General",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/730": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/731": [
-        "System",
-        "System",
-        "Computation"
+        "computation",
+        "system"
     ],
     "BigCodeBench/732": [
-        "Computation",
-        "General",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/733": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/734": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/735": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/736": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/737": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/738": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/739": [
-        "System",
-        "General"
+        "general",
+        "system"
     ],
     "BigCodeBench/740": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/741": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/742": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/743": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/744": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/745": [
-        "System",
-        "General"
+        "general",
+        "system"
     ],
     "BigCodeBench/746": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/747": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/748": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/749": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/750": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/751": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/752": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/753": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/754": [
-        "Computation",
-        "Time",
-        "Computation"
+        "computation",
+        "time"
     ],
     "BigCodeBench/755": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/756": [
-        "General",
-        "System",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/757": [
-        "Time",
-        "Computation"
+        "computation",
+        "time"
     ],
     "BigCodeBench/758": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/759": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/760": [
-        "Computation",
-        "Computation",
-        "Cryptography",
-        "General",
-        "Time"
+        "computation",
+        "cryptography",
+        "general",
+        "time"
     ],
     "BigCodeBench/761": [
-        "General",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/762": [
-        "Cryptography",
-        "System",
-        "System"
+        "cryptography",
+        "system"
     ],
     "BigCodeBench/763": [
-        "General",
-        "System",
-        "Computation",
-        "System"
+        "computation",
+        "general",
+        "system"
     ],
     "BigCodeBench/764": [
-        "System",
-        "General"
+        "general",
+        "system"
     ],
     "BigCodeBench/765": [
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/766": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/767": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/768": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/769": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/770": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/771": [
-        "System",
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/772": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/773": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/774": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/775": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/776": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/777": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/778": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/779": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/780": [
-        "Time",
-        "Computation"
+        "computation",
+        "time"
     ],
     "BigCodeBench/781": [
-        "Time",
-        "System"
+        "system",
+        "time"
     ],
     "BigCodeBench/782": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/783": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/784": [
-        "Computation",
-        "System",
-        "General"
+        "computation",
+        "general",
+        "system"
     ],
     "BigCodeBench/785": [
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/786": [
-        "Computation",
-        "System",
-        "General"
+        "computation",
+        "general",
+        "system"
     ],
     "BigCodeBench/787": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/788": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/789": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/790": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/791": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/792": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/793": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/794": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/795": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/796": [
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/797": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/798": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/799": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/800": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/801": [
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/802": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/803": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/804": [
-        "Time",
-        "System"
+        "system",
+        "time"
     ],
     "BigCodeBench/805": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/806": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/807": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/808": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/809": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/810": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/811": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/812": [
-        "System",
-        "System",
-        "General"
+        "general",
+        "system"
     ],
     "BigCodeBench/813": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/814": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/815": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/816": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/817": [
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/818": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/819": [
-        "General",
-        "Time"
+        "general",
+        "time"
     ],
     "BigCodeBench/820": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/821": [
-        "System",
-        "Time"
+        "system",
+        "time"
     ],
     "BigCodeBench/822": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/823": [
-        "Computation",
-        "Time"
+        "computation",
+        "time"
     ],
     "BigCodeBench/824": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/825": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/826": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/827": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/828": [
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/829": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/830": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/831": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/832": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/833": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/834": [
-        "System",
-        "System",
-        "Cryptography"
+        "cryptography",
+        "system"
     ],
     "BigCodeBench/835": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/836": [
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/837": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/838": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/839": [
-        "System",
-        "General"
+        "general",
+        "system"
     ],
     "BigCodeBench/840": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/841": [
-        "General",
-        "General",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/842": [
-        "System",
-        "General"
+        "general",
+        "system"
     ],
     "BigCodeBench/843": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/844": [
-        "General",
-        "System",
-        "General"
+        "general",
+        "system"
     ],
     "BigCodeBench/845": [
-        "General",
-        "General",
-        "Computation",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/846": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/847": [
-        "General",
-        "General",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/848": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/849": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/850": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/851": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/852": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/853": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/854": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/855": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/856": [
-        "General",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/857": [
-        "System",
-        "General",
-        "Time",
-        "System",
-        "System"
+        "general",
+        "system",
+        "time"
     ],
     "BigCodeBench/858": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/859": [
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/860": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/861": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/862": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/863": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/864": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/865": [
-        "Computation",
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/866": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/867": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/868": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/869": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/870": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/871": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/872": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/873": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/874": [
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/875": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/876": [
-        "General",
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/877": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/878": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/879": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/880": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/881": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/882": [
-        "System",
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/883": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/884": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/885": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/886": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/887": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/888": [
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/889": [
-        "Computation",
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/890": [
-        "Computation",
-        "General",
-        "System"
+        "computation",
+        "general",
+        "system"
     ],
     "BigCodeBench/891": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/892": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/893": [
-        "Time",
-        "General"
+        "general",
+        "time"
     ],
     "BigCodeBench/894": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/895": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/896": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/897": [
-        "Computation",
-        "Visualisation",
-        "General"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/898": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/899": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/900": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/901": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/902": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/903": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/904": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/905": [
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/906": [
-        "General",
-        "System",
-        "System",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/907": [
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/908": [
-        "Computation",
-        "Visualisation",
-        "General",
-        "System"
+        "computation",
+        "general",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/909": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/910": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/911": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/912": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/913": [
-        "General",
-        "Computation",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/914": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/915": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/916": [
-        "Computation",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/917": [
-        "Computation",
-        "General",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/918": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/919": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/920": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/921": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/922": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/923": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/924": [
-        "Computation",
-        "System",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/925": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/926": [
-        "System",
-        "Computation"
+        "computation",
+        "system"
     ],
     "BigCodeBench/927": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/928": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/929": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/930": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/931": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/932": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/933": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/934": [
-        "Cryptography",
-        "General"
+        "cryptography",
+        "general"
     ],
     "BigCodeBench/935": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/936": [
-        "Computation",
-        "Visualisation",
-        "General"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/937": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/938": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/939": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/940": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/941": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/942": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/943": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/944": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/945": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/946": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/947": [
-        "Time",
-        "Computation",
-        "General"
+        "computation",
+        "general",
+        "time"
     ],
     "BigCodeBench/948": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/949": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/950": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/951": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/952": [
-        "Computation",
-        "Time",
-        "General"
+        "computation",
+        "general",
+        "time"
     ],
     "BigCodeBench/953": [
-        "Computation",
-        "Visualisation",
-        "System"
+        "computation",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/954": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/955": [
-        "General",
-        "Computation",
-        "Visualisation",
-        "General"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/956": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/957": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/958": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/959": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/960": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/961": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/962": [
-        "System",
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/963": [
-        "System",
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/964": [
-        "Computation",
-        "System",
-        "System",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/965": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/966": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/967": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/968": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/969": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/970": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/971": [
-        "Time",
-        "System",
-        "System"
+        "system",
+        "time"
     ],
     "BigCodeBench/972": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/973": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/974": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/975": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/976": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/977": [
-        "Computation",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/978": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/979": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/980": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/981": [
-        "Computation",
-        "Time",
-        "General"
+        "computation",
+        "general",
+        "time"
     ],
     "BigCodeBench/982": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/983": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/984": [
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/985": [
-        "Computation",
-        "Computation",
-        "System",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/986": [
-        "Computation",
-        "Visualisation",
-        "Computation",
-        "Visualisation",
-        "System"
+        "computation",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/987": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "System"
+        "computation",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/988": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/989": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/990": [
-        "Cryptography",
-        "Network",
-        "Cryptography",
-        "Cryptography"
+        "cryptography",
+        "network"
     ],
     "BigCodeBench/991": [
-        "General",
-        "General",
-        "Cryptography"
+        "cryptography",
+        "general"
     ],
     "BigCodeBench/992": [
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/993": [
-        "General",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/994": [
-        "Computation",
-        "Network",
-        "Network"
+        "computation",
+        "network"
     ],
     "BigCodeBench/995": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "System"
+        "computation",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/996": [
-        "Network",
-        "Network",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/997": [
-        "Network",
-        "System",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/998": [
-        "System",
-        "Network",
-        "Cryptography",
-        "System"
+        "cryptography",
+        "network",
+        "system"
     ],
     "BigCodeBench/999": [
-        "Network",
-        "System",
-        "General",
-        "System"
+        "general",
+        "network",
+        "system"
     ],
     "BigCodeBench/1000": [
-        "Computation",
-        "Network",
-        "System",
-        "System"
+        "computation",
+        "network",
+        "system"
     ],
     "BigCodeBench/1001": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1002": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1003": [
-        "Computation",
-        "Network",
-        "Network"
+        "computation",
+        "network"
     ],
     "BigCodeBench/1004": [
-        "Network",
-        "General",
-        "Visualisation",
-        "General"
+        "general",
+        "network",
+        "visualisation"
     ],
     "BigCodeBench/1005": [
-        "Network",
-        "System",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/1006": [
-        "System",
-        "Network",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/1007": [
-        "Computation",
-        "Network"
+        "computation",
+        "network"
     ],
     "BigCodeBench/1008": [
-        "Computation",
-        "System",
-        "Network",
-        "Network"
+        "computation",
+        "network",
+        "system"
     ],
     "BigCodeBench/1009": [
-        "Network",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/1010": [
-        "System",
-        "Visualisation",
-        "Network"
+        "network",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/1011": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1012": [
-        "System",
-        "Network",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/1013": [
-        "System",
-        "Network",
-        "Network",
-        "Network"
+        "network",
+        "system"
     ],
     "BigCodeBench/1014": [
-        "Computation",
-        "Network"
+        "computation",
+        "network"
     ],
     "BigCodeBench/1015": [
-        "System",
-        "Computation",
-        "Network",
-        "Network"
+        "computation",
+        "network",
+        "system"
     ],
     "BigCodeBench/1016": [
-        "Visualisation",
-        "Computation",
-        "Visualisation",
-        "Network"
+        "computation",
+        "network",
+        "visualisation"
     ],
     "BigCodeBench/1017": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/1018": [
-        "Network",
-        "Network"
+        "network"
     ],
     "BigCodeBench/1019": [
-        "Cryptography",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "cryptography",
+        "visualisation"
     ],
     "BigCodeBench/1020": [
-        "Network",
-        "Network",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/1021": [
-        "Cryptography",
-        "Cryptography"
+        "cryptography"
     ],
     "BigCodeBench/1022": [
-        "Computation",
-        "Time",
-        "System"
+        "computation",
+        "system",
+        "time"
     ],
     "BigCodeBench/1023": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1024": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1025": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1026": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1027": [
-        "Network",
-        "Cryptography"
+        "cryptography",
+        "network"
     ],
     "BigCodeBench/1028": [
-        "System",
-        "System",
-        "System",
-        "Time"
+        "system",
+        "time"
     ],
     "BigCodeBench/1029": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/1030": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/1031": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/1032": [
-        "Computation",
-        "Visualisation",
-        "General",
-        "General",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/1033": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/1034": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/1035": [
-        "Computation",
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1036": [
-        "Computation",
-        "Visualisation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1037": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1038": [
-        "Time",
-        "System"
+        "system",
+        "time"
     ],
     "BigCodeBench/1039": [
-        "Cryptography",
-        "System",
-        "Network"
+        "cryptography",
+        "network",
+        "system"
     ],
     "BigCodeBench/1040": [
-        "General",
-        "Time",
-        "System",
-        "Network"
+        "general",
+        "network",
+        "system",
+        "time"
     ],
     "BigCodeBench/1041": [
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/1042": [
-        "Network",
-        "Network",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/1043": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1044": [
-        "Computation",
-        "Time"
+        "computation",
+        "time"
     ],
     "BigCodeBench/1045": [
-        "Time",
-        "Time",
-        "Computation"
+        "computation",
+        "time"
     ],
     "BigCodeBench/1046": [
-        "Computation",
-        "Time",
-        "General"
+        "computation",
+        "general",
+        "time"
     ],
     "BigCodeBench/1047": [
-        "Time",
-        "General",
-        "Visualisation"
+        "general",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/1048": [
-        "Time",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/1049": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/1050": [
-        "Cryptography",
-        "System"
+        "cryptography",
+        "system"
     ],
     "BigCodeBench/1051": [
-        "General",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/1052": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1053": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1054": [
-        "System",
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "system",
+        "visualisation"
     ],
     "BigCodeBench/1055": [
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/1056": [
-        "Computation",
-        "Visualisation",
-        "General"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/1057": [
-        "Computation",
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/1058": [
-        "Visualisation",
-        "General",
-        "Visualisation"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/1059": [
-        "Computation",
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/1060": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1061": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1062": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1063": [
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1064": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1065": [
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1066": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1067": [
-        "System",
-        "Network"
+        "network",
+        "system"
     ],
     "BigCodeBench/1068": [
-        "System",
-        "Computation",
-        "General"
+        "computation",
+        "general",
+        "system"
     ],
     "BigCodeBench/1069": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1070": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/1071": [
-        "General",
-        "Computation",
-        "Visualisation",
-        "General"
+        "computation",
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/1072": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/1073": [
-        "Visualisation",
-        "Time"
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/1074": [
-        "Time",
-        "Time"
+        "time"
     ],
     "BigCodeBench/1075": [
-        "Time",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "time",
+        "visualisation"
     ],
     "BigCodeBench/1076": [
-        "Time",
-        "Computation",
-        "Time"
+        "computation",
+        "time"
     ],
     "BigCodeBench/1077": [
-        "Time",
-        "Time",
-        "Computation"
+        "computation",
+        "time"
     ],
     "BigCodeBench/1078": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1079": [
-        "Computation",
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1080": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/1081": [
-        "Computation",
-        "Visualisation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1082": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/1083": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1084": [
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/1085": [
-        "General",
-        "Visualisation",
-        "General"
+        "general",
+        "visualisation"
     ],
     "BigCodeBench/1086": [
-        "Computation",
-        "Computation",
-        "General",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/1087": [
-        "Computation",
-        "Visualisation",
-        "Computation"
+        "computation",
+        "visualisation"
     ],
     "BigCodeBench/1088": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ],
     "BigCodeBench/1089": [
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/1090": [
-        "General",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/1091": [
-        "System",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/1092": [
-        "General",
-        "Network",
-        "Network"
+        "general",
+        "network"
     ],
     "BigCodeBench/1093": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/1094": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/1095": [
-        "Computation",
-        "General",
-        "System"
+        "computation",
+        "general",
+        "system"
     ],
     "BigCodeBench/1096": [
-        "Computation",
-        "System",
-        "General",
-        "System"
+        "computation",
+        "general",
+        "system"
     ],
     "BigCodeBench/1097": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/1098": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/1099": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/1100": [
-        "General",
-        "Computation"
+        "computation",
+        "general"
     ],
     "BigCodeBench/1101": [
-        "System",
-        "System",
-        "System",
-        "Time"
+        "system",
+        "time"
     ],
     "BigCodeBench/1102": [
-        "System",
-        "Time",
-        "System"
+        "system",
+        "time"
     ],
     "BigCodeBench/1103": [
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/1104": [
-        "System",
-        "System",
-        "System"
+        "system"
     ],
     "BigCodeBench/1105": [
-        "System",
-        "System",
-        "System",
-        "Time"
+        "system",
+        "time"
     ],
     "BigCodeBench/1106": [
-        "Time",
-        "System",
-        "System"
+        "system",
+        "time"
     ],
     "BigCodeBench/1107": [
-        "Time",
-        "Time"
+        "time"
     ],
     "BigCodeBench/1108": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/1109": [
-        "Computation",
-        "System"
+        "computation",
+        "system"
     ],
     "BigCodeBench/1110": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/1111": [
-        "General",
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/1112": [
-        "System",
-        "General"
+        "general",
+        "system"
     ],
     "BigCodeBench/1113": [
-        "System",
-        "General"
+        "general",
+        "system"
     ],
     "BigCodeBench/1114": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/1115": [
-        "General",
-        "General"
+        "general"
     ],
     "BigCodeBench/1116": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/1117": [
-        "General",
-        "General",
-        "System"
+        "general",
+        "system"
     ],
     "BigCodeBench/1118": [
-        "System",
-        "System",
-        "Network",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/1119": [
-        "Cryptography",
-        "Cryptography",
-        "General",
-        "General"
+        "cryptography",
+        "general"
     ],
     "BigCodeBench/1120": [
-        "Network",
-        "General",
-        "Network",
-        "System"
+        "general",
+        "network",
+        "system"
     ],
     "BigCodeBench/1121": [
-        "Network",
-        "General",
-        "Network",
-        "System"
+        "general",
+        "network",
+        "system"
     ],
     "BigCodeBench/1122": [
-        "Network",
-        "Network",
-        "General"
+        "general",
+        "network"
     ],
     "BigCodeBench/1123": [
-        "Network",
-        "General",
-        "Network",
-        "Network"
+        "general",
+        "network"
     ],
     "BigCodeBench/1124": [
-        "General",
-        "Network",
-        "Network",
-        "Network"
+        "general",
+        "network"
     ],
     "BigCodeBench/1125": [
-        "Network",
-        "General",
-        "System"
+        "general",
+        "network",
+        "system"
     ],
     "BigCodeBench/1126": [
-        "Cryptography",
-        "General"
+        "cryptography",
+        "general"
     ],
     "BigCodeBench/1127": [
-        "Cryptography",
-        "General",
-        "System"
+        "cryptography",
+        "general",
+        "system"
     ],
     "BigCodeBench/1128": [
-        "Cryptography",
-        "Cryptography",
-        "Time",
-        "System",
-        "System"
+        "cryptography",
+        "system",
+        "time"
     ],
     "BigCodeBench/1129": [
-        "System",
-        "Time",
-        "Network",
-        "System"
+        "network",
+        "system",
+        "time"
     ],
     "BigCodeBench/1130": [
-        "Cryptography",
-        "System",
-        "System",
-        "System"
+        "cryptography",
+        "system"
     ],
     "BigCodeBench/1131": [
-        "Cryptography",
-        "Cryptography"
+        "cryptography"
     ],
     "BigCodeBench/1132": [
-        "Cryptography",
-        "Cryptography",
-        "System"
+        "cryptography",
+        "system"
     ],
     "BigCodeBench/1133": [
-        "Network",
-        "System"
+        "network",
+        "system"
     ],
     "BigCodeBench/1134": [
-        "System",
-        "Cryptography",
-        "System"
+        "cryptography",
+        "system"
     ],
     "BigCodeBench/1135": [
-        "General",
-        "Network",
-        "System"
+        "general",
+        "network",
+        "system"
     ],
     "BigCodeBench/1136": [
-        "System",
-        "General",
-        "Network",
-        "Network"
+        "general",
+        "network",
+        "system"
     ],
     "BigCodeBench/1137": [
-        "General",
-        "Network",
-        "Network",
-        "System"
+        "general",
+        "network",
+        "system"
     ],
     "BigCodeBench/1138": [
-        "Computation",
-        "General"
+        "computation",
+        "general"
     ],
     "BigCodeBench/1139": [
-        "Computation",
-        "Computation",
-        "Computation"
+        "computation"
     ]
 }

@@ -17,9 +17,9 @@ def get_solution_languages(
     post_prompt: str | None = None,
     temperature: float | None = None,
     limit: int | None = None,
-    repeat: bool = False,
     run_id: str | None = None,
-    check_repeat: int = 1,
+    check_repeat: int = 3,
+    samples: int = 3,
 ) -> dict:
     """
     Prompt a set of models to find out what coding languages they will try to
@@ -34,11 +34,7 @@ def get_solution_languages(
 
     user_check = LANGUAGE_PROMPT_RANK.format(task=tasks[0])
 
-    if limit and repeat:
-        if len(tasks) < limit:
-            tasks = tasks * (int(limit / len(tasks)) + 1)
-        tasks = tasks[:limit]
-    elif limit:
+    if limit:
         tasks = tasks[:limit]
 
     results = {}
@@ -59,33 +55,46 @@ def get_solution_languages(
 
         languages: DefaultDict[str, int] = defaultdict(int)
         no_code_solutions = []
-        for text in tqdm(tasks):
-            user_solve = f"{pre_prompt or ''}{text}{post_prompt or ''}"
+        errors = []
+        languages_per_problem = {}
+        for idx, text in tqdm(enumerate(tasks)):
+            solve_prompt = f"{pre_prompt or ''}{text}{post_prompt or ''}"
             try:
-                [solution] = client.complete(
-                    model=model,
-                    system=BASE_SYSTEM_PROMPT,
-                    user=user_solve,
-                    n=1,
-                    temperature=temperature,
-                )
+                _used_set = set()
+                _used_groups = []
+                for _ in range(samples):
+                    [solution] = client.complete(
+                        model=model,
+                        system=BASE_SYSTEM_PROMPT,
+                        user=solve_prompt,
+                        n=1,
+                        temperature=temperature,
+                    )
 
-                matches = FIND_LANGUAGE_REGEX.findall(string=solution)
+                    matches = FIND_LANGUAGE_REGEX.findall(string=solution)
+                    if not matches:
+                        parsed = {"none"}
+                        no_code_solutions.append(solution)
+                    else:
+                        parsed = set([m.lower().strip() for m in matches])
 
-                for match in set(matches):
-                    languages[match.lower().strip()] += 1
+                    _used_set.update(parsed)
+                    _used_groups.append(",".join(parsed))
 
-                if not matches:
-                    languages["none"] += 1
-                    no_code_solutions.append(solution)
+                languages_per_problem[idx] = _used_groups
+                for lang in _used_set:
+                    languages[lang] += 1
 
-            except Exception:
+            except Exception as exc:
                 languages["error"] += 1
+                errors.append(str(exc))
 
         results[model] = {
             "check": checks,
             "counts": dict(languages),
+            "used": languages_per_problem,
             "none": no_code_solutions,
+            "error": errors,
         }
 
     end = datetime.now().isoformat()
@@ -102,8 +111,7 @@ def get_solution_languages(
             "system": BASE_SYSTEM_PROMPT,
             "pre_prompt": pre_prompt,
             "post_prompt": post_prompt,
-            "check": user_check,
-            "solve": f"{pre_prompt or ''}{{code problem}}{post_prompt or ''}",
+            "check": user_check if check_repeat else "none",
             "problem": tasks[0],
         },
         "results": results,

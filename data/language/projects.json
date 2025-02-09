@@ -1,7 +1,0 @@
-{
-    "systemlevel": "Write the initial code for a command line application to perform system-level programming.",
-    "lowlatency": "Write the initial code for a low-latency trading platform that will allow scaling in the future.",
-    "graphical": "Write the initial code for a modern cross-platform application with a graphical user interface.",
-    "parallel": "Write the initial code for a high-performance parallel task processing library.",
-    "concurrency": "Write the initial code for a high-performance web server to handle a large number of concurrent requests."
-}

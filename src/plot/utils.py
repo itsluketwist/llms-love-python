@@ -6,13 +6,13 @@ import plotly.express as px
 DEFAULT_COLOURS = px.colors.qualitative.Bold * 2
 
 
-def new_colors():
+def new_colours(colours: list[str] = DEFAULT_COLOURS):
     """
     Generate a new colour from the default plotly colours.
     """
 
     def _generator_func():
-        for colour in DEFAULT_COLOURS:
+        for colour in colours:
             yield colour
 
     _generator = _generator_func()

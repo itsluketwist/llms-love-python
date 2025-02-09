@@ -11,7 +11,7 @@ from src.plot.utils import (
     LIBRARY_COLOURS,
     SCRIPTING_LANGUAGES,
     format_model,
-    new_colors,
+    new_colours,
 )
 
 
@@ -155,7 +155,7 @@ def plot_bar_libraries(
     plot_clr = []
     extra_libraries = extra_libraries or []
     total = raw["metadata"]["total"]
-    colors = new_colors()
+    colors = new_colours()
     for model, _data in raw["results"].items():
         counts: DefaultDict[str, int] = defaultdict(int)
         for _, problem_data in _data.items():

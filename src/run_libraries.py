@@ -22,7 +22,7 @@ def get_solution_libraries(
     pre_prompt: str | None = None,
     post_prompt: str | None = None,
     temperature: float | None = None,
-    samples: int = 10,
+    samples: int = 3,
     rank_repeat: int = 0,
     run_id: str | None = None,
 ) -> dict:
