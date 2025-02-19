@@ -160,10 +160,10 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
-todo.txt
-data/raw/*
 .ruff*
 .DS_STORE
+
+data/raw/*
 */archive/*
 
 # working notebooks
@@ -171,6 +171,7 @@ mvp.ipynb
 data.ipynb
 latex.ipynb
 figure.ipynb
+kendall.ipynb
 
 # temporary
 output/

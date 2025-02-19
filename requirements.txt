@@ -3,4 +3,5 @@ git+https://github.com/itsluketwist/plotly-utils
 Jupyter
 openai
 pre-commit
+scipy
 tqdm
