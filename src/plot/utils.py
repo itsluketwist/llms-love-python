@@ -79,14 +79,14 @@ SCRIPTING_LANGUAGES = [
 MODEL_MAP: dict[str, str] = {
     "gpt-4o-mini": "gpt-4o",
     "gpt-3.5-turbo": "gpt-3.5",
-    "gpt-4o-mini-2024-07-18": "gpt-4o",
-    "gpt-3.5-turbo-0125": "gpt-3.5",
-    "meta-llama/Llama-3.2-3B-Instruct-Turbo": "llama3.2",
-    "Qwen/Qwen2.5-Coder-32B-Instruct": "qwen2.5",
-    "deepseek-ai/deepseek-llm-67b-chat": "deepseek",
-    "mistralai/Mistral-7B-Instruct-v0.3": "mistral",
-    "claude-3-5-sonnet-20241022": "sonnet-3.5",
-    "claude-3-5-haiku-20241022": "haiku-3.5",
+    "gpt-4o-mini-2024-07-18": "GPT-4o",
+    "gpt-3.5-turbo-0125": "GPT-3.5",
+    "meta-llama/Llama-3.2-3B-Instruct-Turbo": "Llama3.2",
+    "Qwen/Qwen2.5-Coder-32B-Instruct": "Qwen2.5",
+    "deepseek-ai/deepseek-llm-67b-chat": "DeepSeekLLM",
+    "mistralai/Mistral-7B-Instruct-v0.3": "Mistral7b",
+    "claude-3-5-sonnet-20241022": "Sonnet3.5",
+    "claude-3-5-haiku-20241022": "Haiku3.5",
 }
 
 

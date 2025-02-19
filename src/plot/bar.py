@@ -147,7 +147,8 @@ def plot_bar_libraries(
                 for lib, col in zip(libraries, LIBRARY_COLOURS)
             ]
         )
-        title = f"Library usage of {library_string} across models"
+        range = "temperatures" if temperature else "models"
+        title = f"Library usage of {library_string} across {range}"
 
     plot_mod = []
     plot_lib = []

@@ -55,7 +55,6 @@ def get_solution_languages(
 
         languages: DefaultDict[str, int] = defaultdict(int)
         no_code_solutions = []
-        errors = []
         languages_per_problem = {}
         for idx, text in tqdm(enumerate(tasks)):
             solve_prompt = f"{pre_prompt or ''}{text}{post_prompt or ''}"
@@ -85,16 +84,14 @@ def get_solution_languages(
                 for lang in _used_set:
                     languages[lang] += 1
 
-            except Exception as exc:
+            except Exception:
                 languages["error"] += 1
-                errors.append(str(exc))
 
         results[model] = {
             "check": checks,
             "counts": dict(languages),
             "used": languages_per_problem,
             "none": no_code_solutions,
-            "error": errors,
         }
 
     end = datetime.now().isoformat()
