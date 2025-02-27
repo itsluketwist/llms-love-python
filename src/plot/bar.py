@@ -4,8 +4,8 @@ from typing import DefaultDict
 import plotly.graph_objects as go
 from plotly_utils import default_figure
 
-from src.output import read_json
-from src.plot.utils import (
+from src.json_utils import read_json
+from src.plot.plot_utils import (
     IGNORE_FILETYPES,
     LANGUAGE_COLOURS,
     LIBRARY_COLOURS,

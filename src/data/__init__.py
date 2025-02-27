@@ -1,4 +1,4 @@
-from src.data.utils import process_data, remove_bad_records
+from src.data.data_utils import process_data, remove_bad_records
 
 
 __all__ = [

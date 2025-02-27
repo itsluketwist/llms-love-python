@@ -3,7 +3,7 @@ from datetime import datetime
 from tqdm import tqdm
 
 from src.api import get_client
-from src.output import save_json
+from src.json_utils import save_json
 from src.prompts import (
     BASE_SYSTEM_PROMPT,
     LIBRARY_PROMPT_COMPARE,
@@ -11,7 +11,7 @@ from src.prompts import (
     LIBRARY_PROMPT_USE_ANY,
     LIBRARY_PROMPT_USE_ONE,
 )
-from src.python_imports import get_imports_from_completion
+from src.python_analysis import get_imports_from_completion
 
 
 def get_solution_libraries(
@@ -40,43 +40,44 @@ def get_solution_libraries(
     results: dict[str, dict] = {}
     for model in models:
         print(f"Prompting model {model} for solutions...")
-        client = get_client(model=model)
-        results[model] = {}
+        client = get_client(model=model)  # configure the client for the model
 
+        results[model] = {}
         for id, text in tqdm(problems.items()):
             results[model][id] = {}
-            text = f"{pre_prompt or ''}{text}{post_prompt or ''}"
+            text = f"{pre_prompt or ''}{text}{post_prompt or ''}"  # build prompt
 
-            if libraries:
-                compare_prompt = LIBRARY_PROMPT_COMPARE.format(
-                    language=language,
-                    libraries=f"{', '.join(libraries[:-1])} and {libraries[-1]} ",
-                    problem=text,
-                )
-                [compare_response] = client.complete(
-                    model=model,
-                    system=BASE_SYSTEM_PROMPT,
-                    user=compare_prompt,
-                    n=1,
-                    temperature=temperature,
-                )
-                results[model][id]["compare"] = compare_response
+            # if libraries:
+            #     compare_prompt = LIBRARY_PROMPT_COMPARE.format(
+            #         language=language,
+            #         libraries=f"{', '.join(libraries[:-1])} and {libraries[-1]} ",
+            #         problem=text,
+            #     )
+            #     [compare_response] = client.complete(
+            #         model=model,
+            #         system=BASE_SYSTEM_PROMPT,
+            #         user=compare_prompt,
+            #         n=1,
+            #         temperature=temperature,
+            #     )
+            #     results[model][id]["compare"] = compare_response
 
-                for library in libraries:
-                    library_prompt = LIBRARY_PROMPT_USE_ONE.format(
-                        problem=text,
-                        language=language,
-                        library=library,
-                    )
-                    [library_response] = client.complete(
-                        model=model,
-                        system=BASE_SYSTEM_PROMPT,
-                        user=library_prompt,
-                        n=1,
-                        temperature=temperature,
-                    )
-                    results[model][id][library] = library_response
+            #     for library in libraries:
+            #         library_prompt = LIBRARY_PROMPT_USE_ONE.format(
+            #             problem=text,
+            #             language=language,
+            #             library=library,
+            #         )
+            #         [library_response] = client.complete(
+            #             model=model,
+            #             system=BASE_SYSTEM_PROMPT,
+            #             user=library_prompt,
+            #             n=1,
+            #             temperature=temperature,
+            #         )
+            #         results[model][id][library] = library_response
 
+            # get the ranks of the libraries recommended to solve the problem
             if rank_repeat:
                 rank_prompt = LIBRARY_PROMPT_RANK.format(
                     problem=text,
@@ -94,6 +95,7 @@ def get_solution_libraries(
                     ranks.append([k.strip() for k in rank_response.split("\n")])
                 results[model][id]["ranks"] = ranks
 
+            # get libraries used to solve the problem
             if samples:
                 solve_prompt = LIBRARY_PROMPT_USE_ANY.format(
                     problem=text,
@@ -109,6 +111,7 @@ def get_solution_libraries(
                 )
                 results[model][id]["counts"] = import_counts
 
+    # save the results to file
     end = datetime.now().isoformat()
     data = {
         "metadata": {
@@ -130,7 +133,6 @@ def get_solution_libraries(
         },
         "results": results,
     }
-
     save_path = f"output/library_results/{run_id or 'library'}_results_{end}.json"
     save_json(
         data=data,

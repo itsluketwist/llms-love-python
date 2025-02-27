@@ -1,10 +1,11 @@
 import sys
 
 
-_STDLIB_MODNAMES = getattr(sys, "stdlib_module_names", [])
+STDLIB_MODNAMES = getattr(sys, "stdlib_module_names", [])
 
-_BAD_WORDS = [
-    "sql",
+BAD_STDLIB = [x for x in STDLIB_MODNAMES if len(x) > 4]
+
+BAD_WORDS = [
     "aspose-words",
     "bs4",
     "configparser",
@@ -23,8 +24,6 @@ _BAD_WORDS = [
     "openpyxl",
     "pandas",
     "pytz",
-    "regex",
-    "rsa",
     "scikit-learn",
     "scipy",
     "seaborn",
@@ -46,17 +45,13 @@ _BAD_WORDS = [
     "swift",
     "matlab",
     "ruby",
-    "perl",
+    "perl ",
     "objective-c",
     "dataframe",
-    "pil",
-    " r ",
     "brainfuck",
     "c#",
     "kotlin",
-    "scala",
+    "scala ",
     "cpp",
-    "js",
+    "js ",
 ]
-
-BAD_WORDS = _BAD_WORDS + [x for x in _STDLIB_MODNAMES if len(x) > 4]

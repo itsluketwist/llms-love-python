@@ -4,9 +4,11 @@ from datetime import datetime
 import plotly.graph_objects as go
 from plotly_utils import default_figure
 
-from src.constants import DATETIME_FORMAT
-from src.output import read_json
-from src.plot.utils import DEFAULT_COLOURS, LIBRARY_COLOURS
+from src.json_utils import read_json
+from src.plot.plot_utils import DEFAULT_COLOURS, LIBRARY_COLOURS
+
+
+_DATETIME_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
 
 
 def _format_results(
@@ -104,7 +106,7 @@ def plot_line_library_stars(
     if not isinstance(raw, dict):
         raise TypeError("Results file must contain a json dictionary.")
 
-    queried = datetime.strptime(raw["queried"], DATETIME_FORMAT)
+    queried = datetime.strptime(raw["queried"], _DATETIME_FORMAT)
     title = (
         title or "GitHub repository stars growth"
     )  # + " vs ".join([f"<b>{lib}</b>" for lib in libraries])
@@ -117,7 +119,7 @@ def plot_line_library_stars(
 
     for i, library in enumerate(libraries):
         library_data = raw["data"][library]
-        created = datetime.strptime(library_data["created"], DATETIME_FORMAT)
+        created = datetime.strptime(library_data["created"], _DATETIME_FORMAT)
         age = (queried - created).days / 365
 
         print(

@@ -1,26 +1,9 @@
-import re
-import sys
 from collections import defaultdict
 from typing import DefaultDict
 
 from src.api import CompletionProtocol
-
-
-STDLIB_MODULES = set(sys.stdlib_module_names)
-
-
-CODE_BLOCK_REGEX = re.compile(
-    pattern=r"\`\`\`(\w*)\n(.*?)(?:\`\`\`|$)",
-    flags=re.DOTALL,
-)
-
-FROM_MODULE_IMPORT_REGEX = re.compile(
-    pattern=r"^\s*from\s+(\w[\w.]+)\s+import\s*\(?\s*(.*)$",
-)
-
-IMPORT_MODULE_REGEX = re.compile(
-    pattern=r"^\s*import\s+(.*)$",
-)
+from src.data.constants import STDLIB_MODNAMES
+from src.regexes import CODE_BLOCK_REGEX, FROM_MODULE_IMPORT_REGEX, IMPORT_MODULE_REGEX
 
 
 def get_imports_from_line(
@@ -95,7 +78,7 @@ def get_imports_from_markdown(
     if include_stdlib:
         return imports
     else:
-        return imports - STDLIB_MODULES
+        return imports - set(STDLIB_MODNAMES)
 
 
 def get_imports_from_completion(

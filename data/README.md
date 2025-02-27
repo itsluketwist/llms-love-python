@@ -1,12 +1,12 @@
 # **data**
 
-The data records used in the project and results produced.
+The data records used in the project.
 
 ## *contents*
 
 - `language/` - data used for *language* experiments.
-    - `projects.json` - project descriptions to be used as prompts.
-    - `datasets/` - natural language coding problems from existing datasets.
+    - `project_init_tasks.json` - project descriptions to be used as prompts.
+    - `benchmark_tasks/` - natural language coding problems from existing datasets.
         - `aixbench.json` (129 records) - the `raw_nl` data from the AixBench NL task dataset, 2022.
             - *Cuts: problems containing chinese characters have been removed.*
         - `apps_competition.json` (200 records) - the `question` data from the APPS (train and test) dataset, for problems with `difficulty = competition`, 2021.
@@ -17,10 +17,10 @@ The data records used in the project and results produced.
         - `mx_humaneval.json` (161 records) - the `description` data from the MxEval Multi-HumanEval dataset, 2023.
         - `mx_mbxp.json` (200 records) - the `description` data from the MxEval MBXP dataset, 2023.
 - `library/` - data used for *library* experiments
-    - `library/bigcodebench_stats.json` - data about the BigCodeBench dataset, before and after processing for use.
-    - `library/library_stats.json` - GitHub data from about libraries analysed in the study.
-    - `library/problems.json` - problem statements to be used as prompts, curated from the BigCodeBench dataset.
-    - `library/projects.json` - project descriptions to be used as prompts.
+    - `benchmark_tasks.json` - problem statements to be used as prompts, curated from the BigCodeBench dataset.
+    - `bigcodebench_stats.json` - data about the BigCodeBench dataset, before and after processing for use.
+    - `library_stats.json` - GitHub data about libraries used in case analysis.
+    - `project_init_tasks.json` - project descriptions to be used as prompts.
     - `bigcodebench/` - raw data from the BigCodeBench dataset
         - `bigcodebench_all.json` (1140 records) - the `instruct_prompt` and `libs` data from the BigCodeBench dataset, 2024.
         - `bigcodebench_ext.json` (813 records) - BigCodeBench problems that include external libraries.
