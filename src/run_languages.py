@@ -53,7 +53,8 @@ def get_solution_languages(
             )
             checks.append([k.strip() for k in check.split("\n")])
 
-        languages: DefaultDict[str, int] = defaultdict(int)
+        language_counts: DefaultDict[str, int] = defaultdict(int)
+        language_totals: DefaultDict[str, int] = defaultdict(int)
         no_code_solutions = []
         languages_per_problem = {}
         for idx, text in tqdm(enumerate(tasks)):
@@ -79,17 +80,20 @@ def get_solution_languages(
 
                     _used_set.update(parsed)
                     _used_groups.append(",".join(parsed))
+                    for lang in parsed:
+                        language_totals[lang] += 1
 
                 languages_per_problem[idx] = _used_groups
                 for lang in _used_set:
-                    languages[lang] += 1
+                    language_counts[lang] += 1
 
             except Exception:
-                languages["error"] += 1
+                language_counts["error"] += 1
 
         results[model] = {
             "check": checks,
-            "counts": dict(languages),
+            "counts_per_response": dict(language_totals),
+            "counts_per_problem": dict(language_counts),
             "used": languages_per_problem,
             "none": no_code_solutions,
         }
@@ -114,7 +118,7 @@ def get_solution_languages(
         "results": results,
     }
 
-    save_path = f"output/language/{run_id or 'lang'}_results_{end}.json"
+    save_path = f"output/language_results/{run_id or 'lang'}_results_{end}.json"
     save_json(
         data=data,
         file_path=save_path,

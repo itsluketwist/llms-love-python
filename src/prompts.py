@@ -42,3 +42,13 @@ LIBRARY_PROMPT_USE_ANY = (
 LIBRARY_PROMPT_RANK = (
     "List, in order, the best {language} libraries for the following task: {problem}"
 )
+
+# chain-of-thought prompt ending for languages
+END_LANGUAGE_COT = (
+    "\nThink step by step about which coding language you should use and why."
+)
+
+# chain-of-thought prompt ending for libraries
+END_LIBRARY_COT = (
+    "\nThink step by step about which coding library you should use and why."
+)

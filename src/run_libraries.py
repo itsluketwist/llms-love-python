@@ -131,7 +131,7 @@ def get_solution_libraries(
         "results": results,
     }
 
-    save_path = f"output/library/{run_id or 'language'}_results_{end}.json"
+    save_path = f"output/library_results/{run_id or 'library'}_results_{end}.json"
     save_json(
         data=data,
         file_path=save_path,
