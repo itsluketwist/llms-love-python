@@ -1,0 +1,78 @@
+{
+    "metadata": {
+        "dataset": "deeplearning",
+        "total": 100,
+        "start": "2025-01-27T19:30:59.826030",
+        "end": "2025-01-27T19:54:12.609693",
+        "temperature": 0.0,
+        "models": [
+            "gpt-4o-mini-2024-07-18"
+        ],
+        "model": "gpt-4o-mini-2024-07-18"
+    },
+    "prompt": {
+        "system": "You are a helpful and knowledgeable code assistant!",
+        "compare_prompt": "Compare the usage of {language} libraries {libraries} for the following task:\n\n{problem}",
+        "library_prompt": "{problem}\n\nYou should write self-contained {language} code.\nImport and use the {library} library, and explain if it's a good choice.",
+        "solve_prompt": "{problem}\n\nYou should write self-contained {language} code.\nChoose, import and utilise at least one external library.",
+        "pre_prompt": null,
+        "post_prompt": null,
+        "problem_texts": {
+            "solve": "Write the initial code for a deep learning project implementing a neural network."
+        }
+    },
+    "results": {
+        "0.0": {
+            "solve": {
+                "counts": {
+                    "numpy,sklearn,tensorflow": 2,
+                    "matplotlib,numpy,tensorflow": 50,
+                    "numpy,tensorflow": 27,
+                    "matplotlib,tensorflow": 16,
+                    "tensorflow": 3,
+                    "matplotlib,numpy,sklearn,tensorflow": 1,
+                    "torch,torchvision": 1
+                }
+            }
+        },
+        "0.5": {
+            "solve": {
+                "counts": {
+                    "matplotlib,tensorflow": 29,
+                    "matplotlib,numpy,tensorflow": 41,
+                    "numpy,tensorflow": 30
+                }
+            }
+        },
+        "1.0": {
+            "solve": {
+                "counts": {
+                    "matplotlib,numpy,tensorflow": 49,
+                    "numpy,tensorflow": 26,
+                    "matplotlib,tensorflow": 21,
+                    "torch,torchvision": 1,
+                    "numpy,sklearn,tensorflow": 1,
+                    "tensorflow": 2
+                }
+            }
+        },
+        "1.5": {
+            "solve": {
+                "counts": {
+                    "numpy,tensorflow": 25,
+                    "matplotlib,numpy,tensorflow": 41,
+                    "matplotlib,numpy,sklearn,tensorflow": 3,
+                    "torch,torchvision": 6,
+                    "sklearn,tensorflow": 1,
+                    "matplotlib,tensorflow": 10,
+                    "numpy,sklearn,tensorflow": 1,
+                    "tensorflow": 8,
+                    "matplotlib,numpy,pandas,tensorflow": 1,
+                    "matplotlib,torch,torchvision": 1,
+                    "numpy,pandas,sklearn,tensorflow": 2,
+                    "none": 1
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,6515 @@
+{
+    "metadata": {
+        "dataset": "mx_humaneval",
+        "total": 160,
+        "start": "2025-02-06T15:15:45.886120",
+        "end": "2025-02-06T23:24:57.540206",
+        "temperature": null,
+        "models": [
+            "gpt-4o-mini-2024-07-18",
+            "gpt-3.5-turbo-0125",
+            "meta-llama/Llama-3.2-3B-Instruct-Turbo",
+            "Qwen/Qwen2.5-Coder-32B-Instruct",
+            "deepseek-ai/deepseek-llm-67b-chat",
+            "mistralai/Mistral-7B-Instruct-v0.3",
+            "claude-3-5-sonnet-20241022",
+            "claude-3-5-haiku-20241022"
+        ]
+    },
+    "prompts": {
+        "system": "You are a helpful and knowledgeable code assistant!",
+        "pre_prompt": "Generate a code-based solution, with an explanation, for the following task or described function:\n",
+        "post_prompt": null,
+        "check": "none",
+        "solve": "Generate a code-based solution, with an explanation, for the following task or described function:\n{code problem}",
+        "problem": "Check if in given list of numbers, are any two numbers closer to each other than\ngiven threshold.\n>>> has_close_elements([1.0, 2.0, 3.0], 0.5)\nFalse\n>>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\nTrue\n"
+    },
+    "results": {
+        "gpt-4o-mini-2024-07-18": {
+            "check": [],
+            "counts": {
+                "python": 160
+            },
+            "used": {
+                "0": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "1": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "2": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "3": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "4": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "5": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "6": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "7": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "8": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "9": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "10": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "11": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "12": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "13": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "14": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "15": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "16": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "17": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "18": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "19": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "20": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "21": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "22": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "23": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "24": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "25": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "26": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "27": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "28": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "29": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "30": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "31": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "32": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "33": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "34": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "35": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "36": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "37": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "38": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "39": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "40": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "41": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "42": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "43": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "44": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "45": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "46": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "47": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "48": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "49": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "50": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "51": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "52": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "53": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "54": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "55": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "56": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "57": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "58": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "59": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "60": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "61": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "62": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "63": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "64": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "65": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "66": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "67": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "68": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "69": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "70": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "71": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "72": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "73": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "74": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "75": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "76": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "77": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "78": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "79": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "80": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "81": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "82": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "83": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "84": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "85": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "86": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "87": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "88": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "89": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "90": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "91": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "92": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "93": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "94": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "95": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "96": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "97": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "98": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "99": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "100": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "101": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "102": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "103": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "104": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "105": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "106": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "107": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "108": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "109": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "110": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "111": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "112": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "113": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "114": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "115": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "116": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "117": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "118": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "119": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "120": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "121": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "122": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "123": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "124": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "125": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "126": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "127": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "128": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "129": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "130": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "131": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "132": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "133": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "134": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "135": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "136": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "137": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "138": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "139": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "140": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "141": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "142": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "143": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "144": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "145": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "146": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "147": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "148": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "149": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "150": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "151": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "152": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "153": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "154": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "155": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "156": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "157": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "158": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "159": [
+                    "python",
+                    "python",
+                    "python"
+                ]
+            },
+            "none": [],
+            "error": []
+        },
+        "gpt-3.5-turbo-0125": {
+            "check": [],
+            "counts": {
+                "python": 160
+            },
+            "used": {
+                "0": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "1": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "2": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "3": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "4": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "5": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "6": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "7": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "8": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "9": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "10": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "11": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "12": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "13": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "14": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "15": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "16": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "17": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "18": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "19": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "20": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "21": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "22": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "23": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "24": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "25": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "26": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "27": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "28": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "29": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "30": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "31": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "32": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "33": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "34": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "35": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "36": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "37": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "38": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "39": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "40": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "41": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "42": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "43": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "44": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "45": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "46": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "47": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "48": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "49": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "50": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "51": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "52": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "53": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "54": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "55": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "56": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "57": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "58": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "59": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "60": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "61": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "62": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "63": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "64": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "65": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "66": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "67": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "68": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "69": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "70": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "71": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "72": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "73": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "74": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "75": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "76": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "77": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "78": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "79": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "80": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "81": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "82": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "83": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "84": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "85": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "86": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "87": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "88": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "89": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "90": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "91": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "92": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "93": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "94": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "95": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "96": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "97": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "98": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "99": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "100": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "101": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "102": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "103": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "104": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "105": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "106": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "107": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "108": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "109": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "110": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "111": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "112": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "113": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "114": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "115": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "116": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "117": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "118": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "119": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "120": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "121": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "122": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "123": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "124": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "125": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "126": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "127": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "128": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "129": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "130": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "131": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "132": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "133": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "134": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "135": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "136": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "137": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "138": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "139": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "140": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "141": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "142": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "143": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "144": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "145": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "146": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "147": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "148": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "149": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "150": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "151": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "152": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "153": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "154": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "155": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "156": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "157": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "158": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "159": [
+                    "python",
+                    "python",
+                    "python"
+                ]
+            },
+            "none": [],
+            "error": []
+        },
+        "meta-llama/Llama-3.2-3B-Instruct-Turbo": {
+            "check": [],
+            "counts": {
+                "python": 160
+            },
+            "used": {
+                "0": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "1": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "2": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "3": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "4": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "5": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "6": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "7": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "8": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "9": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "10": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "11": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "12": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "13": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "14": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "15": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "16": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "17": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "18": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "19": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "20": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "21": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "22": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "23": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "24": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "25": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "26": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "27": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "28": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "29": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "30": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "31": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "32": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "33": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "34": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "35": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "36": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "37": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "38": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "39": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "40": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "41": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "42": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "43": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "44": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "45": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "46": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "47": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "48": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "49": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "50": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "51": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "52": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "53": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "54": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "55": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "56": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "57": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "58": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "59": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "60": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "61": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "62": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "63": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "64": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "65": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "66": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "67": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "68": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "69": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "70": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "71": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "72": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "73": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "74": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "75": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "76": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "77": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "78": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "79": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "80": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "81": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "82": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "83": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "84": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "85": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "86": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "87": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "88": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "89": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "90": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "91": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "92": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "93": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "94": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "95": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "96": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "97": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "98": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "99": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "100": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "101": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "102": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "103": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "104": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "105": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "106": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "107": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "108": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "109": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "110": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "111": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "112": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "113": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "114": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "115": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "116": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "117": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "118": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "119": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "120": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "121": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "122": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "123": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "124": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "125": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "126": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "127": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "128": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "129": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "130": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "131": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "132": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "133": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "134": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "135": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "136": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "137": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "138": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "139": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "140": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "141": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "142": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "143": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "144": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "145": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "146": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "147": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "148": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "149": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "150": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "151": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "152": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "153": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "154": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "155": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "156": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "157": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "158": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "159": [
+                    "python",
+                    "python",
+                    "python"
+                ]
+            },
+            "none": [],
+            "error": []
+        },
+        "Qwen/Qwen2.5-Coder-32B-Instruct": {
+            "check": [],
+            "counts": {
+                "python": 160
+            },
+            "used": {
+                "0": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "1": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "2": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "3": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "4": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "5": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "6": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "7": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "8": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "9": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "10": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "11": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "12": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "13": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "14": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "15": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "16": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "17": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "18": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "19": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "20": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "21": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "22": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "23": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "24": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "25": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "26": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "27": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "28": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "29": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "30": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "31": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "32": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "33": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "34": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "35": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "36": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "37": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "38": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "39": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "40": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "41": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "42": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "43": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "44": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "45": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "46": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "47": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "48": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "49": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "50": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "51": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "52": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "53": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "54": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "55": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "56": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "57": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "58": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "59": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "60": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "61": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "62": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "63": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "64": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "65": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "66": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "67": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "68": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "69": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "70": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "71": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "72": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "73": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "74": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "75": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "76": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "77": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "78": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "79": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "80": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "81": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "82": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "83": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "84": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "85": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "86": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "87": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "88": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "89": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "90": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "91": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "92": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "93": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "94": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "95": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "96": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "97": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "98": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "99": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "100": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "101": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "102": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "103": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "104": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "105": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "106": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "107": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "108": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "109": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "110": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "111": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "112": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "113": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "114": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "115": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "116": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "117": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "118": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "119": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "120": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "121": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "122": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "123": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "124": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "125": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "126": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "127": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "128": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "129": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "130": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "131": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "132": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "133": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "134": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "135": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "136": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "137": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "138": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "139": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "140": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "141": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "142": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "143": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "144": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "145": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "146": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "147": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "148": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "149": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "150": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "151": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "152": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "153": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "154": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "155": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "156": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "157": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "158": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "159": [
+                    "python",
+                    "python",
+                    "python"
+                ]
+            },
+            "none": [],
+            "error": []
+        },
+        "deepseek-ai/deepseek-llm-67b-chat": {
+            "check": [],
+            "counts": {
+                "python": 160
+            },
+            "used": {
+                "0": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "1": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "2": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "3": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "4": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "5": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "6": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "7": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "8": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "9": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "10": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "11": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "12": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "13": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "14": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "15": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "16": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "17": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "18": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "19": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "20": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "21": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "22": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "23": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "24": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "25": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "26": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "27": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "28": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "29": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "30": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "31": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "32": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "33": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "34": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "35": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "36": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "37": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "38": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "39": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "40": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "41": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "42": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "43": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "44": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "45": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "46": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "47": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "48": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "49": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "50": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "51": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "52": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "53": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "54": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "55": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "56": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "57": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "58": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "59": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "60": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "61": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "62": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "63": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "64": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "65": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "66": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "67": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "68": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "69": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "70": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "71": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "72": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "73": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "74": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "75": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "76": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "77": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "78": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "79": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "80": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "81": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "82": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "83": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "84": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "85": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "86": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "87": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "88": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "89": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "90": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "91": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "92": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "93": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "94": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "95": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "96": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "97": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "98": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "99": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "100": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "101": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "102": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "103": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "104": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "105": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "106": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "107": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "108": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "109": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "110": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "111": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "112": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "113": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "114": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "115": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "116": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "117": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "118": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "119": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "120": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "121": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "122": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "123": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "124": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "125": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "126": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "127": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "128": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "129": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "130": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "131": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "132": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "133": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "134": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "135": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "136": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "137": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "138": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "139": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "140": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "141": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "142": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "143": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "144": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "145": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "146": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "147": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "148": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "149": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "150": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "151": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "152": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "153": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "154": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "155": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "156": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "157": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "158": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "159": [
+                    "python",
+                    "python",
+                    "python"
+                ]
+            },
+            "none": [],
+            "error": []
+        },
+        "mistralai/Mistral-7B-Instruct-v0.3": {
+            "check": [],
+            "counts": {
+                "python": 160,
+                "php": 1,
+                "c": 1
+            },
+            "used": {
+                "0": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "1": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "2": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "3": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "4": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "5": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "6": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "7": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "8": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "9": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "10": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "11": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "12": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "13": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "14": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "15": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "16": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "17": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "18": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "19": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "20": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "21": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "22": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "23": [
+                    "python,php,c",
+                    "python,php,c",
+                    "python,php,c"
+                ],
+                "24": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "25": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "26": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "27": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "28": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "29": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "30": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "31": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "32": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "33": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "34": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "35": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "36": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "37": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "38": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "39": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "40": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "41": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "42": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "43": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "44": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "45": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "46": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "47": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "48": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "49": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "50": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "51": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "52": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "53": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "54": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "55": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "56": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "57": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "58": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "59": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "60": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "61": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "62": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "63": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "64": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "65": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "66": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "67": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "68": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "69": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "70": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "71": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "72": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "73": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "74": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "75": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "76": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "77": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "78": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "79": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "80": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "81": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "82": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "83": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "84": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "85": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "86": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "87": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "88": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "89": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "90": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "91": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "92": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "93": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "94": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "95": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "96": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "97": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "98": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "99": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "100": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "101": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "102": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "103": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "104": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "105": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "106": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "107": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "108": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "109": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "110": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "111": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "112": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "113": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "114": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "115": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "116": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "117": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "118": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "119": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "120": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "121": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "122": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "123": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "124": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "125": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "126": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "127": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "128": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "129": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "130": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "131": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "132": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "133": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "134": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "135": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "136": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "137": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "138": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "139": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "140": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "141": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "142": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "143": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "144": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "145": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "146": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "147": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "148": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "149": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "150": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "151": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "152": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "153": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "154": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "155": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "156": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "157": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "158": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "159": [
+                    "python",
+                    "python",
+                    "python"
+                ]
+            },
+            "none": [],
+            "error": []
+        },
+        "claude-3-5-sonnet-20241022": {
+            "check": [],
+            "counts": {
+                "python": 158,
+                "javascript": 2
+            },
+            "used": {
+                "0": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "1": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "2": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "3": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "4": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "5": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "6": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "7": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "8": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "9": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "10": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "11": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "12": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "13": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "14": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "15": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "16": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "17": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "18": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "19": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "20": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "21": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "22": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "23": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "24": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "25": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "26": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "27": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "28": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "29": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "30": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "31": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "32": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "33": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "34": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "35": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "36": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "37": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "38": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "39": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "40": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "41": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "42": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "43": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "44": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "45": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "46": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "47": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "48": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "49": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "50": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "51": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "52": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "53": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "54": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "55": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "56": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "57": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "58": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "59": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "60": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "61": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "62": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "63": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "64": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "65": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "66": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "67": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "68": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "69": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "70": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "71": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "72": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "73": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "74": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "75": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "76": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "77": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "78": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "79": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "80": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "81": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "82": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "83": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "84": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "85": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "86": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "87": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "88": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "89": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "90": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "91": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "92": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "93": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "94": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "95": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "96": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "97": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "98": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "99": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "100": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "101": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "102": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "103": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "104": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "105": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "106": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "107": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "108": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "109": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "110": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "111": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "112": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "113": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "114": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "115": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "116": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "117": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "118": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "119": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "120": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "121": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "122": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "123": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "124": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "125": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "126": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "127": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "128": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "129": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "130": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "131": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "132": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "133": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "134": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "135": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "136": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "137": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "138": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "139": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "140": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "141": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "142": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "143": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "144": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "145": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "146": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "147": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "148": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "149": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "150": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "151": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "152": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "153": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "154": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "155": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "156": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "157": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "158": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "159": [
+                    "python",
+                    "python",
+                    "python"
+                ]
+            },
+            "none": [],
+            "error": []
+        },
+        "claude-3-5-haiku-20241022": {
+            "check": [],
+            "counts": {
+                "python": 159,
+                "java": 1,
+                "javascript": 2,
+                "c": 1
+            },
+            "used": {
+                "0": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "1": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "2": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "3": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "4": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "5": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "6": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "7": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "8": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "9": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "10": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "11": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "12": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "13": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "14": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "15": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "16": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "17": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "18": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "19": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "20": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "21": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "22": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "23": [
+                    "python,javascript,c",
+                    "python,javascript,c",
+                    "python"
+                ],
+                "24": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "25": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "26": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "27": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "28": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "29": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "30": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "31": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "32": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "33": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "34": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "35": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "36": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "37": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "38": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "39": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "40": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "41": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "42": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "43": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "44": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "45": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "46": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "47": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "48": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "49": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "50": [
+                    "python",
+                    "python",
+                    "python,java,javascript"
+                ],
+                "51": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "52": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "53": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "54": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "55": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "56": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "57": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "58": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "59": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "60": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "61": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "62": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "63": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "64": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "65": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "66": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "67": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "68": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "69": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "70": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "71": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "72": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "73": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "74": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "75": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "76": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "77": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "78": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "79": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "80": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "81": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "82": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "83": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "84": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "85": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "86": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "87": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "88": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "89": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "90": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "91": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "92": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "93": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "94": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "95": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "96": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "97": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "98": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "99": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "100": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "101": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "102": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "103": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "104": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "105": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "106": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "107": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "108": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "109": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "110": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "111": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "112": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "113": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "114": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "115": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "116": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "117": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "118": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "119": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "120": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "121": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "122": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "123": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "124": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "125": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "126": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "127": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "128": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "129": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "130": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "131": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "132": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "133": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "134": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "135": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "136": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "137": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "138": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "139": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "140": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "141": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "142": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "143": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "144": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "145": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "146": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "147": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "148": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "149": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "150": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "151": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "152": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "153": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "154": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "155": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "156": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "157": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "158": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "159": [
+                    "python",
+                    "python",
+                    "python"
+                ]
+            },
+            "none": [],
+            "error": []
+        }
+    }
+}

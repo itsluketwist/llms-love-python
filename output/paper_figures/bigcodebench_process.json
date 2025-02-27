@@ -1,0 +1,18 @@
+{
+    "original": {
+        "BigCodeBench/924": {
+            "problem": "Load a CSV file into a Pandas DataFrame, replace all occurrences of the string '\\n' with the string '<br>' in the specified column, and return the cleaned DataFrame.\nThe function should output with:\n    pd.DataFrame: The cleaned Pandas DataFrame.\nYou should write self-contained code starting with:\n```\nimport pandas as pd\nimport os\nimport sys\ndef task_func(file_path: str, column_name: str) -> pd.DataFrame:\n```",
+            "libraries": [
+                "pandas",
+                "os",
+                "sys"
+            ],
+            "external": [
+                "pandas"
+            ]
+        }
+    },
+    "processed": {
+        "BigCodeBench/924": "Load a CSV file into a DataFrame, replace all occurrences of the string '\\n' with the string '<br>' in the specified column, and return the cleaned DataFrame."
+    }
+}

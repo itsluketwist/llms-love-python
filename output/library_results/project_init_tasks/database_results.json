@@ -1,0 +1,163 @@
+{
+    "metadata": {
+        "dataset": "database",
+        "total": 100,
+        "start": "2025-01-27T12:02:31.907461",
+        "end": "2025-01-27T14:24:01.639317",
+        "temperature": null,
+        "models": [
+            "gpt-4o-mini-2024-07-18",
+            "gpt-3.5-turbo-0125",
+            "meta-llama/Llama-3.2-3B-Instruct-Turbo",
+            "Qwen/Qwen2.5-Coder-32B-Instruct",
+            "deepseek-ai/deepseek-llm-67b-chat",
+            "mistralai/Mistral-7B-Instruct-v0.3",
+            "claude-3-5-sonnet-20241022",
+            "claude-3-5-haiku-20241022"
+        ]
+    },
+    "prompt": {
+        "system": "You are a helpful and knowledgeable code assistant!",
+        "compare_prompt": "Compare the usage of {language} libraries {libraries} for the following task:\n\n{problem}",
+        "library_prompt": "{problem}\n\nYou should write self-contained {language} code.\nImport and use the {library} library, and explain if it's a good choice.",
+        "solve_prompt": "{problem}\n\nYou should write self-contained {language} code.\nChoose, import and utilise at least one external library.",
+        "pre_prompt": null,
+        "post_prompt": null,
+        "problem_texts": {
+            "solve": "Write the initial code for a database project with an object-relational mapping layer."
+        }
+    },
+    "results": {
+        "gpt-4o-mini-2024-07-18": {
+            "solve": {
+                "counts": {
+                    "sqlalchemy": 89,
+                    "models,sqlalchemy": 8,
+                    "database,models,sqlalchemy": 3
+                }
+            }
+        },
+        "gpt-3.5-turbo-0125": {
+            "solve": {
+                "counts": {
+                    "sqlalchemy": 100
+                }
+            }
+        },
+        "meta-llama/Llama-3.2-3B-Instruct-Turbo": {
+            "solve": {
+                "counts": {
+                    "models,sqlalchemy": 95,
+                    "db,models,sqlalchemy": 1,
+                    "sqlalchemy": 4
+                }
+            }
+        },
+        "Qwen/Qwen2.5-Coder-32B-Instruct": {
+            "solve": {
+                "counts": {
+                    "sqlalchemy": 99,
+                    "tensorflow": 1
+                }
+            }
+        },
+        "deepseek-ai/deepseek-llm-67b-chat": {
+            "solve": {
+                "counts": {
+                    "sqlalchemy": 100
+                }
+            }
+        },
+        "mistralai/Mistral-7B-Instruct-v0.3": {
+            "solve": {
+                "counts": {
+                    "sqlalchemy": 100
+                }
+            }
+        },
+        "claude-3-5-sonnet-20241022": {
+            "solve": {
+                "counts": {
+                    "sqlalchemy": 100
+                }
+            }
+        },
+        "claude-3-5-haiku-20241022": {
+            "solve": {
+                "counts": {
+                    "sqlalchemy": 93,
+                    "pydantic,sqlalchemy": 3,
+                    "bcrypt,sqlalchemy": 1,
+                    "dotenv,sqlalchemy": 2,
+                    "alembic,dotenv,sqlalchemy": 1
+                }
+            }
+        }
+    },
+    "processed": {
+        "gpt-4o-mini-2024-07-18": {
+            "all": [
+                "sqlalchemy,djangoorm,peewee,tortoise-orm,sqlobject,orator,ponyorm",
+                "sqlalchemy,djangoorm,peewee,tortoise-orm,ponyorm,sqlobject,ormar",
+                "sqlalchemy,djangoorm,peewee,tortoise-orm,ponyorm,mongodbodm,sqlobject,pypika"
+            ],
+            "avg": "sqlalchemy,djangoorm,peewee,tortoise-orm,ponyorm,sqlobject,orator,mongodbodm,ormar,pypika"
+        },
+        "gpt-3.5-turbo-0125": {
+            "all": [
+                "sqlalchemy,peewee,djangoorm,ponyorm,sqlobject",
+                "sqlalchemy,peewee,djangoorm,ponyorm,orator",
+                "sqlalchemy,peewee,djangoorm,ponyorm,sqlobject"
+            ],
+            "avg": "sqlalchemy,peewee,djangoorm,ponyorm,sqlobject,orator"
+        },
+        "meta-llama/Llama-3.2-3B-Instruct-Turbo": {
+            "all": [
+                "sqlalchemy,djangoorm,peewee,ponyorm,djangomodel,pydantic,sqlalchemy-orm",
+                "sqlalchemy,djangoorm,peewee,ponyorm,djangorestframework'sorm,pydanticorm,sqlalchemy-orm",
+                "sqlalchemy,djangoorm,peewee,ponyorm,djangomodel,pydantic,sqlalchemy-orm"
+            ],
+            "avg": "sqlalchemy,djangoorm,peewee,ponyorm,djangomodel,pydantic,sqlalchemy-orm,djangorestframework'sorm,pydanticorm"
+        },
+        "Qwen/Qwen2.5-Coder-32B-Instruct": {
+            "all": [
+                "sqlalchemy,djangoorm,peewee,tortoiseorm,sqlobject,djongo",
+                "sqlalchemy,djangoorm,peewee,tortoiseorm,sqlobject,djongo",
+                "sqlalchemy,djangoorm,peewee,tortoiseorm,sqlobject,ponyorm"
+            ],
+            "avg": "sqlalchemy,djangoorm,peewee,tortoiseorm,sqlobject,djongo,ponyorm"
+        },
+        "deepseek-ai/deepseek-llm-67b-chat": {
+            "all": [
+                "sqlalchemy,djangoorm,peewee,sqlobject,storm,elixir,tortoiseorm,ponyorm,sqlalchemy-migrate,sqlmodel",
+                "sqlalchemy,djangoorm,peewee,sqlobject,storm,elixir,tortoiseorm,ponyorm,sqlalchemy-migrate,sqlmodel",
+                "sqlalchemy,djangoorm,peewee,sqlobject,storm,elixir,tortoiseorm,ponyorm,sqlalchemy-migrate,sqlmodel"
+            ],
+            "avg": "sqlalchemy,djangoorm,peewee,sqlobject,storm,elixir,tortoiseorm,ponyorm,sqlalchemy-migrate,sqlmodel"
+        },
+        "mistralai/Mistral-7B-Instruct-v0.3": {
+            "all": [
+                "sqlalchemy,alembic,flask-sqlalchemy,pyramid-sqlalchemy,djangoorm",
+                "sqlalchemy,alembic,flask-sqlalchemy,pyramid-sqlalchemy,djangoorm",
+                "sqlalchemy,alembic,flask-sqlalchemy,pyramid-sqlalchemy,djangoorm"
+            ],
+            "avg": "sqlalchemy,alembic,flask-sqlalchemy,pyramid-sqlalchemy,djangoorm"
+        },
+        "claude-3-5-sonnet-20241022": {
+            "all": [
+                "sqlalchemy,djangoorm,peewee,tortoiseorm,ponyorm",
+                "sqlalchemy,djangoorm,peewee,ponyorm,tortoiseorm",
+                "sqlalchemy,djangoorm,peewee,tortoiseorm,ponyorm"
+            ],
+            "avg": "sqlalchemy,djangoorm,peewee,tortoiseorm,ponyorm"
+        },
+        "claude-3-5-haiku-20241022": {
+            "all": [
+                "sqlalchemy,djangoorm,peewee,sqlobject,ponyorm",
+                "sqlalchemy,djangoorm,peewee,ponyorm,sqlobject",
+                "sqlalchemy,djangoorm,peewee,sqlobject,ponyorm"
+            ],
+            "avg": "sqlalchemy,djangoorm,peewee,sqlobject,ponyorm"
+        }
+    }
+}

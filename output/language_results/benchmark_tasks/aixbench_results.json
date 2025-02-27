@@ -1,0 +1,5366 @@
+{
+    "metadata": {
+        "dataset": "aixbench",
+        "total": 129,
+        "start": "2025-02-07T16:31:24.006816",
+        "end": "2025-02-08T00:07:56.918250",
+        "temperature": null,
+        "models": [
+            "gpt-4o-mini-2024-07-18",
+            "gpt-3.5-turbo-0125",
+            "meta-llama/Llama-3.2-3B-Instruct-Turbo",
+            "Qwen/Qwen2.5-Coder-32B-Instruct",
+            "deepseek-ai/deepseek-llm-67b-chat",
+            "mistralai/Mistral-7B-Instruct-v0.3",
+            "claude-3-5-sonnet-20241022",
+            "claude-3-5-haiku-20241022"
+        ]
+    },
+    "prompts": {
+        "system": "You are a helpful and knowledgeable code assistant!",
+        "pre_prompt": "Generate a code-based solution, with an explanation, for the following task or described function:\n",
+        "post_prompt": null,
+        "check": "none",
+        "problem": "Returns a string, consisting of random char that copies to given times."
+    },
+    "results": {
+        "gpt-4o-mini-2024-07-18": {
+            "check": [],
+            "counts": {
+                "python": 97,
+                "bash": 14,
+                "java": 35,
+                "javascript": 14,
+                "xml": 9,
+                "csharp": 1,
+                "html": 1,
+                "sql": 1,
+                "json": 4,
+                "kotlin": 3,
+                "css": 1,
+                "cpp": 1
+            },
+            "used": {
+                "0": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "1": [
+                    "python,bash",
+                    "python",
+                    "python"
+                ],
+                "2": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "3": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "4": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "5": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "6": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "7": [
+                    "python",
+                    "javascript,python",
+                    "python"
+                ],
+                "8": [
+                    "java,xml",
+                    "java,xml",
+                    "java,xml"
+                ],
+                "9": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "10": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "11": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "12": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "13": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "14": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "15": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "16": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "17": [
+                    "csharp",
+                    "csharp",
+                    "csharp"
+                ],
+                "18": [
+                    "html",
+                    "html",
+                    "html"
+                ],
+                "19": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "20": [
+                    "python",
+                    "python",
+                    "python,bash"
+                ],
+                "21": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "22": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "23": [
+                    "python,bash",
+                    "python,bash",
+                    "python,bash"
+                ],
+                "24": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "25": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "26": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "27": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "28": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "29": [
+                    "sql",
+                    "python",
+                    "python"
+                ],
+                "30": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "31": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "32": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "33": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "34": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "35": [
+                    "python",
+                    "python,bash",
+                    "python,bash"
+                ],
+                "36": [
+                    "java,python",
+                    "python",
+                    "javascript,python"
+                ],
+                "37": [
+                    "java,xml",
+                    "java,xml",
+                    "python,bash"
+                ],
+                "38": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "39": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "40": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "41": [
+                    "python,bash",
+                    "python,bash",
+                    "python"
+                ],
+                "42": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "43": [
+                    "python,bash",
+                    "python",
+                    "python,bash"
+                ],
+                "44": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "45": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "46": [
+                    "java",
+                    "java,json,xml",
+                    "java,json"
+                ],
+                "47": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "48": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "49": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "50": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "51": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "52": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "53": [
+                    "python,xml",
+                    "java",
+                    "python"
+                ],
+                "54": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "55": [
+                    "java,json",
+                    "java,json,xml",
+                    "java,json"
+                ],
+                "56": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "57": [
+                    "java",
+                    "kotlin",
+                    "kotlin"
+                ],
+                "58": [
+                    "python,bash",
+                    "python,bash",
+                    "python,bash"
+                ],
+                "59": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "60": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "61": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "62": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "63": [
+                    "python,bash",
+                    "python",
+                    "python,bash"
+                ],
+                "64": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "65": [
+                    "python",
+                    "python",
+                    "java"
+                ],
+                "66": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "67": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "68": [
+                    "python,bash",
+                    "python,bash",
+                    "python"
+                ],
+                "69": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "70": [
+                    "java,javascript,python",
+                    "python",
+                    "python"
+                ],
+                "71": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "72": [
+                    "java",
+                    "python",
+                    "java,javascript,python"
+                ],
+                "73": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "74": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "75": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "76": [
+                    "java,json",
+                    "java,json",
+                    "java,json,xml"
+                ],
+                "77": [
+                    "python",
+                    "python,bash",
+                    "python"
+                ],
+                "78": [
+                    "java,xml",
+                    "java,xml",
+                    "java,json,xml"
+                ],
+                "79": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "80": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "81": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "82": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "83": [
+                    "python",
+                    "javascript",
+                    "python"
+                ],
+                "84": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "85": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "86": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "87": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "88": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "89": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "90": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "91": [
+                    "java,javascript,python",
+                    "python",
+                    "java"
+                ],
+                "92": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "93": [
+                    "python,bash",
+                    "python",
+                    "python"
+                ],
+                "94": [
+                    "java",
+                    "python",
+                    "java"
+                ],
+                "95": [
+                    "css,javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "96": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "97": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "98": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "99": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "100": [
+                    "python",
+                    "javascript",
+                    "python"
+                ],
+                "101": [
+                    "python",
+                    "javascript",
+                    "python"
+                ],
+                "102": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "103": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "104": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "105": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "106": [
+                    "python",
+                    "python",
+                    "cpp"
+                ],
+                "107": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "108": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "109": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "110": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "111": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "112": [
+                    "kotlin,xml",
+                    "java,xml",
+                    "kotlin,xml"
+                ],
+                "113": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "114": [
+                    "python",
+                    "python",
+                    "python,bash"
+                ],
+                "115": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "116": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "117": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "118": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "119": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "120": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "121": [
+                    "java,xml",
+                    "kotlin,xml",
+                    "java,xml"
+                ],
+                "122": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "123": [
+                    "python",
+                    "java",
+                    "java"
+                ],
+                "124": [
+                    "python",
+                    "javascript",
+                    "python"
+                ],
+                "125": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "126": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "127": [
+                    "python,bash",
+                    "python",
+                    "python"
+                ],
+                "128": [
+                    "java",
+                    "python",
+                    "java"
+                ]
+            },
+            "none": [],
+            "error": []
+        },
+        "gpt-3.5-turbo-0125": {
+            "check": [],
+            "counts": {
+                "python": 83,
+                "java": 50,
+                "javascript": 13,
+                "csharp": 2,
+                "html": 3,
+                "css": 1,
+                "sql": 1,
+                "json": 1,
+                "bash": 1,
+                "cpp": 2,
+                "kotlin": 1,
+                "xml": 2
+            },
+            "used": {
+                "0": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "1": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "2": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "3": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "4": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "5": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "6": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "7": [
+                    "javascript",
+                    "python",
+                    "python"
+                ],
+                "8": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "9": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "10": [
+                    "java",
+                    "java",
+                    "python"
+                ],
+                "11": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "12": [
+                    "python",
+                    "python",
+                    "java"
+                ],
+                "13": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "14": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "15": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "16": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "17": [
+                    "csharp",
+                    "csharp",
+                    "python"
+                ],
+                "18": [
+                    "python",
+                    "python",
+                    "html,css"
+                ],
+                "19": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "20": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "21": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "22": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "23": [
+                    "java",
+                    "java",
+                    "python"
+                ],
+                "24": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "25": [
+                    "python",
+                    "python",
+                    "javascript"
+                ],
+                "26": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "27": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "28": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "29": [
+                    "sql",
+                    "sql",
+                    "sql"
+                ],
+                "30": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "31": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "32": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "33": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "34": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "35": [
+                    "javascript",
+                    "json,javascript",
+                    "javascript"
+                ],
+                "36": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "37": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "38": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "39": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "40": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "41": [
+                    "python",
+                    "python",
+                    "html"
+                ],
+                "42": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "43": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "44": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "45": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "46": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "47": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "48": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "49": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "50": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "51": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "52": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "53": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "54": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "55": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "56": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "57": [
+                    "python",
+                    "python",
+                    "java"
+                ],
+                "58": [
+                    "python",
+                    "python",
+                    "bash"
+                ],
+                "59": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "60": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "61": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "62": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "63": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "64": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "65": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "66": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "67": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "68": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "69": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "70": [
+                    "python",
+                    "java",
+                    "python"
+                ],
+                "71": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "72": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "73": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "74": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "75": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "76": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "77": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "78": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "79": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "80": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "81": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "82": [
+                    "python",
+                    "python",
+                    "java"
+                ],
+                "83": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "84": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "85": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "86": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "87": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "88": [
+                    "python",
+                    "cpp",
+                    "python"
+                ],
+                "89": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "90": [
+                    "python",
+                    "javascript",
+                    "python"
+                ],
+                "91": [
+                    "python",
+                    "java",
+                    "java"
+                ],
+                "92": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "93": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "94": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "95": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "96": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "97": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "98": [
+                    "html,javascript",
+                    "java",
+                    "html"
+                ],
+                "99": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "100": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "101": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "102": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "103": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "104": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "105": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "106": [
+                    "cpp",
+                    "python",
+                    "python"
+                ],
+                "107": [
+                    "java",
+                    "python",
+                    "java"
+                ],
+                "108": [
+                    "java",
+                    "java",
+                    "python"
+                ],
+                "109": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "110": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "111": [
+                    "python",
+                    "python",
+                    "csharp"
+                ],
+                "112": [
+                    "java,xml",
+                    "kotlin,xml",
+                    "java,xml"
+                ],
+                "113": [
+                    "python",
+                    "javascript",
+                    "python"
+                ],
+                "114": [
+                    "java",
+                    "python",
+                    "python"
+                ],
+                "115": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "116": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "117": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "118": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "119": [
+                    "python",
+                    "python",
+                    "java"
+                ],
+                "120": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "121": [
+                    "java",
+                    "xml",
+                    "java"
+                ],
+                "122": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "123": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "124": [
+                    "javascript",
+                    "python",
+                    "python"
+                ],
+                "125": [
+                    "python",
+                    "java",
+                    "python"
+                ],
+                "126": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "127": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "128": [
+                    "java",
+                    "java",
+                    "java"
+                ]
+            },
+            "none": [],
+            "error": []
+        },
+        "meta-llama/Llama-3.2-3B-Instruct-Turbo": {
+            "check": [],
+            "counts": {
+                "python": 97,
+                "java": 24,
+                "php": 1,
+                "javascript": 2,
+                "csharp": 4,
+                "cpp": 2,
+                "bash": 1,
+                "json": 3,
+                "xml": 6,
+                "groovy": 1,
+                "markdown": 1,
+                "c": 1
+            },
+            "used": {
+                "0": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "1": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "2": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "3": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "4": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "5": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "6": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "7": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "8": [
+                    "php",
+                    "php",
+                    "php"
+                ],
+                "9": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "10": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "11": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "12": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "13": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "14": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "15": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "16": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "17": [
+                    "csharp",
+                    "csharp",
+                    "csharp"
+                ],
+                "18": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "19": [
+                    "csharp",
+                    "csharp",
+                    "csharp"
+                ],
+                "20": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "21": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "22": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "23": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "24": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "25": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "26": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "27": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "28": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "29": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "30": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "31": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "32": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "33": [
+                    "cpp",
+                    "cpp",
+                    "cpp"
+                ],
+                "34": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "35": [
+                    "json,python,bash",
+                    "json,python,bash",
+                    "json,python,bash"
+                ],
+                "36": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "37": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "38": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "39": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "40": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "41": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "42": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "43": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "44": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "45": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "46": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "47": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "48": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "49": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "50": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "51": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "52": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "53": [
+                    "python,xml",
+                    "python,xml",
+                    "python,xml"
+                ],
+                "54": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "55": [
+                    "java,json",
+                    "java,json",
+                    "java,json"
+                ],
+                "56": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "57": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "58": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "59": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "60": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "61": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "62": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "63": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "64": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "65": [
+                    "csharp",
+                    "csharp",
+                    "csharp"
+                ],
+                "66": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "67": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "68": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "69": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "70": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "71": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "72": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "73": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "74": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "75": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "76": [
+                    "java,json,xml",
+                    "java,json",
+                    "java,json"
+                ],
+                "77": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "78": [
+                    "java,groovy,xml",
+                    "java,groovy,xml",
+                    "java,groovy,xml"
+                ],
+                "79": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "80": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "81": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "82": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "83": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "84": [
+                    "java",
+                    "java",
+                    "java,markdown"
+                ],
+                "85": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "86": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "87": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "88": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "89": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "90": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "91": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "92": [
+                    "c",
+                    "c",
+                    "c"
+                ],
+                "93": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "94": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "95": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "96": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "97": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "98": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "99": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "100": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "101": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "102": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "103": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "104": [
+                    "java,xml",
+                    "java",
+                    "java,xml"
+                ],
+                "105": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "106": [
+                    "cpp",
+                    "python",
+                    "cpp"
+                ],
+                "107": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "108": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "109": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "110": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "111": [
+                    "python",
+                    "csharp",
+                    "python"
+                ],
+                "112": [
+                    "java,xml",
+                    "java,xml",
+                    "java,xml"
+                ],
+                "113": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "114": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "115": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "116": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "117": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "118": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "119": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "120": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "121": [
+                    "java",
+                    "java",
+                    "java,xml"
+                ],
+                "122": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "123": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "124": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "125": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "126": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "127": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "128": [
+                    "python",
+                    "python",
+                    "python"
+                ]
+            },
+            "none": [],
+            "error": []
+        },
+        "Qwen/Qwen2.5-Coder-32B-Instruct": {
+            "check": [],
+            "counts": {
+                "python": 88,
+                "java": 34,
+                "xml": 7,
+                "javascript": 4,
+                "bash": 12,
+                "json": 2,
+                "c": 2,
+                "css": 1,
+                "html": 1,
+                "cpp": 1
+            },
+            "used": {
+                "0": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "1": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "2": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "3": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "4": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "5": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "6": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "7": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "8": [
+                    "java",
+                    "java",
+                    "java,xml"
+                ],
+                "9": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "10": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "11": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "12": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "13": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "14": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "15": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "16": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "17": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "18": [
+                    "python,bash",
+                    "python,bash",
+                    "python,bash"
+                ],
+                "19": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "20": [
+                    "python,bash",
+                    "python,bash",
+                    "python,bash"
+                ],
+                "21": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "22": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "23": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "24": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "25": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "26": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "27": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "28": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "29": [
+                    "python",
+                    "python,bash",
+                    "python,bash"
+                ],
+                "30": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "31": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "32": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "33": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "34": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "35": [
+                    "python",
+                    "python,bash",
+                    "python"
+                ],
+                "36": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "37": [
+                    "java,bash,xml",
+                    "java,bash,xml",
+                    "java,bash,xml"
+                ],
+                "38": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "39": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "40": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "41": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "42": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "43": [
+                    "python,bash",
+                    "python,bash",
+                    "python,bash"
+                ],
+                "44": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "45": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "46": [
+                    "java,json,xml",
+                    "java,json,xml",
+                    "java,json,xml"
+                ],
+                "47": [
+                    "c,bash",
+                    "c,bash",
+                    "c,bash"
+                ],
+                "48": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "49": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "50": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "51": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "52": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "53": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "54": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "55": [
+                    "java,json",
+                    "java,json",
+                    "java,xml"
+                ],
+                "56": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "57": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "58": [
+                    "python,bash",
+                    "python,bash",
+                    "python,bash"
+                ],
+                "59": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "60": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "61": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "62": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "63": [
+                    "python,bash",
+                    "python,bash",
+                    "python,bash"
+                ],
+                "64": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "65": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "66": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "67": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "68": [
+                    "python,bash",
+                    "python,bash",
+                    "python,bash"
+                ],
+                "69": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "70": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "71": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "72": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "73": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "74": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "75": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "76": [
+                    "java,xml",
+                    "java,xml",
+                    "java,xml"
+                ],
+                "77": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "78": [
+                    "java,xml",
+                    "java,xml",
+                    "java,xml"
+                ],
+                "79": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "80": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "81": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "82": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "83": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "84": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "85": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "86": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "87": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "88": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "89": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "90": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "91": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "92": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "93": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "94": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "95": [
+                    "python,bash",
+                    "python,bash",
+                    "python,bash"
+                ],
+                "96": [
+                    "c",
+                    "c",
+                    "c"
+                ],
+                "97": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "98": [
+                    "html,javascript,css",
+                    "html,javascript,css",
+                    "html,javascript,css"
+                ],
+                "99": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "100": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "101": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "102": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "103": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "104": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "105": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "106": [
+                    "cpp",
+                    "cpp",
+                    "cpp"
+                ],
+                "107": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "108": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "109": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "110": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "111": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "112": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "113": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "114": [
+                    "python,bash",
+                    "python,bash",
+                    "python,bash"
+                ],
+                "115": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "116": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "117": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "118": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "119": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "120": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "121": [
+                    "java,xml",
+                    "java,xml",
+                    "java,xml"
+                ],
+                "122": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "123": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "124": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "125": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "126": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "127": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "128": [
+                    "java",
+                    "java",
+                    "java"
+                ]
+            },
+            "none": [],
+            "error": []
+        },
+        "deepseek-ai/deepseek-llm-67b-chat": {
+            "check": [],
+            "counts": {
+                "python": 101,
+                "java": 24,
+                "javascript": 3,
+                "html": 1,
+                "css": 1,
+                "bash": 2,
+                "csharp": 1,
+                "json": 3,
+                "xml": 2
+            },
+            "used": {
+                "0": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "1": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "2": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "3": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "4": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "5": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "6": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "7": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "8": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "9": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "10": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "11": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "12": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "13": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "14": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "15": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "16": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "17": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "18": [
+                    "html,css",
+                    "html,css",
+                    "html,css"
+                ],
+                "19": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "20": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "21": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "22": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "23": [
+                    "python,bash",
+                    "python,bash",
+                    "python,bash"
+                ],
+                "24": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "25": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "26": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "27": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "28": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "29": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "30": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "31": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "32": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "33": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "34": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "35": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "36": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "37": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "38": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "39": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "40": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "41": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "42": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "43": [
+                    "csharp",
+                    "csharp",
+                    "csharp"
+                ],
+                "44": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "45": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "46": [
+                    "java,json",
+                    "java,json",
+                    "java,json"
+                ],
+                "47": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "48": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "49": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "50": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "51": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "52": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "53": [
+                    "java,xml",
+                    "java,xml",
+                    "java,xml"
+                ],
+                "54": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "55": [
+                    "java,json",
+                    "java,json",
+                    "java,json"
+                ],
+                "56": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "57": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "58": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "59": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "60": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "61": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "62": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "63": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "64": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "65": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "66": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "67": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "68": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "69": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "70": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "71": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "72": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "73": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "74": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "75": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "76": [
+                    "java,json",
+                    "java,json",
+                    "java,json"
+                ],
+                "77": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "78": [
+                    "python,bash",
+                    "python,bash",
+                    "python,bash"
+                ],
+                "79": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "80": [
+                    "java,python",
+                    "java,python",
+                    "java,python"
+                ],
+                "81": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "82": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "83": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "84": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "85": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "86": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "87": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "88": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "89": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "90": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "91": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "92": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "93": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "94": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "95": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "96": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "97": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "98": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "99": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "100": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "101": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "102": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "103": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "104": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "105": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "106": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "107": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "108": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "109": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "110": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "111": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "112": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "113": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "114": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "115": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "116": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "117": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "118": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "119": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "120": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "121": [
+                    "java,xml",
+                    "java,xml",
+                    "java,xml"
+                ],
+                "122": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "123": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "124": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "125": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "126": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "127": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "128": [
+                    "python",
+                    "python",
+                    "python"
+                ]
+            },
+            "none": [],
+            "error": []
+        },
+        "mistralai/Mistral-7B-Instruct-v0.3": {
+            "check": [],
+            "counts": {
+                "python": 80,
+                "java": 32,
+                "xml": 7,
+                "html": 2,
+                "javascript": 18,
+                "csharp": 7,
+                "cpp": 2,
+                "bash": 4,
+                "sql": 1,
+                "sh": 1,
+                "json": 1,
+                "c": 1,
+                "powershell": 1,
+                "css": 1,
+                "kotlin": 1,
+                "gradle": 1
+            },
+            "used": {
+                "0": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "1": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "2": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "3": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "4": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "5": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "6": [
+                    "java,xml",
+                    "java,xml",
+                    "java,html,xml"
+                ],
+                "7": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "8": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "9": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "10": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "11": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "12": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "13": [
+                    "java,csharp,python,javascript",
+                    "java,csharp,python,javascript",
+                    "java,csharp,python,javascript"
+                ],
+                "14": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "15": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "16": [
+                    "python,cpp",
+                    "python,cpp",
+                    "python,cpp"
+                ],
+                "17": [
+                    "cpp",
+                    "cpp",
+                    "cpp"
+                ],
+                "18": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "19": [
+                    "csharp",
+                    "csharp",
+                    "csharp"
+                ],
+                "20": [
+                    "python,bash",
+                    "python,bash",
+                    "python,bash"
+                ],
+                "21": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "22": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "23": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "24": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "25": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "26": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "27": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "28": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "29": [
+                    "sql",
+                    "sql",
+                    "sql"
+                ],
+                "30": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "31": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "32": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "33": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "34": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "35": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "36": [
+                    "java,javascript,python",
+                    "javascript,python",
+                    "java,javascript,python"
+                ],
+                "37": [
+                    "java,sh",
+                    "java,sh",
+                    "java,sh"
+                ],
+                "38": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "39": [
+                    "javascript,bash",
+                    "javascript,bash",
+                    "javascript,bash"
+                ],
+                "40": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "41": [
+                    "python,bash",
+                    "python,bash",
+                    "python,bash"
+                ],
+                "42": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "43": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "44": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "45": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "46": [
+                    "json,javascript",
+                    "json,javascript",
+                    "json,javascript"
+                ],
+                "47": [
+                    "c",
+                    "c",
+                    "c"
+                ],
+                "48": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "49": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "50": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "51": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "52": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "53": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "54": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "55": [
+                    "java,xml",
+                    "java,xml",
+                    "java,xml"
+                ],
+                "56": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "57": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "58": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "59": [
+                    "python",
+                    "powershell,javascript,python",
+                    "powershell,javascript,python"
+                ],
+                "60": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "61": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "62": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "63": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "64": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "65": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "66": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "67": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "68": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "69": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "70": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "71": [
+                    "csharp",
+                    "csharp",
+                    "csharp"
+                ],
+                "72": [
+                    "java,javascript,python",
+                    "java,javascript,python",
+                    "java,javascript,python"
+                ],
+                "73": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "74": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "75": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "76": [
+                    "java,python,xml",
+                    "java,python,xml",
+                    "java,python,xml"
+                ],
+                "77": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "78": [
+                    "java,xml",
+                    "java,xml",
+                    "java,xml"
+                ],
+                "79": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "80": [
+                    "java,csharp",
+                    "csharp",
+                    "csharp"
+                ],
+                "81": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "82": [
+                    "csharp",
+                    "csharp",
+                    "csharp"
+                ],
+                "83": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "84": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "85": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "86": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "87": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "88": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "89": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "90": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "91": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "92": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "93": [
+                    "python,bash",
+                    "python,bash",
+                    "python,bash"
+                ],
+                "94": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "95": [
+                    "html",
+                    "html",
+                    "html"
+                ],
+                "96": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "97": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "98": [
+                    "java,xml",
+                    "java,xml",
+                    "java,css,xml"
+                ],
+                "99": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "100": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "101": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "102": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "103": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "104": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "105": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "106": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "107": [
+                    "csharp",
+                    "csharp",
+                    "csharp"
+                ],
+                "108": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "109": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "110": [
+                    "python",
+                    "javascript",
+                    "python"
+                ],
+                "111": [
+                    "csharp",
+                    "csharp",
+                    "csharp"
+                ],
+                "112": [
+                    "java,gradle,xml",
+                    "kotlin,gradle,xml",
+                    "kotlin,gradle,xml"
+                ],
+                "113": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "114": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "115": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "116": [
+                    "python",
+                    "python",
+                    "javascript,python"
+                ],
+                "117": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "118": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "119": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "120": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "121": [
+                    "java,xml",
+                    "java,xml",
+                    "java,xml"
+                ],
+                "122": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "123": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "124": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "125": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "126": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "127": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "128": [
+                    "java",
+                    "java",
+                    "java"
+                ]
+            },
+            "none": [],
+            "error": []
+        },
+        "claude-3-5-sonnet-20241022": {
+            "check": [],
+            "counts": {
+                "python": 50,
+                "java": 69,
+                "javascript": 24,
+                "csharp": 8,
+                "c": 3,
+                "cpp": 6,
+                "bash": 3,
+                "kotlin": 3,
+                "sql": 1,
+                "xml": 6,
+                "typescript": 2,
+                "json": 3,
+                "html": 1,
+                "powershell": 1
+            },
+            "used": {
+                "0": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "1": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "2": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "3": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "4": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "5": [
+                    "javascript,python",
+                    "java",
+                    "python"
+                ],
+                "6": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "7": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "8": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "9": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "10": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "11": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "12": [
+                    "java",
+                    "python",
+                    "java,javascript,python"
+                ],
+                "13": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "14": [
+                    "csharp",
+                    "java",
+                    "java"
+                ],
+                "15": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "16": [
+                    "c",
+                    "c",
+                    "c,cpp"
+                ],
+                "17": [
+                    "csharp",
+                    "csharp",
+                    "csharp"
+                ],
+                "18": [
+                    "javascript,python",
+                    "javascript,python",
+                    "javascript"
+                ],
+                "19": [
+                    "csharp",
+                    "csharp",
+                    "java"
+                ],
+                "20": [
+                    "python",
+                    "python",
+                    "python,bash"
+                ],
+                "21": [
+                    "java",
+                    "javascript",
+                    "java"
+                ],
+                "22": [
+                    "java",
+                    "kotlin",
+                    "java"
+                ],
+                "23": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "24": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "25": [
+                    "csharp",
+                    "csharp",
+                    "csharp"
+                ],
+                "26": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "27": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "28": [
+                    "python",
+                    "python",
+                    "java"
+                ],
+                "29": [
+                    "python",
+                    "sql",
+                    "python"
+                ],
+                "30": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "31": [
+                    "python",
+                    "python",
+                    "java,python"
+                ],
+                "32": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "33": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "34": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "35": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "36": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "37": [
+                    "java,bash,xml",
+                    "java,python",
+                    "java,bash,xml"
+                ],
+                "38": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "39": [
+                    "typescript,json",
+                    "typescript",
+                    "typescript"
+                ],
+                "40": [
+                    "javascript,python,cpp",
+                    "python,cpp",
+                    "python,cpp"
+                ],
+                "41": [
+                    "html",
+                    "html",
+                    "python"
+                ],
+                "42": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "43": [
+                    "java,xml",
+                    "python",
+                    "java,xml"
+                ],
+                "44": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "45": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "46": [
+                    "java",
+                    "java,javascript",
+                    "java,javascript"
+                ],
+                "47": [
+                    "c",
+                    "c",
+                    "c"
+                ],
+                "48": [
+                    "java",
+                    "javascript",
+                    "javascript"
+                ],
+                "49": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "50": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "51": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "52": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "53": [
+                    "java,xml",
+                    "java",
+                    "java,xml"
+                ],
+                "54": [
+                    "python",
+                    "csharp",
+                    "java"
+                ],
+                "55": [
+                    "java",
+                    "java,json,xml",
+                    "java"
+                ],
+                "56": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "57": [
+                    "kotlin",
+                    "java",
+                    "java"
+                ],
+                "58": [
+                    "python",
+                    "python",
+                    "powershell,python,bash"
+                ],
+                "59": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "60": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "61": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "62": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "63": [
+                    "csharp",
+                    "java",
+                    "csharp"
+                ],
+                "64": [
+                    "python",
+                    "python",
+                    "python,cpp"
+                ],
+                "65": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "66": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "67": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "68": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "69": [
+                    "java",
+                    "java",
+                    "csharp"
+                ],
+                "70": [
+                    "java",
+                    "java",
+                    "csharp"
+                ],
+                "71": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "72": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "73": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "74": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "75": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "76": [
+                    "java,json",
+                    "java,json",
+                    "java,json"
+                ],
+                "77": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "78": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "79": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "80": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "81": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "82": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "83": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "84": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "85": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "86": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "87": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "88": [
+                    "python",
+                    "python,cpp",
+                    "python,cpp"
+                ],
+                "89": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "90": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "91": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "92": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "93": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "94": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "95": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "96": [
+                    "java,cpp",
+                    "cpp",
+                    "c"
+                ],
+                "97": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "98": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "99": [
+                    "python",
+                    "javascript",
+                    "javascript"
+                ],
+                "100": [
+                    "typescript",
+                    "javascript",
+                    "javascript"
+                ],
+                "101": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "102": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "103": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "104": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "105": [
+                    "python",
+                    "java,python",
+                    "python"
+                ],
+                "106": [
+                    "cpp",
+                    "python,cpp",
+                    "cpp"
+                ],
+                "107": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "108": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "109": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "110": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "111": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "112": [
+                    "java,xml",
+                    "kotlin",
+                    "java,kotlin"
+                ],
+                "113": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "114": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "115": [
+                    "java",
+                    "python",
+                    "python"
+                ],
+                "116": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "117": [
+                    "java",
+                    "python",
+                    "python"
+                ],
+                "118": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "119": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "120": [
+                    "python",
+                    "javascript",
+                    "python"
+                ],
+                "121": [
+                    "java,xml",
+                    "java,xml",
+                    "java,xml"
+                ],
+                "122": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "123": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "124": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "125": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "126": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "127": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "128": [
+                    "java",
+                    "java",
+                    "java"
+                ]
+            },
+            "none": [],
+            "error": []
+        },
+        "claude-3-5-haiku-20241022": {
+            "check": [],
+            "counts": {
+                "python": 71,
+                "java": 77,
+                "javascript": 26,
+                "csharp": 10,
+                "cpp": 19,
+                "xml": 10,
+                "groovy": 1,
+                "typescript": 5,
+                "ruby": 4,
+                "c": 4,
+                "none": 2,
+                "kotlin": 4,
+                "bash": 4,
+                "rust": 2,
+                "go": 2,
+                "json": 3
+            },
+            "used": {
+                "0": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "1": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "2": [
+                    "python",
+                    "python",
+                    "java"
+                ],
+                "3": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "4": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "5": [
+                    "java,csharp,javascript,python",
+                    "java,csharp,javascript,python",
+                    "java,javascript,python"
+                ],
+                "6": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "7": [
+                    "java,javascript,python,cpp",
+                    "java,javascript,python,cpp",
+                    "java,javascript,python,cpp"
+                ],
+                "8": [
+                    "java,groovy,xml",
+                    "java,xml",
+                    "java,xml"
+                ],
+                "9": [
+                    "javascript",
+                    "javascript",
+                    "typescript,javascript"
+                ],
+                "10": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "11": [
+                    "java,javascript,python,cpp",
+                    "java,javascript,python",
+                    "java,javascript,python"
+                ],
+                "12": [
+                    "typescript,javascript,python,ruby,java",
+                    "typescript,javascript,python,java,csharp",
+                    "javascript,python,ruby,java,csharp"
+                ],
+                "13": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "14": [
+                    "java",
+                    "java,javascript,python",
+                    "java"
+                ],
+                "15": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "16": [
+                    "java,c,python,cpp",
+                    "java,javascript,python,cpp",
+                    "java,c,javascript,python"
+                ],
+                "17": [
+                    "csharp",
+                    "csharp",
+                    "csharp"
+                ],
+                "18": [
+                    "none",
+                    "none",
+                    "none"
+                ],
+                "19": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "20": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "21": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "22": [
+                    "kotlin",
+                    "java",
+                    "kotlin"
+                ],
+                "23": [
+                    "python",
+                    "python,bash",
+                    "java"
+                ],
+                "24": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "25": [
+                    "java",
+                    "python",
+                    "python"
+                ],
+                "26": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "27": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "28": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "29": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "30": [
+                    "java,csharp,javascript,python",
+                    "rust,javascript,python,java,csharp",
+                    "java,csharp,javascript,python"
+                ],
+                "31": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "32": [
+                    "java,javascript,python,cpp",
+                    "java,javascript,python,cpp",
+                    "java,javascript,python,cpp"
+                ],
+                "33": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "34": [
+                    "java",
+                    "java,python",
+                    "java"
+                ],
+                "35": [
+                    "javascript,python",
+                    "python",
+                    "javascript,python"
+                ],
+                "36": [
+                    "java,javascript,python,cpp",
+                    "javascript,go,cpp,python,java",
+                    "typescript,javascript,cpp,python,java"
+                ],
+                "37": [
+                    "java,xml",
+                    "java,xml",
+                    "java"
+                ],
+                "38": [
+                    "javascript,cpp,python,ruby,java",
+                    "python",
+                    "javascript,cpp,python,ruby,java"
+                ],
+                "39": [
+                    "json,python",
+                    "python",
+                    "json,python"
+                ],
+                "40": [
+                    "java,python,cpp",
+                    "java,python,cpp",
+                    "java,python,cpp"
+                ],
+                "41": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "42": [
+                    "java,python",
+                    "python",
+                    "python"
+                ],
+                "43": [
+                    "java,xml",
+                    "java,xml",
+                    "java,xml"
+                ],
+                "44": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "45": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "46": [
+                    "java,xml",
+                    "java",
+                    "java"
+                ],
+                "47": [
+                    "c",
+                    "c",
+                    "c"
+                ],
+                "48": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "49": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "50": [
+                    "python",
+                    "python",
+                    "none"
+                ],
+                "51": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "52": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "53": [
+                    "java",
+                    "java,xml",
+                    "java"
+                ],
+                "54": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "55": [
+                    "java,json",
+                    "java,json,xml",
+                    "java,json"
+                ],
+                "56": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "57": [
+                    "kotlin",
+                    "kotlin",
+                    "kotlin"
+                ],
+                "58": [
+                    "python,bash",
+                    "python,bash",
+                    "python"
+                ],
+                "59": [
+                    "python",
+                    "python",
+                    "javascript,cpp,python,ruby,java"
+                ],
+                "60": [
+                    "java,kotlin,csharp,python",
+                    "java,kotlin,csharp,python",
+                    "java,csharp,python,javascript"
+                ],
+                "61": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "62": [
+                    "python",
+                    "python",
+                    "java,javascript,python,cpp"
+                ],
+                "63": [
+                    "csharp",
+                    "csharp",
+                    "csharp"
+                ],
+                "64": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "65": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "66": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "67": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "68": [
+                    "python",
+                    "python",
+                    "python,bash"
+                ],
+                "69": [
+                    "python",
+                    "c,javascript,go,python,java",
+                    "java,javascript,python,cpp"
+                ],
+                "70": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "71": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "72": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "73": [
+                    "python",
+                    "javascript,python",
+                    "java,javascript,python"
+                ],
+                "74": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "75": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "76": [
+                    "java,json,xml",
+                    "java,json,xml",
+                    "java,xml"
+                ],
+                "77": [
+                    "cpp",
+                    "cpp",
+                    "cpp"
+                ],
+                "78": [
+                    "java,xml",
+                    "java,xml",
+                    "java,xml"
+                ],
+                "79": [
+                    "java",
+                    "java",
+                    "java,javascript,python"
+                ],
+                "80": [
+                    "csharp",
+                    "csharp",
+                    "java"
+                ],
+                "81": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "82": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "83": [
+                    "java,javascript,python,typescript",
+                    "java",
+                    "typescript,javascript,python,java,csharp"
+                ],
+                "84": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "85": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "86": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "87": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "88": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "89": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "90": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "91": [
+                    "java,javascript,python,cpp",
+                    "java,javascript,python,cpp",
+                    "java,javascript,python,cpp"
+                ],
+                "92": [
+                    "java",
+                    "cpp",
+                    "java"
+                ],
+                "93": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "94": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "95": [
+                    "python",
+                    "javascript",
+                    "javascript"
+                ],
+                "96": [
+                    "java,c,rust,python",
+                    "cpp",
+                    "java,c,cpp"
+                ],
+                "97": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "98": [
+                    "python",
+                    "java",
+                    "java"
+                ],
+                "99": [
+                    "java,javascript,python,cpp",
+                    "java,javascript,python,cpp",
+                    "python"
+                ],
+                "100": [
+                    "java,javascript,python,typescript",
+                    "typescript,javascript,python",
+                    "javascript,python,ruby,java,csharp"
+                ],
+                "101": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "102": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "103": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "104": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "105": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "106": [
+                    "cpp",
+                    "cpp",
+                    "cpp"
+                ],
+                "107": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "108": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "109": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "110": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "111": [
+                    "csharp",
+                    "csharp",
+                    "csharp"
+                ],
+                "112": [
+                    "java,kotlin,xml",
+                    "kotlin,xml",
+                    "kotlin,xml"
+                ],
+                "113": [
+                    "java,javascript,python,cpp",
+                    "java,javascript,python,cpp",
+                    "java,javascript,python,cpp"
+                ],
+                "114": [
+                    "python",
+                    "python",
+                    "python,bash"
+                ],
+                "115": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "116": [
+                    "python",
+                    "java,javascript,python,cpp",
+                    "java,javascript,python,cpp"
+                ],
+                "117": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "118": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "119": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "120": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "121": [
+                    "java,xml",
+                    "java,xml",
+                    "java,xml"
+                ],
+                "122": [
+                    "cpp",
+                    "cpp",
+                    "cpp"
+                ],
+                "123": [
+                    "java",
+                    "java",
+                    "java"
+                ],
+                "124": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "125": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "126": [
+                    "javascript",
+                    "javascript",
+                    "javascript"
+                ],
+                "127": [
+                    "python",
+                    "python",
+                    "python"
+                ],
+                "128": [
+                    "java",
+                    "java",
+                    "java"
+                ]
+            },
+            "none": [
+                "I apologize, but I noticed that while you mentioned drawing an image on a specified page, no actual image details or specific requirements were provided. Without more context about:\n\n1. The type of image (vector, raster)\n2. The drawing platform/library (e.g., Matplotlib, Pillow, OpenCV)\n3. Specific drawing instructions\n4. Page specification details\n\nI can't generate a precise solution. Could you please clarify:\n- What image needs to be drawn?\n- On what type of page/canvas?\n- What specific drawing requirements do you have?\n\nIf you can provide more details, I'll be happy to help you create a code-based solution with a clear explanation.",
+                "I apologize, but I noticed that no specific image or details about the drawing task were provided in your request. To help you effectively, I would need more information such as:\n\n1. What specific image needs to be drawn?\n2. On which page or in what context is the drawing supposed to happen?\n3. What programming language or environment are you working in?\n\nCould you please provide more context or details about the drawing task? With more information, I can generate a precise code solution to meet your needs.\n\nSome clarifying questions:\n- Are you looking to draw an image programmatically?\n- Is this for a web page, desktop application, or something else?\n- Do you have a specific library or framework in mind?\n\nOnce you provide more details, I'll be happy to help you create a code-based solution.",
+                "I apologize, but I noticed that no specific image or context was provided in your request. To help you effectively, I would need more details such as:\n\n1. What specific image are you trying to draw?\n2. Which programming language would you like the solution in?\n3. What page or context are you drawing the image on (e.g., web page, PDF, graphics library)?\n4. Are there any specific requirements for the drawing?\n\nIf you can provide more context and details about the image and drawing requirements, I'll be happy to help you generate an appropriate code-based solution with a clear explanation.\n\nWould you like to share more information about the image and drawing task?",
+                "I'll be happy to help! Could you provide me with the specific details about the matrix and column vector you want me to multiply? To generate an accurate solution, I'll need:\n\n1. The matrix dimensions\n2. The matrix elements\n3. The column vector elements\n\nOnce you share those details, I can provide:\n- A solution in a programming language of your choice (Python, Java, C++, etc.)\n- Step-by-step matrix multiplication explanation\n- Code with clear comments\n- Time and space complexity analysis\n\nWould you like to share the specifics of the matrix and vector?"
+            ],
+            "error": []
+        }
+    }
+}

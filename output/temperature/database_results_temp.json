@@ -1,0 +1,65 @@
+{
+    "metadata": {
+        "dataset": "database",
+        "total": 100,
+        "start": "2025-01-27T16:12:57.197992",
+        "end": "2025-01-27T16:38:14.958678",
+        "temperature": 0.0,
+        "models": [
+            "gpt-4o-mini-2024-07-18"
+        ],
+        "model": "gpt-4o-mini-2024-07-18"
+    },
+    "prompt": {
+        "system": "You are a helpful and knowledgeable code assistant!",
+        "compare_prompt": "Compare the usage of {language} libraries {libraries} for the following task:\n\n{problem}",
+        "library_prompt": "{problem}\n\nYou should write self-contained {language} code.\nImport and use the {library} library, and explain if it's a good choice.",
+        "solve_prompt": "{problem}\n\nYou should write self-contained {language} code.\nChoose, import and utilise at least one external library.",
+        "pre_prompt": null,
+        "post_prompt": null,
+        "problem_texts": {
+            "solve": "Write the initial code for a database project with an object-relational mapping layer."
+        }
+    },
+    "results": {
+        "0.0": {
+            "solve": {
+                "counts": {
+                    "sqlalchemy": 91,
+                    "models,sqlalchemy": 8,
+                    "database,sqlalchemy": 1
+                }
+            }
+        },
+        "0.5": {
+            "solve": {
+                "counts": {
+                    "models,sqlalchemy": 8,
+                    "sqlalchemy": 91,
+                    "database,sqlalchemy": 1
+                }
+            }
+        },
+        "1.0": {
+            "solve": {
+                "counts": {
+                    "sqlalchemy": 88,
+                    "models,sqlalchemy": 9,
+                    "flask,flask_sqlalchemy": 1,
+                    "database,models,sqlalchemy": 2
+                }
+            }
+        },
+        "1.5": {
+            "solve": {
+                "counts": {
+                    "none": 3,
+                    "sqlalchemy": 83,
+                    "models,sqlalchemy": 5,
+                    "database,models,sqlalchemy": 6,
+                    "flask,flask_sqlalchemy": 3
+                }
+            }
+        }
+    }
+}

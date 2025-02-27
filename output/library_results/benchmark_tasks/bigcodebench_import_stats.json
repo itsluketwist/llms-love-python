@@ -1,0 +1,562 @@
+{
+    "all": {
+        "stats": {
+            "expected_libraries": 35,
+            "problems": 526
+        },
+        "gpt-4o-mini-2024-07-18": {
+            "total_libraries_used": 37,
+            "expected_libraries_used": 26,
+            "extra_libraries_used": 11,
+            "tasks_using_expected": 359,
+            "tasks_using_extra": 243,
+            "tasks_using_exactly_expected": 200
+        },
+        "gpt-3.5-turbo-0125": {
+            "total_libraries_used": 36,
+            "expected_libraries_used": 27,
+            "extra_libraries_used": 9,
+            "tasks_using_expected": 358,
+            "tasks_using_extra": 227,
+            "tasks_using_exactly_expected": 208
+        },
+        "meta-llama/Llama-3.2-3B-Instruct-Turbo": {
+            "total_libraries_used": 32,
+            "expected_libraries_used": 25,
+            "extra_libraries_used": 7,
+            "tasks_using_expected": 332,
+            "tasks_using_extra": 255,
+            "tasks_using_exactly_expected": 186
+        },
+        "Qwen/Qwen2.5-Coder-32B-Instruct": {
+            "total_libraries_used": 35,
+            "expected_libraries_used": 24,
+            "extra_libraries_used": 11,
+            "tasks_using_expected": 331,
+            "tasks_using_extra": 197,
+            "tasks_using_exactly_expected": 213
+        },
+        "deepseek-ai/deepseek-llm-67b-chat": {
+            "total_libraries_used": 35,
+            "expected_libraries_used": 28,
+            "extra_libraries_used": 7,
+            "tasks_using_expected": 257,
+            "tasks_using_extra": 187,
+            "tasks_using_exactly_expected": 174
+        },
+        "mistralai/Mistral-7B-Instruct-v0.3": {
+            "total_libraries_used": 38,
+            "expected_libraries_used": 28,
+            "extra_libraries_used": 10,
+            "tasks_using_expected": 290,
+            "tasks_using_extra": 210,
+            "tasks_using_exactly_expected": 188
+        },
+        "claude-3-5-sonnet-20241022": {
+            "total_libraries_used": 37,
+            "expected_libraries_used": 26,
+            "extra_libraries_used": 11,
+            "tasks_using_expected": 385,
+            "tasks_using_extra": 253,
+            "tasks_using_exactly_expected": 194
+        },
+        "claude-3-5-haiku-20241022": {
+            "total_libraries_used": 39,
+            "expected_libraries_used": 25,
+            "extra_libraries_used": 14,
+            "tasks_using_expected": 404,
+            "tasks_using_extra": 270,
+            "tasks_using_exactly_expected": 195
+        }
+    },
+    "general": {
+        "stats": {
+            "expected_libraries": 21,
+            "problems": 208
+        },
+        "gpt-4o-mini-2024-07-18": {
+            "total_libraries_used": 20,
+            "expected_libraries_used": 14,
+            "extra_libraries_used": 6,
+            "tasks_using_expected": 148,
+            "tasks_using_extra": 90,
+            "tasks_using_exactly_expected": 83
+        },
+        "gpt-3.5-turbo-0125": {
+            "total_libraries_used": 18,
+            "expected_libraries_used": 15,
+            "extra_libraries_used": 3,
+            "tasks_using_expected": 148,
+            "tasks_using_extra": 92,
+            "tasks_using_exactly_expected": 81
+        },
+        "meta-llama/Llama-3.2-3B-Instruct-Turbo": {
+            "total_libraries_used": 20,
+            "expected_libraries_used": 14,
+            "extra_libraries_used": 6,
+            "tasks_using_expected": 138,
+            "tasks_using_extra": 100,
+            "tasks_using_exactly_expected": 69
+        },
+        "Qwen/Qwen2.5-Coder-32B-Instruct": {
+            "total_libraries_used": 18,
+            "expected_libraries_used": 14,
+            "extra_libraries_used": 4,
+            "tasks_using_expected": 132,
+            "tasks_using_extra": 71,
+            "tasks_using_exactly_expected": 81
+        },
+        "deepseek-ai/deepseek-llm-67b-chat": {
+            "total_libraries_used": 18,
+            "expected_libraries_used": 15,
+            "extra_libraries_used": 3,
+            "tasks_using_expected": 110,
+            "tasks_using_extra": 72,
+            "tasks_using_exactly_expected": 67
+        },
+        "mistralai/Mistral-7B-Instruct-v0.3": {
+            "total_libraries_used": 21,
+            "expected_libraries_used": 17,
+            "extra_libraries_used": 4,
+            "tasks_using_expected": 123,
+            "tasks_using_extra": 81,
+            "tasks_using_exactly_expected": 76
+        },
+        "claude-3-5-sonnet-20241022": {
+            "total_libraries_used": 19,
+            "expected_libraries_used": 15,
+            "extra_libraries_used": 4,
+            "tasks_using_expected": 157,
+            "tasks_using_extra": 104,
+            "tasks_using_exactly_expected": 75
+        },
+        "claude-3-5-haiku-20241022": {
+            "total_libraries_used": 22,
+            "expected_libraries_used": 15,
+            "extra_libraries_used": 7,
+            "tasks_using_expected": 162,
+            "tasks_using_extra": 105,
+            "tasks_using_exactly_expected": 77
+        }
+    },
+    "computation": {
+        "stats": {
+            "expected_libraries": 26,
+            "problems": 444
+        },
+        "gpt-4o-mini-2024-07-18": {
+            "total_libraries_used": 24,
+            "expected_libraries_used": 18,
+            "extra_libraries_used": 6,
+            "tasks_using_expected": 296,
+            "tasks_using_extra": 209,
+            "tasks_using_exactly_expected": 163
+        },
+        "gpt-3.5-turbo-0125": {
+            "total_libraries_used": 28,
+            "expected_libraries_used": 19,
+            "extra_libraries_used": 9,
+            "tasks_using_expected": 295,
+            "tasks_using_extra": 191,
+            "tasks_using_exactly_expected": 173
+        },
+        "meta-llama/Llama-3.2-3B-Instruct-Turbo": {
+            "total_libraries_used": 22,
+            "expected_libraries_used": 18,
+            "extra_libraries_used": 4,
+            "tasks_using_expected": 272,
+            "tasks_using_extra": 221,
+            "tasks_using_exactly_expected": 147
+        },
+        "Qwen/Qwen2.5-Coder-32B-Instruct": {
+            "total_libraries_used": 22,
+            "expected_libraries_used": 16,
+            "extra_libraries_used": 6,
+            "tasks_using_expected": 268,
+            "tasks_using_extra": 171,
+            "tasks_using_exactly_expected": 169
+        },
+        "deepseek-ai/deepseek-llm-67b-chat": {
+            "total_libraries_used": 26,
+            "expected_libraries_used": 19,
+            "extra_libraries_used": 7,
+            "tasks_using_expected": 198,
+            "tasks_using_extra": 158,
+            "tasks_using_exactly_expected": 137
+        },
+        "mistralai/Mistral-7B-Instruct-v0.3": {
+            "total_libraries_used": 27,
+            "expected_libraries_used": 21,
+            "extra_libraries_used": 6,
+            "tasks_using_expected": 229,
+            "tasks_using_extra": 172,
+            "tasks_using_exactly_expected": 152
+        },
+        "claude-3-5-sonnet-20241022": {
+            "total_libraries_used": 22,
+            "expected_libraries_used": 16,
+            "extra_libraries_used": 6,
+            "tasks_using_expected": 319,
+            "tasks_using_extra": 214,
+            "tasks_using_exactly_expected": 162
+        },
+        "claude-3-5-haiku-20241022": {
+            "total_libraries_used": 29,
+            "expected_libraries_used": 17,
+            "extra_libraries_used": 12,
+            "tasks_using_expected": 338,
+            "tasks_using_extra": 233,
+            "tasks_using_exactly_expected": 159
+        }
+    },
+    "visualisation": {
+        "stats": {
+            "expected_libraries": 21,
+            "problems": 243
+        },
+        "gpt-4o-mini-2024-07-18": {
+            "total_libraries_used": 19,
+            "expected_libraries_used": 18,
+            "extra_libraries_used": 1,
+            "tasks_using_expected": 158,
+            "tasks_using_extra": 129,
+            "tasks_using_exactly_expected": 74
+        },
+        "gpt-3.5-turbo-0125": {
+            "total_libraries_used": 21,
+            "expected_libraries_used": 19,
+            "extra_libraries_used": 2,
+            "tasks_using_expected": 166,
+            "tasks_using_extra": 130,
+            "tasks_using_exactly_expected": 75
+        },
+        "meta-llama/Llama-3.2-3B-Instruct-Turbo": {
+            "total_libraries_used": 20,
+            "expected_libraries_used": 18,
+            "extra_libraries_used": 2,
+            "tasks_using_expected": 150,
+            "tasks_using_extra": 131,
+            "tasks_using_exactly_expected": 79
+        },
+        "Qwen/Qwen2.5-Coder-32B-Instruct": {
+            "total_libraries_used": 17,
+            "expected_libraries_used": 16,
+            "extra_libraries_used": 1,
+            "tasks_using_expected": 148,
+            "tasks_using_extra": 107,
+            "tasks_using_exactly_expected": 82
+        },
+        "deepseek-ai/deepseek-llm-67b-chat": {
+            "total_libraries_used": 19,
+            "expected_libraries_used": 19,
+            "extra_libraries_used": 0,
+            "tasks_using_expected": 116,
+            "tasks_using_extra": 97,
+            "tasks_using_exactly_expected": 68
+        },
+        "mistralai/Mistral-7B-Instruct-v0.3": {
+            "total_libraries_used": 20,
+            "expected_libraries_used": 18,
+            "extra_libraries_used": 2,
+            "tasks_using_expected": 139,
+            "tasks_using_extra": 114,
+            "tasks_using_exactly_expected": 76
+        },
+        "claude-3-5-sonnet-20241022": {
+            "total_libraries_used": 19,
+            "expected_libraries_used": 17,
+            "extra_libraries_used": 2,
+            "tasks_using_expected": 182,
+            "tasks_using_extra": 138,
+            "tasks_using_exactly_expected": 77
+        },
+        "claude-3-5-haiku-20241022": {
+            "total_libraries_used": 22,
+            "expected_libraries_used": 17,
+            "extra_libraries_used": 5,
+            "tasks_using_expected": 188,
+            "tasks_using_extra": 142,
+            "tasks_using_exactly_expected": 76
+        }
+    },
+    "system": {
+        "stats": {
+            "expected_libraries": 22,
+            "problems": 69
+        },
+        "gpt-4o-mini-2024-07-18": {
+            "total_libraries_used": 22,
+            "expected_libraries_used": 15,
+            "extra_libraries_used": 7,
+            "tasks_using_expected": 47,
+            "tasks_using_extra": 24,
+            "tasks_using_exactly_expected": 37
+        },
+        "gpt-3.5-turbo-0125": {
+            "total_libraries_used": 19,
+            "expected_libraries_used": 15,
+            "extra_libraries_used": 4,
+            "tasks_using_expected": 46,
+            "tasks_using_extra": 22,
+            "tasks_using_exactly_expected": 35
+        },
+        "meta-llama/Llama-3.2-3B-Instruct-Turbo": {
+            "total_libraries_used": 22,
+            "expected_libraries_used": 15,
+            "extra_libraries_used": 7,
+            "tasks_using_expected": 42,
+            "tasks_using_extra": 23,
+            "tasks_using_exactly_expected": 34
+        },
+        "Qwen/Qwen2.5-Coder-32B-Instruct": {
+            "total_libraries_used": 21,
+            "expected_libraries_used": 13,
+            "extra_libraries_used": 8,
+            "tasks_using_expected": 46,
+            "tasks_using_extra": 21,
+            "tasks_using_exactly_expected": 39
+        },
+        "deepseek-ai/deepseek-llm-67b-chat": {
+            "total_libraries_used": 17,
+            "expected_libraries_used": 14,
+            "extra_libraries_used": 3,
+            "tasks_using_expected": 36,
+            "tasks_using_extra": 21,
+            "tasks_using_exactly_expected": 29
+        },
+        "mistralai/Mistral-7B-Instruct-v0.3": {
+            "total_libraries_used": 19,
+            "expected_libraries_used": 15,
+            "extra_libraries_used": 4,
+            "tasks_using_expected": 46,
+            "tasks_using_extra": 20,
+            "tasks_using_exactly_expected": 37
+        },
+        "claude-3-5-sonnet-20241022": {
+            "total_libraries_used": 22,
+            "expected_libraries_used": 15,
+            "extra_libraries_used": 7,
+            "tasks_using_expected": 51,
+            "tasks_using_extra": 22,
+            "tasks_using_exactly_expected": 38
+        },
+        "claude-3-5-haiku-20241022": {
+            "total_libraries_used": 21,
+            "expected_libraries_used": 14,
+            "extra_libraries_used": 7,
+            "tasks_using_expected": 51,
+            "tasks_using_extra": 26,
+            "tasks_using_exactly_expected": 37
+        }
+    },
+    "time": {
+        "stats": {
+            "expected_libraries": 9,
+            "problems": 55
+        },
+        "gpt-4o-mini-2024-07-18": {
+            "total_libraries_used": 8,
+            "expected_libraries_used": 7,
+            "extra_libraries_used": 1,
+            "tasks_using_expected": 39,
+            "tasks_using_extra": 27,
+            "tasks_using_exactly_expected": 19
+        },
+        "gpt-3.5-turbo-0125": {
+            "total_libraries_used": 11,
+            "expected_libraries_used": 8,
+            "extra_libraries_used": 3,
+            "tasks_using_expected": 39,
+            "tasks_using_extra": 28,
+            "tasks_using_exactly_expected": 16
+        },
+        "meta-llama/Llama-3.2-3B-Instruct-Turbo": {
+            "total_libraries_used": 7,
+            "expected_libraries_used": 7,
+            "extra_libraries_used": 0,
+            "tasks_using_expected": 37,
+            "tasks_using_extra": 31,
+            "tasks_using_exactly_expected": 14
+        },
+        "Qwen/Qwen2.5-Coder-32B-Instruct": {
+            "total_libraries_used": 14,
+            "expected_libraries_used": 6,
+            "extra_libraries_used": 8,
+            "tasks_using_expected": 34,
+            "tasks_using_extra": 26,
+            "tasks_using_exactly_expected": 18
+        },
+        "deepseek-ai/deepseek-llm-67b-chat": {
+            "total_libraries_used": 7,
+            "expected_libraries_used": 5,
+            "extra_libraries_used": 2,
+            "tasks_using_expected": 26,
+            "tasks_using_extra": 22,
+            "tasks_using_exactly_expected": 16
+        },
+        "mistralai/Mistral-7B-Instruct-v0.3": {
+            "total_libraries_used": 11,
+            "expected_libraries_used": 8,
+            "extra_libraries_used": 3,
+            "tasks_using_expected": 29,
+            "tasks_using_extra": 29,
+            "tasks_using_exactly_expected": 14
+        },
+        "claude-3-5-sonnet-20241022": {
+            "total_libraries_used": 9,
+            "expected_libraries_used": 8,
+            "extra_libraries_used": 1,
+            "tasks_using_expected": 40,
+            "tasks_using_extra": 31,
+            "tasks_using_exactly_expected": 14
+        },
+        "claude-3-5-haiku-20241022": {
+            "total_libraries_used": 11,
+            "expected_libraries_used": 8,
+            "extra_libraries_used": 3,
+            "tasks_using_expected": 39,
+            "tasks_using_extra": 32,
+            "tasks_using_exactly_expected": 14
+        }
+    },
+    "network": {
+        "stats": {
+            "expected_libraries": 9,
+            "problems": 34
+        },
+        "gpt-4o-mini-2024-07-18": {
+            "total_libraries_used": 14,
+            "expected_libraries_used": 9,
+            "extra_libraries_used": 5,
+            "tasks_using_expected": 32,
+            "tasks_using_extra": 8,
+            "tasks_using_exactly_expected": 24
+        },
+        "gpt-3.5-turbo-0125": {
+            "total_libraries_used": 10,
+            "expected_libraries_used": 8,
+            "extra_libraries_used": 2,
+            "tasks_using_expected": 31,
+            "tasks_using_extra": 4,
+            "tasks_using_exactly_expected": 27
+        },
+        "meta-llama/Llama-3.2-3B-Instruct-Turbo": {
+            "total_libraries_used": 14,
+            "expected_libraries_used": 8,
+            "extra_libraries_used": 6,
+            "tasks_using_expected": 30,
+            "tasks_using_extra": 8,
+            "tasks_using_exactly_expected": 25
+        },
+        "Qwen/Qwen2.5-Coder-32B-Instruct": {
+            "total_libraries_used": 10,
+            "expected_libraries_used": 8,
+            "extra_libraries_used": 2,
+            "tasks_using_expected": 32,
+            "tasks_using_extra": 4,
+            "tasks_using_exactly_expected": 28
+        },
+        "deepseek-ai/deepseek-llm-67b-chat": {
+            "total_libraries_used": 11,
+            "expected_libraries_used": 8,
+            "extra_libraries_used": 3,
+            "tasks_using_expected": 29,
+            "tasks_using_extra": 6,
+            "tasks_using_exactly_expected": 23
+        },
+        "mistralai/Mistral-7B-Instruct-v0.3": {
+            "total_libraries_used": 12,
+            "expected_libraries_used": 8,
+            "extra_libraries_used": 4,
+            "tasks_using_expected": 30,
+            "tasks_using_extra": 7,
+            "tasks_using_exactly_expected": 24
+        },
+        "claude-3-5-sonnet-20241022": {
+            "total_libraries_used": 15,
+            "expected_libraries_used": 9,
+            "extra_libraries_used": 6,
+            "tasks_using_expected": 33,
+            "tasks_using_extra": 6,
+            "tasks_using_exactly_expected": 27
+        },
+        "claude-3-5-haiku-20241022": {
+            "total_libraries_used": 14,
+            "expected_libraries_used": 9,
+            "extra_libraries_used": 5,
+            "tasks_using_expected": 34,
+            "tasks_using_extra": 6,
+            "tasks_using_exactly_expected": 28
+        }
+    },
+    "cryptography": {
+        "stats": {
+            "expected_libraries": 8,
+            "problems": 8
+        },
+        "gpt-4o-mini-2024-07-18": {
+            "total_libraries_used": 11,
+            "expected_libraries_used": 7,
+            "extra_libraries_used": 4,
+            "tasks_using_expected": 5,
+            "tasks_using_extra": 4,
+            "tasks_using_exactly_expected": 2
+        },
+        "gpt-3.5-turbo-0125": {
+            "total_libraries_used": 11,
+            "expected_libraries_used": 7,
+            "extra_libraries_used": 4,
+            "tasks_using_expected": 5,
+            "tasks_using_extra": 3,
+            "tasks_using_exactly_expected": 3
+        },
+        "meta-llama/Llama-3.2-3B-Instruct-Turbo": {
+            "total_libraries_used": 7,
+            "expected_libraries_used": 6,
+            "extra_libraries_used": 1,
+            "tasks_using_expected": 4,
+            "tasks_using_extra": 1,
+            "tasks_using_exactly_expected": 4
+        },
+        "Qwen/Qwen2.5-Coder-32B-Instruct": {
+            "total_libraries_used": 10,
+            "expected_libraries_used": 7,
+            "extra_libraries_used": 3,
+            "tasks_using_expected": 5,
+            "tasks_using_extra": 2,
+            "tasks_using_exactly_expected": 3
+        },
+        "deepseek-ai/deepseek-llm-67b-chat": {
+            "total_libraries_used": 7,
+            "expected_libraries_used": 6,
+            "extra_libraries_used": 1,
+            "tasks_using_expected": 4,
+            "tasks_using_extra": 1,
+            "tasks_using_exactly_expected": 4
+        },
+        "mistralai/Mistral-7B-Instruct-v0.3": {
+            "total_libraries_used": 7,
+            "expected_libraries_used": 6,
+            "extra_libraries_used": 1,
+            "tasks_using_expected": 4,
+            "tasks_using_extra": 2,
+            "tasks_using_exactly_expected": 4
+        },
+        "claude-3-5-sonnet-20241022": {
+            "total_libraries_used": 7,
+            "expected_libraries_used": 7,
+            "extra_libraries_used": 0,
+            "tasks_using_expected": 5,
+            "tasks_using_extra": 0,
+            "tasks_using_exactly_expected": 5
+        },
+        "claude-3-5-haiku-20241022": {
+            "total_libraries_used": 10,
+            "expected_libraries_used": 7,
+            "extra_libraries_used": 3,
+            "tasks_using_expected": 5,
+            "tasks_using_extra": 3,
+            "tasks_using_exactly_expected": 3
+        }
+    }
+}

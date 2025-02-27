@@ -1,0 +1,63 @@
+{
+    "metadata": {
+        "dataset": "webscraper",
+        "total": 100,
+        "start": "2025-01-27T21:59:08.625793",
+        "end": "2025-01-27T22:19:05.575524",
+        "temperature": 0.0,
+        "models": [
+            "gpt-4o-mini-2024-07-18"
+        ],
+        "model": "gpt-4o-mini-2024-07-18"
+    },
+    "prompt": {
+        "system": "You are a helpful and knowledgeable code assistant!",
+        "compare_prompt": "Compare the usage of {language} libraries {libraries} for the following task:\n\n{problem}",
+        "library_prompt": "{problem}\n\nYou should write self-contained {language} code.\nImport and use the {library} library, and explain if it's a good choice.",
+        "solve_prompt": "{problem}\n\nYou should write self-contained {language} code.\nChoose, import and utilise at least one external library.",
+        "pre_prompt": null,
+        "post_prompt": null,
+        "problem_texts": {
+            "solve": "Write the initial code for a web scraping and analysis library."
+        }
+    },
+    "results": {
+        "0.0": {
+            "solve": {
+                "counts": {
+                    "bs4,pandas,requests": 26,
+                    "bs4,requests": 72,
+                    "bs4,matplotlib,requests": 1,
+                    "bs4,requests,textblob": 1
+                }
+            }
+        },
+        "0.5": {
+            "solve": {
+                "counts": {
+                    "bs4,requests": 98,
+                    "bs4,pandas,requests": 2
+                }
+            }
+        },
+        "1.0": {
+            "solve": {
+                "counts": {
+                    "bs4,pandas,requests": 26,
+                    "bs4,requests": 73,
+                    "bs4,nltk,requests": 1
+                }
+            }
+        },
+        "1.5": {
+            "solve": {
+                "counts": {
+                    "bs4,requests": 60,
+                    "bs4,pandas,requests": 38,
+                    "bs4,nltk,requests": 1,
+                    "bs4,numpy,requests": 1
+                }
+            }
+        }
+    }
+}

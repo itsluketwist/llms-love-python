@@ -164,7 +164,7 @@ cython_debug/
 .DS_STORE
 
 data/raw/*
-*/archive/*
+/output/*/archive/*
 
 # working notebooks
 mvp.ipynb
@@ -174,4 +174,4 @@ figure.ipynb
 kendall.ipynb
 
 # temporary
-output/
+# output/
