@@ -47,37 +47,38 @@ def get_solution_libraries(
         results[model] = {}
         for id, text in tqdm(problems.items()):
             results[model][id] = {}
-            text = f"{pre_prompt or ''}{text}{post_prompt or ''}"  # build prompt
+            text = f"{pre_prompt or ''}{text}{post_prompt or ''}"  # build main prompt
 
-            # if libraries:
-            #     compare_prompt = LIBRARY_PROMPT_COMPARE.format(
-            #         language=language,
-            #         libraries=f"{', '.join(libraries[:-1])} and {libraries[-1]} ",
-            #         problem=text,
-            #     )
-            #     [compare_response] = client.complete(
-            #         model=model,
-            #         system=BASE_SYSTEM_PROMPT,
-            #         user=compare_prompt,
-            #         n=1,
-            #         temperature=temperature,
-            #     )
-            #     results[model][id]["compare"] = compare_response
+            # compare libraries for solving the problem (unused in final project)
+            if libraries:
+                compare_prompt = LIBRARY_PROMPT_COMPARE.format(
+                    language=language,
+                    libraries=f"{', '.join(libraries[:-1])} and {libraries[-1]} ",
+                    problem=text,
+                )
+                [compare_response] = client.complete(
+                    model=model,
+                    system=BASE_SYSTEM_PROMPT,
+                    user=compare_prompt,
+                    n=1,
+                    temperature=temperature,
+                )
+                results[model][id]["compare"] = compare_response
 
-            #     for library in libraries:
-            #         library_prompt = LIBRARY_PROMPT_USE_ONE.format(
-            #             problem=text,
-            #             language=language,
-            #             library=library,
-            #         )
-            #         [library_response] = client.complete(
-            #             model=model,
-            #             system=BASE_SYSTEM_PROMPT,
-            #             user=library_prompt,
-            #             n=1,
-            #             temperature=temperature,
-            #         )
-            #         results[model][id][library] = library_response
+                for library in libraries:
+                    library_prompt = LIBRARY_PROMPT_USE_ONE.format(
+                        problem=text,
+                        language=language,
+                        library=library,
+                    )
+                    [library_response] = client.complete(
+                        model=model,
+                        system=BASE_SYSTEM_PROMPT,
+                        user=library_prompt,
+                        n=1,
+                        temperature=temperature,
+                    )
+                    results[model][id][library] = library_response
 
             # get the ranks of the libraries recommended to solve the problem
             if rank_repeat:

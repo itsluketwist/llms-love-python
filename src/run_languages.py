@@ -67,7 +67,7 @@ def get_solution_languages(
         # get languages used to solve each task
         for idx, text in tqdm(enumerate(tasks)):
             solve_prompt = (
-                f"{pre_prompt or ''}{text}{post_prompt or ''}"  # build prompt
+                f"{pre_prompt or ''}{text}{post_prompt or ''}"  # build main prompt
             )
             try:
                 _used_set = set()
@@ -131,7 +131,7 @@ def get_solution_languages(
         },
         "results": results,
     }
-    save_path = f"output/language_results/{run_id or 'lang'}_results_{end}.json"
+    save_path = f"output/language_results/{run_id or 'language'}_results_{end}.json"
     save_json(
         data=data,
         file_path=save_path,
