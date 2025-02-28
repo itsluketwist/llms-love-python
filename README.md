@@ -9,7 +9,7 @@ This repository contains the artifacts and full results for the paper **LMs Love
         <img alt="CC-BY-SA-4.0 License" src="https://img.shields.io/badge/Licence-CC_BY_SA_4.0-yellow?style=for-the-badge&logo=docs&logoColor=white" />
     </a>
     <a href="https://www.python.org/">
-        <img alt="Python 3" src="https://img.shields.io/badge/Python_3-blue?style=for-the-badge&logo=python&logoColor=white" />
+        <img alt="Python 3.11" src="https://img.shields.io/badge/Python_3.11-blue?style=for-the-badge&logo=python&logoColor=white" />
     </a>
     <a href="https://openai.com/blog/openai-api/">
         <img alt="OpenAI API" src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white" />
@@ -17,14 +17,20 @@ This repository contains the artifacts and full results for the paper **LMs Love
     <a href="https://www.anthropic.com/api/">
         <img alt="Anthropic API" src="https://img.shields.io/badge/Claude_API-D97757?style=for-the-badge&logo=claude&logoColor=white" />
     </a>
+    <a href="https://api.together.ai/">
+        <img alt="together.ai API" src="https://img.shields.io/badge/together.ai_API-B5B5B5?style=for-the-badge&logoColor=white" />
+    </a>
 </div>
 
 ## *about*
 
-Programming language and library choices are critical decisions in software development, directly affecting code reliability, security, maintainability, and overall system integrity. Poor or inconsistent choices can lead to increased technical debt, security vulnerabilities, and even catastrophic failures in safety-critical systems.
-As Large Language Models (LLMs) play an increasing role in code generation, it is essential to understand how they make these decisions. However, little is known about their preferences when selecting programming languages and libraries for different coding tasks.
+Programming language and library choices are critical decisions in software development, directly affecting code reliability, security, maintainability, and overall system integrity.
+Poor or inconsistent choices can lead to increased technical debt, security vulnerabilities, and even catastrophic failures in safety-critical systems.
+As Large Language Models (LLMs) play an increasing role in code generation, it is essential to understand how they make these decisions.
+However, little is known about their preferences when selecting programming languages and libraries for different coding tasks.
 
-To fill this gap, this study provides the first in-depth investigation into LLM preferences for coding languages and libraries used when generating code. We assess the preferences of **eight** diverse LLMs by prompting them to complete various coding tasks, including widely-studied benchmarks and the more practical task of generating the initial structural code for new projects (a crucial step that often determines a project’s language or library choices).
+To fill this gap, this study provides the first in-depth investigation into LLM preferences for coding languages and libraries used when generating code.
+We assess the preferences of **eight** diverse LLMs by prompting them to complete various coding tasks, including widely-studied benchmarks and the more practical task of generating the initial structural code for new projects (a crucial step that often determines a project’s language or library choices).
 
 ## *structure*
 
@@ -45,7 +51,14 @@ It has the following directory structure:
 
 ## *installation*
 
-First clone the repository code:
+The code requires Python 3.11 or later to run.
+Ensure you have it installed, otherwise download and install it from [here](https://www.python.org/downloads/).
+
+```shell
+python --version
+```
+
+Now clone the repository code:
 
 ```shell
 git clone **redacted**
@@ -100,6 +113,9 @@ pip install uv
 uv pip compile requirements.txt -o requirements.lock
 ```
 
+## *paper*
+
+todo
 
 ## *citation*
 
