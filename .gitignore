@@ -163,7 +163,8 @@ cython_debug/
 .ruff*
 .DS_STORE
 
-data/raw/*
+# ignore old results and raw benchmark data
+/data/raw/*
 /output/*/archive/*
 
 # working notebooks
@@ -172,6 +173,5 @@ data.ipynb
 latex.ipynb
 figure.ipynb
 kendall.ipynb
-
-# temporary
-# output/
+see.ipynb
+/src/plot/*
