@@ -1,3 +1,5 @@
+"""Simple utility functions to save and read json files."""
+
 import json
 
 

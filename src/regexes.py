@@ -1,3 +1,5 @@
+"""All regexes used in the project are defined here."""
+
 import re
 
 

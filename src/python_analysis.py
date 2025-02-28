@@ -1,8 +1,10 @@
+"""Methods for analyzing python code and extracting imports."""
+
 from collections import defaultdict
 from typing import DefaultDict
 
 from src.api import CompletionProtocol
-from src.data.constants import STDLIB_MODNAMES
+from src.data_utils import PYTHON_STDLIB_MODNAMES
 from src.regexes import CODE_BLOCK_REGEX, FROM_MODULE_IMPORT_REGEX, IMPORT_MODULE_REGEX
 
 
@@ -78,7 +80,7 @@ def get_imports_from_markdown(
     if include_stdlib:
         return imports
     else:
-        return imports - set(STDLIB_MODNAMES)
+        return imports - set(PYTHON_STDLIB_MODNAMES)
 
 
 def get_imports_from_completion(

@@ -1,10 +1,10 @@
+from src.api.api_utils import get_client, quick_complete
 from src.api.completion import (
     AnthropicCompletionAPI,
     OpenAICompletionAPI,
     TogetherCompletionAPI,
 )
 from src.api.protocol import CompletionProtocol
-from src.api.utils import get_client, quick_complete
 
 
 __all__ = [

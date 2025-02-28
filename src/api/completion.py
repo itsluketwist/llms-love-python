@@ -1,3 +1,5 @@
+"""Classes for access to completion APIs of LLM services."""
+
 import anthropic
 import openai
 import together

@@ -1,3 +1,5 @@
+"""Protocol for the completion API of an LLM service."""
+
 from typing import Protocol
 
 

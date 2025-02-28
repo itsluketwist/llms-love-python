@@ -1,3 +1,5 @@
+"""Code to run language preference experiments."""
+
 from collections import defaultdict
 from datetime import datetime
 from typing import DefaultDict

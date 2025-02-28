@@ -19,16 +19,12 @@ This repository contains the artifacts and full results for the paper **LMs Love
     </a>
 </div>
 
-## *abstract*
+## *about*
 
-    Programming language and library choices are critical decisions in software development, directly affecting code reliability, security, maintainability, and overall system integrity. Poor or inconsistent choices can lead to increased technical debt, security vulnerabilities, and even catastrophic failures in safety-critical systems.
-    As Large Language Models (LLMs) play an increasing role in code generation, it is essential to understand how they make these decisions. However, little is known about their preferences when selecting programming languages and libraries for different coding tasks.
+Programming language and library choices are critical decisions in software development, directly affecting code reliability, security, maintainability, and overall system integrity. Poor or inconsistent choices can lead to increased technical debt, security vulnerabilities, and even catastrophic failures in safety-critical systems.
+As Large Language Models (LLMs) play an increasing role in code generation, it is essential to understand how they make these decisions. However, little is known about their preferences when selecting programming languages and libraries for different coding tasks.
 
-    To fill this gap, this study provides the first in-depth investigation into LLM preferences for coding languages and libraries used when generating code. We assess the preferences of \textit{\textbf{eight}} diverse LLMs by prompting them to complete various coding tasks, including widely-studied benchmarks and the more practical task of generating the initial structural code for new projects (a crucial step that often determines a project’s language or library choices).
-
-    Our findings reveal that models heavily favour \texttt{Python} when solving language-agnostic problems, using it \textit{\textbf{90\%-97\%}} of the time, even in cases were \texttt{Python} is widely-accepted as a poor choice. Moreover, they contradict their own recommendations \textit{\textbf{58\%}} of the time for project initialisation tasks, raising concerns about their reliability in guiding language selection. LLMs exhibit similar bias towards using the most well-established libraries, leading the way to a serious discoverability problem for new open-source projects.
-
-    These results highlight the need for improving LLMs' adaptability to diverse programming contexts and developing mechanisms to mitigate language and library bias.
+To fill this gap, this study provides the first in-depth investigation into LLM preferences for coding languages and libraries used when generating code. We assess the preferences of **eight** diverse LLMs by prompting them to complete various coding tasks, including widely-studied benchmarks and the more practical task of generating the initial structural code for new projects (a crucial step that often determines a project’s language or library choices).
 
 ## *structure*
 
@@ -76,7 +72,7 @@ This repository uses up to 3 different LLM APIs -
 [TogetherAI](https://api.together.xyz/).
 The correct API will automatically be used depending on the selected models.
 
-They're not all required, but each API you'd like to use will need it's own access key stored as an environment variable.
+They're not all required, but each API you'd like to use will need it's own API key stored as an environment variable.
 
 ```shell
 export OPENAI_API_KEY=...
