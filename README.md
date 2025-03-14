@@ -114,11 +114,3 @@ pip install uv
 
 uv pip compile requirements.txt -o requirements.lock
 ```
-
-## *paper*
-
-todo
-
-## *citation*
-
-todo
