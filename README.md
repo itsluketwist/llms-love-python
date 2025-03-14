@@ -41,14 +41,14 @@ It has the following directory structure:
 
 - `data/` - Contains the data used to conduct the experiments, including benchmark datasets. Has it's own [README.md](data/README.md) with detailed information.
 - `output/` - The full results for all experiments, and other outputs from running the code.
-    - `chain_of_thought/` - Results from the investigation into the use of chain-of-thought prompting.
+    - `extended_analysis/chain_of_thought/` - Results from the investigation into the use of chain-of-thought prompting.
+    - `extended_analysis/temperature` - Results from the investigation into the influence of adjusting the temperature parameter.
     - `kendall_tau/` - Statistical analysis of the results.
     - `language_results/benchmark_tasks/` - Results for language preferences of LLMs when solving tasks from benchmarks.
     - `language_results/project_init_tasks/` - Results for language preferences of LLMs when writing initial project code.
     - `library_results/benchmark_tasks` - Results for library preferences of LLMs when solving tasks from benchmarks.
     - `library_results/project_init_tasks` - Results for library preferences of LLMs when writing initial project code.
     - `paper_figures` - Figures used in the paper and the data used to create them.
-    - `temperature` - Results from investigation into the influence of changing temperature parameter.
 - `src/` - The main project code, accessing LLM model APIs before extracting data and analysing the results.
 
 ## *installation*
