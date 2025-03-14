@@ -166,6 +166,7 @@ cython_debug/
 # ignore old results and raw benchmark data
 /data/raw/*
 /output/*/archive/*
+/output/*/*/archive/*
 
 # working notebooks
 mvp.ipynb
