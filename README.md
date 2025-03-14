@@ -32,6 +32,8 @@ However, little is known about their preferences when selecting programming lang
 To fill this gap, this study provides the first in-depth investigation into LLM preferences for coding languages and libraries used when generating code.
 We assess the preferences of **eight** diverse LLMs by prompting them to complete various coding tasks, including widely-studied benchmarks and the more practical task of generating the initial structural code for new projects (a crucial step that often determines a project’s language or library choices).
 
+![Example interaction with LLM.](output/paper_figures/llm_chat_example.png)
+
 ## *structure*
 
 This repository contains all of the code used for the project, to allow easy reproduction and encourage further investigation into LLMs coding preferences.
