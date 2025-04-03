@@ -45,7 +45,7 @@ class OpenAICompletionAPI:
 
 class TogetherCompletionAPI:
     """
-    Class to access to Llama-API, using the OpenAI interface.
+    Class to access TogetherAI's API.
     """
 
     def __init__(self):
@@ -77,7 +77,7 @@ class TogetherCompletionAPI:
 
 class AnthropicCompletionAPI:
     """
-    _summary_
+    Class to access Anthropic's Claude API.
     """
 
     def __init__(self) -> None:
